@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="it_letstalk" name="Contact Us Snippet 6">
+        <section class="it_letstalk" data-disp='contact_us'>
+            <div class='container'>
+                <div class='row sct_base_class'>
+                    <div class="col-md-6">
+                        <h2 class="section-title btm_seprator">Let's Talk</h2>
+                        <p class='sct_simple_text'>His exquisite sincerity education shameless ten earnestly breakfast add. So we me unknown as improve hastily sitting forming.</p>
+                    </div>
+                    <div class='sct_cst_btn'>
+                        <a href="#" class="btn btn-primary scita_cstm_btn  it_btn">Let's work together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="letstalk_v2" name="Contact Us Snippet 5">
+        <section class="letstalk_v2 oe_img_bg" style="background-image:url('/theme_scita/static/src/img/service-snippet-img.jpg')" data-disp='contact_us'>
+            <div class='container'>
+                <div class='row sct_base_class'>
+                    <div class="col-md-12">
+                    	<div class='sct_title_div'>
+	                        <h2 class="section-title">Ready to talk?</h2>
+	                        <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	                    </div>
+                        <div class='sct_cst_btn'>
+                            <a href="#" class="btn btn-primary scita_cstm_btn ">Let's Talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

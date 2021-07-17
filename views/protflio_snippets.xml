@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="it_portfolio_tabs_snippets" name="Portfolio Snippet 3">
+        <section class="it_portfolio_tabs s_tabs" style="background-image: url('/web/image/theme_scita.sct_protflio_snippet_1_image_1');" data-disp="portfolio">
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator">Our Latest Projects</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            id="nav_tabs_link_1"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_1"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_1"
+                                            aria-selected="true">Branding</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_2"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_2"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_2"
+                                            aria-selected="false">Digital Marketing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_3"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_3"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_3"
+                                            aria-selected="false">Artwork</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body tab-content">
+                                <div class="tab-pane fade show active"
+                                    id="nav_tabs_content_1"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_1">
+                                    <div class='row'>
+                                        <div class='col-md-6'>
+                                            <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt="portfolio"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='row'>
+                                                <div class='col-md-6'>
+                                                    <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_1" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6'>
+                                                    <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_3" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                            <div class='row'>
+                                                <div class='col-md-6'>
+                                                    <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_2" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6'>
+                                                    <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_4" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_2">
+                                    <div class='row'>
+                                        <div class='col-md-6'>
+                                            <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt="portfolio"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='row'>
+                                                <div class='col-md-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_1" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_3" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                            <div class='row'>
+                                                <div class='col-md-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_2" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_4" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_3"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_3">
+                                    <div class='row'>
+                                        <div class='col-md-6'>
+                                            <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt="portfolio"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='row'>
+                                                <div class='col-md-6 col-sm-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_1" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6 col-sm-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_3" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                            <div class='row'>
+                                                <div class='col-md-6 col-sm-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_2" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                                <div class='col-md-6 col-sm-6'>
+                                                        <img src="/web/image/theme_scita.sct_protflio_snippet_1_small_image_4" class="img img-fluid" alt="portfolio small"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+	<template id="portfolio_snippet_1" name="Portfolio Snippet 1">
+        <section class="portfolio_snippet_1 s_tabs" data-disp="portfolio">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">Recent Projects</h2>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12 sct_service_nav">
+                        <div class="navigation-tab">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#portfolio_1_item1"><span class='nav_title'>Finance</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#portfolio_1_item2"><span class='nav_title'>Market</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#portfolio_1_item3"><span class='nav_title'>Development</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#portfolio_1_item4"><span class='nav_title'>Branding</span></a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active show" id="portfolio_1_item1" role="tabpanel">
+                                    <div class='row sct_serv_row_1'>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="portfolio_1_item2" role="tabpanel">
+                                    <div class='row sct_serv_row_1'>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="portfolio_1_item3" role="tabpanel">
+                                    <div class='row sct_serv_row_1'>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="portfolio_1_item4" role="tabpanel">
+                                    <div class='row sct_serv_row_1'>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    	<div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4 col-sm-6 sct_timeline_img'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btn_row">
+                    <div class='col-md-12'>
+                        <div class='sct_cst_btn'>
+                        	<a href="/contactus" class="btn btn-primary scita_cstm_btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="portfolio_snippet_2" name="Portfolio Snippet 2">
+        <section class="portfolio_snippet_2" data-disp="portfolio">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">Our Portfolio</h2>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row s_nb_column_fixed sct_img_row_1'>
+                	<div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                	<div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 sct_timeline_img'>
+                        <div class='sct_img_box'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

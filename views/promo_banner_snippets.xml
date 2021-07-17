@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Health Promotional Services Banner -->
+    <template id="health_advertisement_banner" name="Advertisement Snippet 3">
+        <section class="health_adv_banner_1 oe_img_bg"  style="background-image: url('/web/image/theme_scita.sct_adveertis_snippet_3_img_1');" data-disp='advbanner'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-12 sct_adv_banner'>
+                        <h2 class='sct_title'>High-class specialists are ready to help you at any time.</h2>
+                        <p class='sct_simple_text'>Contact us any suitable way and make an appointment with the doctor whose help you need! Visit us at the scheduled time and get your treatment.</p>
+                        <div class='sct_play_btn'>
+                           
+                                <a class="btn static-youtube" style="background-image: url('/web/image/theme_scita.sct_adveertis_snippet_3_img_2');" data-src="http://www.youtube.com/v/GlIzuTQGgzs" data-target="#youtube_id">
+                                </a>
+                                
+                                <div class="data-youtube o_hidden">
+                                    <div class='youtube_view'>
+                                        <span id='close_youtube_bar'>X</span>
+                                        <object id='youtube_id' width="100%" height="100%" data="https://www.youtube.com/embed/07d2dXHYb94">
+                                        </object>
+                                    </div>
+                                </div>                   
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+	<!-- Fashion Advertisement Banner-->
+    <template id="fashion_advertisement_banner_1" name="Advertisement Snippet 2">
+        <section class="fashion_advertisement_banner_1" id='adv_banner' data-disp='advbanner'>
+            <div class='container'>
+                <div class="row s_nb_column_fixed">
+                    <div class="col-md-4">
+                        <div class="promo-block">
+                            <img class="img-responsive" src="/web/image/theme_scita.sct_adveertis_snippet_2_img_5"/>
+                        </div>
+                        <div class="promo-block">
+                            <img class="img-responsive" src="/web/image/theme_scita.sct_adveertis_snippet_2_img_4"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="middle-promo-block">
+                            <img class="img-responsive" src="/web/image/theme_scita.sct_adveertis_snippet_2_img_1"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="promo-block">
+                            <img class="img-responsive" src="/web/image/theme_scita.sct_adveertis_snippet_2_img_3"/>
+                        </div>
+                        <div class="promo-block">
+                            <img class="img-responsive" src="/web/image/theme_scita.sct_adveertis_snippet_2_img_2"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- Retail Advertisement Banner-->
+    <template id="retial_advertisement_banner_1" name="Advertisement Snippet 1">
+        <section class="retial_advertisement_banner_1" data-disp='advbanner'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed'>
+                    <div class='col-md-1 sct_vertical_text'>
+                        <h2 class="section-title">TRENDING OFFERS</h2>
+                    </div>
+                    <div class='col-md-5 sct_left_adv'>
+                        <div class='uper-row'>
+                            <div class='sec-left-side'>
+                                <img src="/web/image/theme_scita.sct_adveertis_snippet_1_img_1" class="img img-fluid" alt="promo code"/>
+                                <p>PROMO CODE BIG70</p>
+                                <a href="/shop" class="btn">Shop Now</a>
+                            </div>
+                            <div class='sec-right-side'>
+                                <img src="/web/image/theme_scita.sct_adveertis_snippet_1_img_2" class="img img-fluid" alt='offer product'/>
+                            </div>
+                        </div>
+                        <div class='lower-row'>
+                            <p>No effective interest, no down payment, no processing fee</p>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_right_adv'>
+                        <div class="base-class">
+                            <div class="offer-info">
+                                <p>Only Today</p>
+                                <h3 class='title-text'>BIG SALE</h3>
+                                <a href="/shop" class="btn">Shop Now</a>
+                            </div>
+                            <img src="/web/image/theme_scita.sct_adveertis_snippet_1_img_3" class="img img-fluid mx-auto sct_up_img" alt="For Men Offer"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- Fashion Promo Banner snippet -->
+    <template id="fashion_promo_banner_1" name="Promotion Snippet 2">
+        <section class="fashion_promo_snippet_1" data-disp='advbanner'>
+            <div class='container'>
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12 sct_promo_line'>
+                        <p class='sct_simp_text'>Discounts</p>
+                        <div class='sct_sep'></div>
+                        <div class='sct_text_div'>
+                            <h2 class='sct_big_text'>Get Drenched</h2>
+                            <p class='sct_small_text'>In Style</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-6 sct_left_side'>
+                        <div class='sct_base_class'>
+                            <img src="/web/image/theme_scita.sct_promo_snippet_2_img_1" class="img img-fluid" alt='Background image'/>
+                            <div class='sct_small_img'>
+                                <img src="/web/image/theme_scita.sct_promo_snippet_2_offer_img_1" class="img img-fluid" alt='Offer Banner'/>
+                            </div>
+                            <div class="sct_btn_div">
+                                <a href="/shop" class="btn btn-theme">SHOP NOW<span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_right_side'>
+                        <div class='sct_base_class'>
+                            <img src="/web/image/theme_scita.sct_promo_snippet_2_img_2" class="img img-fluid" alt='Background image'/>
+                            <div class='sct_small_img'>
+                                <img src="/web/image/theme_scita.sct_promo_snippet_2_offer_img_2" class="img img-fluid" alt='Offer Banner'/>
+                            </div>
+                            <div class="sct_btn_div">
+                                <a href="/shop" class="btn btn-theme">SHOP NOW <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-12 sct_promo_line'>
+                        <p class='sct_simp_text'>Discounts</p>
+                        <div class='sct_sep'></div>
+                        <div class='sct_text_div'>
+                            <h2 class='sct_big_text'>New Spring</h2>
+                            <p class='sct_small_text'>Collection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--  Retail promo  Snippet -->
+    <template id="retial_promo_banner_snippet_1" name="Promotion Snippet 1">
+        <section class="retial_promo_banner_snippet_1" data-disp='advbanner'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-4'>
+                        <div class='sct_gray_side retail-offer-thumb'>
+                            <div class="sct_left_text_btn">
+                                <h2 class="title_text">Laptop Windows 10</h2>
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn ">Shop Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                            <div class="sct_icon_img">
+                                <img src="/web/image/theme_scita.sct_promo_snippet_1_img_1" class="img img-fluid mx-auto" alt="Offer Banner"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_pink_side retail-offer-thumb'>
+                            <div class="sct_left_text_btn">
+                                <h2 class="title_text">Crazy Deal Camera</h2>
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn ">Shop Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                            <div class="sct_icon_img">
+                                <img src="/web/image/theme_scita.sct_promo_snippet_1_img_2" class="img img-fluid mx-auto" alt="Offer banner"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_orange_side retail-offer-thumb'>
+                            <div class="sct_left_text_btn">
+                                <h2 class="title_text">Wi-Fi Camera Drone</h2>
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn ">Shop Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                            <div class="sct_icon_img">
+                                <img src="/web/image/theme_scita.sct_promo_snippet_1_img_3" class="img img-fluid mx-auto" alt="Offer Banner"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="promo_banner_snippet_3" name="Promotion Snippet 3">
+        <section class="promo_banner_snippet_3" data-disp='advbanner'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-6 sct_promo_img_div'>
+                        <a href='#'>
+                            <img src="/web/image/theme_scita.sct_promo_snippet_3_img_1" class="img img-fluid" alt="promo banner"/>
+                        </a>
+                    </div>
+                    <div class='col-md-6 sct_promo_img_div'>
+                        <a href='#'>
+                            <img src="/web/image/theme_scita.sct_promo_snippet_3_img_1" class="img img-fluid" alt="promo banner"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

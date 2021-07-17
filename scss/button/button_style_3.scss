@@ -1,0 +1,28 @@
+.btn-primary {
+	background: transparent;
+	border: 2px solid $theme;
+	line-height: 45px;
+	text-align: center;
+	padding: 0 35px;
+	font-size: $font-body + 1;
+	font-weight: bold;
+	color: $theme;
+	letter-spacing: 0.5px;
+	border-radius: 0;
+	@include transition(all, 0.3s, ease);
+	&:focus, &:hover, &:active {
+		border:2px solid transparent;
+		background: $theme;
+		color: $light-color;
+		@include transition(all, 0.3s, ease);
+		outline: none;
+	}
+	@media (max-width: 1023px){
+		line-height:40px;
+		padding:0 30px;
+	}
+	@media (max-width: 767px){
+		line-height:40px;
+		padding:0 20px;
+	}
+}

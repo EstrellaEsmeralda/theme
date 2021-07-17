@@ -1,0 +1,24 @@
+.btn-primary {
+	background:$dark-color;
+	color: $light-color;
+	line-height: 45px;
+	font-size: $head-label;
+	height: auto;
+	padding: 0 15px;
+	border-radius: 0;
+	border: 1px solid transparent;
+	cursor: pointer;
+	border:1px solid transparent;
+	@include transition(all, 0.3s, ease);
+	&:focus, &:hover, &:active{
+		background:$light-color;
+		color: $dark-color;
+		box-shadow: none;
+		border:1px solid $dark-color;
+		@include transition(all, 0.3s, ease);
+		outline: none;
+	}
+	@media (max-width: 1023px){
+		line-height: 40px;
+	}
+}

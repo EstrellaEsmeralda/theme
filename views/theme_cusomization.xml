@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id='snippet_options_add' inherit_id='website.snippet_options' name='Theme add options'>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-select[@data-variable="btn-secondary-outline"]' position='after'>
+            <we-select string="Buttons" data-variable="btn-style-template" data-reload="/">
+                <we-button title="Buttons Style 1"
+                       data-name="btn_style_1"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_1"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-1.gif"/>
+                <we-button title="Buttons Style 2"
+                       data-name="btn_style_2"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_2"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-2.gif"/>
+                <we-button title="Buttons Style 3"
+                       data-name="btn_style_3"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_3"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-3.gif"/>
+                <we-button title="Buttons Style 4"
+                       data-name="btn_style_4"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_4"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-4.gif"/>
+                <we-button title="Buttons Style 5"
+                       data-name="btn_style_5"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_5"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-5.gif"/>
+                <we-button title="Buttons Style 6"
+                       data-name="btn_style_6"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_6"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-6.gif"/>
+                <we-button title="Buttons Style 7"
+                       data-name="btn_style_7"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_7"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-7.gif"/>
+                <we-button title="Buttons Style 8"
+                       data-name="btn_style_8"
+                       data-customize-website-views="theme_scita.theme_scita_button_option_8"
+                       data-img="/theme_scita/static/src/img/snippet_icon/button-style-8.gif"/>
+            </we-select>
+        </xpath>
+        
+        <xpath expr='//div[@data-js="ThemeColors"]//we-row[hasclass("o_we_theme_colors_selector")]' position='after'>
+            <we-colorpicker data-name="color_theme_opt" title="Theme color"
+                            data-customize-website-color="" data-color="theme"
+                            data-use-css-color="true"/>
+        </xpath>
+        <xpath expr='//div[@data-js="ThemeColors"]//we-row[hasclass("o_we_theme_colors_selector")]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        
+        <xpath expr='//div[@data-selector="#wrapwrap > header"]//we-select[@data-variable="header-template"]' position='inside'>
+            <we-button title="Scita Header 1"
+                       data-name="scita_header_1"
+                       data-customize-website-views="theme_scita.option_header_1,theme_scita.header_style_assets_1,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_1'"
+                       data-img="theme_scita/static/src/img/snippet_icon/header-1.png"/>
+            <we-button title="Scita Header 2"
+                       data-name="scita_header_2"
+                       data-customize-website-views="theme_scita.option_header_2,theme_scita.header_style_assets_2,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_2'"
+                       data-img="theme_scita/static/src/img/snippet_icon/header-2.png"/>
+            <we-button title="Scita Header 3"
+                       data-name="scita_header_3"
+                       data-customize-website-views="theme_scita.option_header_3,theme_scita.header_style_assets_3,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_3'"
+                       data-img="theme_scita/static/src/img/snippet_icon/header-3.png"/>
+            <we-button title="Scita Header 4"
+                       data-name="scita_header_4"
+                       data-customize-website-views="theme_scita.option_header_4,theme_scita.header_style_assets_4,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_4'"
+                       data-img="theme_scita/static/src/img/snippet_icon/header-4.png"/>
+            <we-button title="Scita Header 5"
+                       data-name="scita_header_5"
+                       data-customize-website-views="theme_scita.option_header_5,theme_scita.header_style_assets_5,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_5'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-5.png"/>
+            <we-button title="Scita Header 6"
+                       data-name="scita_header_6"
+                       data-customize-website-views="theme_scita.option_header_6,theme_scita.header_style_assets_6"
+                       data-customize-website-variable="'scita_header_6'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-6.png"/>
+            <we-button title="Scita Header 7"
+                       data-name="scita_header_7"
+                       data-customize-website-views="theme_scita.option_header_7,theme_scita.header_style_assets_7,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_7'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-7.png"/>
+            <we-button title="Scita Header 8"
+                       data-name="scita_header_8"
+                       data-customize-website-views="theme_scita.option_header_8,theme_scita.header_style_assets_8"
+                       data-customize-website-variable="'scita_header_8'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-8.png"/>
+            <we-button title="Scita Header 9"
+                       data-name="scita_header_9"
+                       data-customize-website-views="theme_scita.option_header_9,theme_scita.header_style_assets_9,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_9'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-9.png"/>
+            <we-button title="Scita Header 10"
+                       data-name="scita_header_10"
+                       data-customize-website-views="theme_scita.option_header_10,theme_scita.header_style_assets_10,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_10'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-10.png"/>
+            <we-button title="Scita Header 11"
+                       data-name="scita_header_11"
+                       data-customize-website-views="theme_scita.option_header_11,theme_scita.header_style_assets_11,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_11'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-11.png"/>
+            <we-button title="Scita Header 12"
+                       data-name="scita_header_12"
+                       data-customize-website-views="theme_scita.option_header_12,theme_scita.header_style_assets_12,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_12'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-12.png"/>
+            <we-button title="Scita Header 13"
+                       data-name="scita_header_13"
+                       data-customize-website-views="theme_scita.option_header_13,theme_scita.header_style_assets_13,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_13'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-13.png"/>
+            <we-button title="Scita Header 14"
+                       data-name="scita_header_14"
+                       data-customize-website-views="theme_scita.option_header_14,theme_scita.header_style_assets_14"
+                       data-customize-website-variable="'scita_header_14'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-14.png"/>
+              <we-button title="Scita Header 15"
+                       data-name="scita_header_15"
+                       data-customize-website-views="theme_scita.option_header_15,theme_scita.header_style_assets_15,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_15'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-15.png"/>
+            <we-button title="Scita Header 16"
+                       data-name="scita_header_16"
+                       data-customize-website-views="theme_scita.option_header_16,theme_scita.header_style_assets_16"
+                       data-customize-website-variable="'scita_header_16'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-16.png"/>
+            <we-button title="Scita Header 17"
+                       data-name="scita_header_17"
+                       data-customize-website-views="theme_scita.option_header_17,theme_scita.header_style_assets_17"
+                       data-customize-website-variable="'scita_header_17'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-17.png"/>
+            <we-button title="Scita Header 18"
+                       data-name="scita_header_18"
+                       data-customize-website-views="theme_scita.option_header_18,theme_scita.header_style_assets_18,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_18'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-18.png"/>
+            <we-button title="Scita Header 19"
+                       data-name="scita_header_19"
+                       data-customize-website-views="theme_scita.option_header_19,theme_scita.header_style_assets_19,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_19'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-19.png"/>
+            <we-button title="Scita Header 20"
+                       data-name="scita_header_20"
+                       data-customize-website-views="theme_scita.option_header_20,theme_scita.header_style_assets_20,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_20'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-20.png"/>
+            <we-button title="Scita Header 21"
+                       data-name="scita_header_21"
+                       data-customize-website-views="theme_scita.option_header_21,theme_scita.header_style_assets_21,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link"
+                       data-customize-website-variable="'scita_header_21'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-21.png"/>
+            <we-button title="Scita Service Header 1"
+                       data-name="scita_serice_header_1"
+                       data-customize-website-views="theme_scita.option_service_header_1,theme_scita.header_service_style_assets_1"
+                       data-customize-website-variable="'scita_service_header_1'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/service_header.png"/>
+            <we-button title="Scita Service Header 2"
+                       data-name="scita_serice_header_2"
+                       data-customize-website-views="theme_scita.option_service_header_2,theme_scita.header_service_style_assets_2"
+                       data-customize-website-variable="'scita_serice_header_2'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/service-header-2.png"/>
+            <we-button title="Scita Service Header 3"
+                       data-name="scita_serice_header_3"
+                       data-customize-website-views="theme_scita.option_service_header_3,theme_scita.header_service_style_assets_3"
+                       data-customize-website-variable="'scita_service_header_3'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/service-header-3.png"/>
+            <we-button title="Scita Service Header 4"
+                       data-name="scita_serice_header_4"
+                       data-customize-website-views="theme_scita.option_service_header_4,theme_scita.header_service_style_assets_4"
+                       data-customize-website-variable="'scita_serice_header_4'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/service-header-4.png"/>
+            <we-button title="Scita Service Header 5"
+                       data-name="scita_serice_header_5"
+                       data-customize-website-views="theme_scita.option_service_header_5,theme_scita.header_service_style_assets_5"
+                       data-customize-website-variable="'scita_serice_header_5'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/service-header-5.png"/>
+            <we-button title="Scita Header 22"
+                       data-name="scita_header_22"
+                       data-customize-website-views="theme_scita.option_header_2,theme_scita.header_style_assets_2,theme_scita.custom_header_cart_link,theme_scita.custom_header_wishlist_link,
+                       theme_scita.asset_mobile_category, theme_scita.product_details_categories, theme_scita.theme_product_details_category"
+                       data-customize-website-variable="'scita_header_22'"
+                       data-img="/theme_scita/static/src/img/snippet_icon/header-2.png"/>
+        </xpath>
+
+        <xpath expr='//we-select[@data-variable="footer-template"]' position='inside'>
+            <we-button title="Footer-1"
+                   data-customize-website-views="theme_scita.option_footer_1,theme_scita.theme_scita_footer_option_1,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-1'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-1.png"/>
+            <we-button title="Footer-2"
+                   data-customize-website-views="theme_scita.option_footer_2,theme_scita.theme_scita_footer_option_2,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-2'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-2.png"/> 
+            <we-button title="Footer-3"
+                   data-customize-website-views="theme_scita.option_footer_3,theme_scita.theme_scita_footer_option_3,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-3'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-3.png"/>
+            <we-button title="Footer-4"
+                   data-customize-website-views="theme_scita.option_footer_4,theme_scita.theme_scita_footer_option_4,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-4'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-4.png"/>
+            <we-button title="Footer-5"
+                   data-customize-website-views="theme_scita.option_footer_5,theme_scita.theme_scita_footer_option_5,theme_scita.scita_footer_copyright_with_link"
+                   data-customize-website-variable="'Footer-5'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-5.png"/>
+            <we-button title="Footer-6"
+                   data-customize-website-views="theme_scita.option_footer_6,theme_scita.theme_scita_footer_option_6,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-6'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-6.png"/>
+            <we-button title="Footer-7"
+                   data-customize-website-views="theme_scita.option_footer_7,theme_scita.theme_scita_footer_option_7,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-7'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-7.png"/>
+            <we-button title="Footer-8"
+                   data-customize-website-views="theme_scita.option_footer_8,theme_scita.theme_scita_footer_option_8,theme_scita.scita_footer_copyright_with_description"
+                   data-customize-website-variable="'Footer-8'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-8.png"/>
+            <we-button title="Footer-9"
+                   data-customize-website-views="theme_scita.option_footer_9,theme_scita.theme_scita_footer_option_9,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-9'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-9.png"/>
+            <we-button title="Footer-10"
+                   data-customize-website-views="theme_scita.option_footer_10,theme_scita.theme_scita_footer_option_10,theme_scita.scita_footer_copyright_with_icon"
+                   data-customize-website-variable="'Footer-10'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-10.png"/>
+            <we-button title="Footer-11"
+                   data-customize-website-views="theme_scita.option_footer_11,theme_scita.theme_scita_footer_option_11,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-11'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-11.png"/>
+            <we-button title="Footer-12"
+                   data-customize-website-views="theme_scita.option_footer_12,theme_scita.theme_scita_footer_option_12,theme_scita.scita_footer_copyright_with_logo_text"
+                   data-customize-website-variable="'Footer-12'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-12.png"/>
+            <we-button title="Footer-13"
+                   data-customize-website-views="theme_scita.option_footer_13,theme_scita.theme_scita_footer_option_13,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-13'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-13.png"/>
+            <we-button title="Footer-14"
+                   data-customize-website-views="theme_scita.option_footer_14,theme_scita.theme_scita_footer_option_14,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-14'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-14.png"/>
+            <we-button title="Footer-15"
+                   data-customize-website-views="theme_scita.option_footer_15,theme_scita.theme_scita_footer_option_15,theme_scita.scita_footer_copyright_term_link"
+                   data-customize-website-variable="'Footer-15'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-15.png"/>
+            <we-button title="Footer-16"
+                   data-customize-website-views="theme_scita.option_footer_16,theme_scita.theme_scita_footer_option_16,theme_scita.scita_footer_copyright_with_addr_icon"
+                   data-customize-website-variable="'Footer-16'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-16.png"/>
+            <we-button title="Footer-17"
+                   data-customize-website-views="theme_scita.option_footer_17,theme_scita.theme_scita_footer_option_17,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-17'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-17.png"/>
+            <we-button title="Footer-18"
+                   data-customize-website-views="theme_scita.option_footer_18,theme_scita.theme_scita_footer_option_18,theme_scita.scita_footer_copyright_with_only_icon"
+                   data-customize-website-variable="'Footer-18'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-18.png"/>
+            <we-button title="Footer-19"
+                   data-customize-website-views="theme_scita.option_footer_19,theme_scita.theme_scita_footer_option_19,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-19'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-19.png"/>
+            <we-button title="Footer-20"
+                   data-customize-website-views="theme_scita.option_footer_20,theme_scita.theme_scita_footer_option_20,theme_scita.footer_copyright_structure_display_none,theme_scita.footer_copyright_option_display_none"
+                   data-customize-website-variable="'Footer-20'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-20.png"/>
+            <we-button title="Footer-21"
+                   data-customize-website-views="theme_scita.option_footer_21,theme_scita.theme_scita_footer_option_21,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-21'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-21.png"/>
+            <we-button title="Footer-2"
+                   data-customize-website-views="theme_scita.option_footer_22,theme_scita.theme_scita_footer_option_22,theme_scita.scita_footer_copyright_with_payment"
+                   data-customize-website-variable="'Footer-22'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-22.png"/>
+            <we-button title="Footer-2"
+                   data-customize-website-views="theme_scita.option_footer_23,theme_scita.theme_scita_footer_option_23,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-23'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-23.png"/>
+            <we-button title="Footer-24"
+                   data-customize-website-views="theme_scita.option_footer_24,theme_scita.theme_scita_footer_option_24,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-24'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-24.png"/>
+            <we-button title="Footer-25"
+                   data-customize-website-views="theme_scita.option_footer_25,theme_scita.theme_scita_footer_option_25,theme_scita.footer_copyright_structure_display_none,theme_scita.footer_copyright_option_display_none"
+                   data-customize-website-variable="'Footer-25'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-25.png"/>
+            <we-button title="Footer-26"
+                   data-customize-website-views="theme_scita.option_footer_26,theme_scita.theme_scita_footer_option_26,theme_scita.scita_footer_copyright"
+                   data-customize-website-variable="'Footer-26'"
+                   data-img="/theme_scita/static/src/img/snippet_icon/Footer-26.png"/>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-select[@data-variable="btn-primary-outline"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-select[@data-variable="btn-secondary-outline"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]/we-collapse[2]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]/we-collapse[4]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-input[@data-variable="btn-border-width"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-checkbox[@data-variable="btn-ripple"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="OptionsTab"]//we-select[@data-variable="link-underline"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+        <xpath expr='//div[@data-js="HeaderNavbar"]//we-select[@id="option_header_dropdown"]' position='attributes'>
+            <attribute name='class'>o_hidden</attribute>
+        </xpath>
+    </template>
+</odoo>

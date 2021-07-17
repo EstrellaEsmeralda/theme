@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--  Services varient snippet -->
+    <template id="it_grids_service" name="Service Snippet 1">
+        <section class="it_grids_service" style="background-image: url('/web/image/theme_scita.sct_service_snippet_1_img_1');" data-disp="service">
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator">Services Offered</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_img'>
+                        <img src="/web/image/theme_scita.sct_how_it_work_snippet_1" class="img img-fluid" alt="About Company"/>
+                    </div>
+                    <div class='col-md-6 sct_cmp_info'>
+                        <div class='sct_cmp_content'>
+                            <h3 class='sct_blue_text'>Grids of various services</h3>
+                            <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class='sct_icon_img it-icon'>
+                            <ul>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_case_study_snippet_3" class="img img-fluid" alt="cloud db"/>
+                                    </div>
+                                    <h4>Cloud databases</h4>
+                                </li>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_service_snippet_1_img_file" class="img img-fluid" alt="file explore"/>
+                                    </div>
+                                    <h4>File backups</h4>
+                                </li>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_service_snippet_1_img_server" class="img img-fluid" alt="email server"/>
+                                    </div>
+                                    <h4>Email servers</h4>
+                                </li>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_service_snippet_1_img_file" class="img img-fluid" alt="file explore"/>
+                                    </div>
+                                    <h4>File storage</h4>
+                                </li>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_service_snippet_1_img_ecomerce" class="img img-fluid" alt="ecommerce"/>
+                                    </div>
+                                    <h4>ECommerce</h4>
+                                </li>
+                                <li>
+                                    <div class="icon-based">
+                                        <img src="/web/image/theme_scita.sct_service_snippet_1_img_desktop" class="img img-fluid" alt="remote desktop"/>
+                                    </div>
+                                    <h4>Remote desktop</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='sct_cst_btn'>
+                            <a href="/shop" class="btn btn-primary scita_cstm_btn  it_btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_1" name="Service Snippet 2">
+        <section class="service_varient_1" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title blue_line">Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-3 sct_sers_box">
+                        <span class='fa fa-user-md'/>
+                        <h3 class="sct_title">Experience Physicians</h3>
+                        <p class='sct_simple_text'>
+                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                        </p>
+                    </div>
+                    <div class="col-md-3 sct_sers_box">
+                        <span class='fa fa-heartbeat'/>
+                        <h3 class="sct_title">Experience Physicians</h3>
+                        <p class='sct_simple_text'>
+                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                        </p>
+                    </div>
+                    <div class="col-md-3 sct_sers_box">
+                        <span class='fa fa-user-md'/>
+                        <h3 class="sct_title">Experience Physicians</h3>
+                        <p class='sct_simple_text'>
+                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                        </p>
+                    </div>
+                    <div class="col-md-3 sct_sers_box">
+                        <span class='fa fa-medkit'/>
+                        <h3 class="sct_title">Experience Physicians</h3>
+                        <p class='sct_simple_text'>
+                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_2" name="Service Snippet 3">
+        <section class="service_varient_2" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title dark_blue_line">Speciality Services</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Small Business Loans</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                            <div class="sct_cst_btn">
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_3" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Credit Rating Advice</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                            <div class="sct_cst_btn">
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_4" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Fast Crowd Funding</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                            <div class="sct_cst_btn">
+                                <a href="/shop" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_3" name="Service Snippet 4">
+        <section class="service_varient_3" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title blue_line">Our Services</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_img'>
+                                <img src="/web/image/theme_scita.sct_banner_slider_1_image_1" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Aggriculture Engineering</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                <div class="sct_cst_btn">
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_img'>
+                                <img src="/web/image/theme_scita.sct_banner_slider_1_image_1" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Air freight</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                <div class="sct_cst_btn">
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_img'>
+                                <img src="/web/image/theme_scita.sct_banner_slider_1_image_1" class="img img-fluid" alt='web icon'/>
+                            </div>
+                            <div class="sct_text_info">
+                                <h3 class='sct_title'>Ocean freight</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                <div class="sct_cst_btn">
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_4" name="Service Snippet 5">
+        <section class="service_varient_4" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-shopping-bag'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Internal Audit</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-shopping-bag'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Accounting</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-shopping-bag'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Audit</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-phone'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Legislative Support</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-thumbs-o-up'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Review</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_sers_box'>
+                        <div class='service_icon'>
+                            <span class='fa fa-star-o'/>
+                        </div>
+                        <div class="sct_text_info">
+                            <h3 class='sct_title'>Attest Services</h3>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class='more_icon'>
+                            <span class='fa fa-arrow-right'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_5" name="Service Snippet 6">
+        <section class="service_varient_5" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title"><span class='green_color'>Our</span> Services</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class='sct_left_side'>
+                                    <h3 class='sct_title'>Content Marketing</h3>
+                                    <p class='sct_simple_text sct_green_line'>Market Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class="sct_left_side">
+                                    <h3 class='sct_title'>Saving Investments</h3>
+                                    <p class='sct_simple_text sct_green_line'>Finance Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class='sct_left_side'>
+                                    <h3 class='sct_title'>Details Report</h3>
+                                    <p class='sct_simple_text sct_green_line'>Detail Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class='sct_left_side'>
+                                    <h3 class='sct_title'>Investment Plan</h3>
+                                    <p class='sct_simple_text sct_green_line'>Business Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class='sct_left_side'>
+                                    <h3 class='sct_title'>Media Marketing</h3>
+                                    <p class='sct_simple_text sct_green_line'>Marketing Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_sers_box'>
+                            <div class='sct_title_div'>
+                                <div class='sct_left_side'>
+                                    <h3 class='sct_title'>Finance Analysis</h3>
+                                    <p class='sct_simple_text sct_green_line'>Finance Plan</p>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class="sct_text_info">
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_6" name="Service Snippet 7">
+        <section class="service_varient_6" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title sct_green_line">Our Services</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Content Marketing</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Saving Investments</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Details Report</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Investment Plan</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Media Marketing</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Finance Analysis</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_7" name="Service Snippet 8">
+        <section class="service_varient_7 oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp="service">
+            
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">What Industries We Serve? </h2>
+                            <p class="sct_simple_text">Our Industries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Banking and Finance</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Construction &amp; Real Estate</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Food &amp; Commodities </h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Healthcare</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Government</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Not-For-Profit</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_11" name="Service Snippet 10">
+        <section class="service_varient_11" data-disp="service">
+            <div class="container">
+                <div class="row">
+                    <div class='col-lg-3 col-md-6 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Financial Research</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Market Research</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Pharma Research</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Media Research</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_14" name="Service Snippet 13">
+        <section class="service_varient_14" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title sct_blue_line">Our Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Content Marketing</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Saving Investments</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Details Report</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Investment Plan</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Media Marketing</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_sers_box'>
+                            <div class='service_icon'>
+                                <span class="fa fa-pencil-square-o"/>
+                            </div>
+                            <div class='sct_text_info'>
+                                <h3 class='sct_title'>Finance Analysis</h3>
+                                <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_13" name="Service Snippet 12">
+        <section class="service_varient_13" data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">What We Do </h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_left_box'>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Healthcare</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Healthcare</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Healthcare</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_mid_box'>
+                        <div class='sct_img_column'>
+                            <img src="/web/image/theme_scita.sct_content_snippet_4" class="img img-fluid" alt='web icon'/>
+                        </div>
+                    </div>
+                    <div class='col-md-4 sct_thumb'>
+                        <div class='sct_right_box'>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Finance Analysis</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Finance Analysis</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class='sct_sers_box'>
+                                <div class='service_icon'>
+                                    <span class="fa fa-pencil-square-o"/>
+                                </div>
+                                <div class='sct_text_info'>
+                                    <h3 class='sct_title'>Finance Analysis</h3>
+                                    <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_10" name="Service Snippet 9">
+        <section class="service_varient_10 s_tabs" data-disp="service">
+            <div class="container">
+                <div class="row sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <p class="sct_simple_text">Lorem ipsum dolor amet</p>
+                            <h2 class="section-title">What We Do </h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row sct_btm_row">
+                    <div class="col-md-12 sct_service_nav">
+                        <div class="navigation-tab">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#serv_10_item1"><span class='nav_title'>Grids</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_10_item2"><span class='nav_title'>Lorem</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_10_item3"><span class='nav_title'>Consectetur</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_10_item4"><span class='nav_title'>Tempor</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_10_item5"><span class='nav_title'>Labore</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_10_item6"><span class='nav_title'>Labore</span></a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active show" id="serv_10_item1" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_10_item2" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services2</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_10_item3" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services3</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                               
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_10_item4" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services4</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_10_item5" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services5</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_10_item6" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-6 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Grids of various services6</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_serv_list'>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                    <li class='true_icon_text'>
+                                                        <span class="fa fa-check"/>Lorem ipsum dolor sit amet 
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                            <div class='sct_cst_btn'>
+                                                <a href="#" class="btn btn-primary scita_cstm_btn "><span class="fa fa-arrow-circle-o-right"/>Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_service_snippet_9" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="service_varient_12" name="Service Snippet 11">
+        <section class="service_varient_12 s_tabs"  data-disp="service">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">More Feature</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12 sct_service_nav">
+                        <div class="navigation-tab">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#serv_12_item1">
+                                    <span class="fa fa-tree"></span> <strong>Graphic Design</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_12_item2"><span class="fa fa-globe"/><strong>Web Design</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#serv_12_item3">
+                                    <span class="fa fa-camera"/><strong>Photography</strong></a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active show" id="serv_12_item1" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-5'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-7 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Graphic Design</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_list_serv_tab'>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                </ul>                                   
+                                                
+                                                <p class='sct_bold_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_12_item2" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-5'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-7 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Web Design</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                <ul class='sct_list_serv_tab'>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                </ul>                                   
+                                                <p class='sct_bold_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="serv_12_item3" role="tabpanel">
+                                    <div class='row sct_serv_row'>
+                                        <div class='col-md-5'>
+                                            <div class='sct_img_box'>
+                                                <img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid" alt='web icon'/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-7 sct_thumb'>
+                                            <div class='sct_text_info'>
+                                                <h3 class='sct_title'>Photography</h3>
+                                                <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                                
+                                                <ul class='sct_list_serv_tab'>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                </ul>                                   
+                                                
+                                                <p class='sct_bold_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="helth_portfolio_tabs_snippets" name="Service Snippet 14">
+        <section class="helth_service_tabs oe_img_bg s_tabs" style="background-image: url('/web/image/theme_scita.sct_service_snippet_14_img_1');" data-disp="service">
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span class='left_right_seprator light-seprator'>Special High-quality Services</span></h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            id="nav_tabs_link_1"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_1"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_1"
+                                            aria-selected="true">
+                                            <div class='tab_icon'>
+                                                <div class='tab_img'>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_1_light" class="img img-fluid light_img" alt="Emergency"/>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_1_light" class="img img-fluid dark_img" alt="Emergency"/>
+                                                </div>
+                                                <h3 class='tab_title'><span class='light-seprator'>Emergency</span></h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_2"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_2"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_2"
+                                            aria-selected="false">
+                                            <div class='tab_icon'>
+                                                <div class='tab_img'>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_2_light" class="img img-fluid light_img" alt="Tools"/>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_2_dark" class="img img-fluid dark_img" alt="Tools"/>
+                                                </div>
+                                                <h3 class='tab_title'><span class='light-seprator'>Tools</span></h3>
+                                            </div>    
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_3"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_3"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_3"
+                                            aria-selected="false">
+                                            <div class='tab_icon'>
+                                                <div class='tab_img'>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_3_light" class="img img-fluid light_img" alt="Appointment"/> 
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_3_dark" class="img img-fluid dark_img" alt="Appointment"/> 
+                                                </div>
+                                                <h3 class='tab_title'><span class='light-seprator'>Appointment</span></h3>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_4"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_4"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_3"
+                                            aria-selected="false">
+                                            <div class='tab_icon'>
+                                                <div class='tab_img'>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_4_light" class="img img-fluid light_img" alt=" Insurances"/>
+                                                    <img src="/web/image/theme_scita.sct_service_snippet_14_icon_4_dark" class="img img-fluid dark_img" alt=" Insurances"/>
+                                                </div>
+                                                <h3 class='tab_title'><span class='light-seprator'>Insurances</span></h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body tab-content">
+                                <div class="tab-pane fade show active"
+                                    id="nav_tabs_content_1"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_1">
+                                    <div class='row'>
+                                        <div class='col-md-12'>
+                                            <div class='helth_tab_info'>
+                                                <p class='sct_simple_text'>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean. Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean emergency.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_2">
+                                    <div class='row'>
+                                        <div class='col-md-12'>
+                                            <div class='helth_tab_info'>
+                                                <p class='sct_simple_text'>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean. Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean Appointment Tools.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_3"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_3">
+                                    <div class='row'>
+                                        <div class='col-md-12'>
+                                            <div class='helth_tab_info'>
+                                                <p class='sct_simple_text'>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean. Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean Appointment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_4"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_4">
+                                    <div class='row'>
+                                        <div class='col-md-12'>
+                                            <div class='helth_tab_info'>
+                                                <p class='sct_simple_text'>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean. Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nis ipsum aliquenean Insurances.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="health_department_snippets" name="Service Snippet 15">
+        <!-- Tab style 2 -->
+        <section class="health_dept_snippet_1 tab-right-vertical oe_img_bg s_tabs" style="background-image: url('/web/image/theme_scita.sct_service_snippet_15_img_1');" data-disp="service">
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span class='left_right_seprator light-seprator'>Departments</span></h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12">
+                        <div class="vertical scita-health-tabs">
+                            <div class="tab-section">
+                                <div class='row'>
+                                    <div class="col-md-8">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active show" id="home1">
+                                                <div class='row'>
+                                                    <div class='col-md-4 sct_dept_img'>
+                                                        <img src="/web/image/theme_scita.sct_service_snippet_15_img_2" class="img img-fluid" alt="Expert"/>
+                                                    </div>
+                                                    <div class='col-md-8'>
+                                                        <div class='sct_dept_info'>
+                                                            <h3 class='sct_dept_title'>Neurology</h3>
+                                                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                        </div>
+                                                        <div class="sct_helth_btn">
+                                                            <a href="/contactus" class="btn btn_border btn-primary scita_cstm_btn ">Make an appointment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="profile1">
+                                                <div class='row'>
+                                                    <div class='col-md-4 sct_dept_img'>
+                                                        <img src="/web/image/theme_scita.sct_service_snippet_15_img_2" class="img img-fluid" alt="Expert"/>
+                                                    </div>
+                                                    <div class='col-md-8'>
+                                                        <div class='sct_dept_info'>
+                                                            <h3 class='sct_dept_title'>Dental</h3>
+                                                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                        </div>
+                                                        <div class="sct_helth_btn">
+                                                            <a href="/contactus" class="btn btn_border btn-primary scita_cstm_btn ">Make an appointment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="messages1">
+                                                <div class='row'>
+                                                    <div class='col-md-4 sct_dept_img'>
+                                                        <img src="/web/image/theme_scita.sct_service_snippet_15_img_2" class="img img-fluid" alt="Expert"/>
+                                                    </div>
+                                                    <div class='col-md-8'>
+                                                        <div class='sct_dept_info'>
+                                                            <h3 class='sct_dept_title'>X-ray</h3>
+                                                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                        </div>
+                                                        <div class="sct_helth_btn">
+                                                            <a href="/contactus" class="btn btn_border btn-primary scita_cstm_btn ">Make an appointment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="settings1">
+                                                <div class='row'>
+                                                    <div class='col-md-4 sct_dept_img'>
+                                                        <img src="/web/image/theme_scita.sct_service_snippet_15_img_2" class="img img-fluid" alt="Expert"/>
+                                                    </div>
+                                                    <div class='col-md-8'>
+                                                        <div class='sct_dept_info'>
+                                                            <h3 class='sct_dept_title'>Pulmonary</h3>
+                                                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                        </div>
+                                                        <div class="sct_helth_btn">
+                                                            <a href="/contactus" class="btn btn_border btn-primary scita_cstm_btn ">Make an appointment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 tabs">
+                                        <ul class="nav nav-tabs tabs-left" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" name="home1" href="#home1">
+                                                    <div class='tab_icon'>
+                                                        <div class='tab_img'>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_1_light" class="img img-fluid light_img" alt=" Neurology"/>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_1_dark" class="img img-fluid dark_img" alt=" Neurology"/>
+                                                        </div>
+                                                        <h3 class='tab_title'><span class='light-seprator'>Neurology</span></h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" name="profile1" href="#profile1">
+                                                    <div class='tab_icon'>
+                                                        <div class='tab_img'>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_2_light" class="img img-fluid light_img" alt=" Dental"/>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_2_dark" class="img img-fluid dark_img" alt=" Dental"/>
+                                                        </div>
+                                                        <h3 class='tab_title'><span class='light-seprator'>Dental</span></h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" name="messages1" href="#messages1">
+                                                    <div class='tab_icon'>
+                                                        <div class='tab_img'>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_3_light" class="img img-fluid light_img" alt=" X-ray"/>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_3_dark" class="img img-fluid dark_img" alt=" X-ray"/>
+                                                        </div>
+                                                        <h3 class='tab_title'><span class='light-seprator'>X-ray</span></h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" name="settings1" href="#settings1">
+                                                    <div class='tab_icon'>
+                                                        <div class='tab_img'>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_4_light" class="img img-fluid light_img" alt=" Pulmonary"/>
+                                                            <img src="/web/image/theme_scita.sct_service_snippet_15_icon_4_dark" class="img img-fluid dark_img" alt=" Pulmonary"/>
+                                                        </div>
+                                                        <h3 class='tab_title'><span class='light-seprator'>Pulmonary</span></h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--   Services snippet End-->
+</odoo>

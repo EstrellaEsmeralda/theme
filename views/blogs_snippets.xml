@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Blog Slider Snippet -->
+    <template id="health_blog_custom_snippet" name="Blog Snippet 2">
+        <section id="health_custom_blog_snippet" class="health_blog_slider oe_img_bg" data-blog-slider-id="" data-blog-slider-type="" style="background-image: url('/web/image/theme_scita.sct_blog_snippet_2');" data-disp="blog">    
+            <div class="container">
+                <div class="block-title">
+                    <h3 class="fancy">Blog post slider</h3>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="health_blog_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="health_blog_custom_snippet" data-selector=".health_blog_slider" data-snippet-option-id="health_blog_custom_snippet">
+                <we-button class="dropdown-item health_blog_slider" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="health_blog_slider_view" name="Health Blog">
+        <div class="container">
+            <div class='row sct_top_row'>
+                <div class='col-md-12'>
+                    <div class="block-title">
+                        <h2 class="section-title" t-if="not slider_header"><span class='left_right_seprator'>Recent Articles</span></h2>
+                        <h2 class="section-title" t-if="slider_header">
+                           <span class='left_right_seprator'> <t t-esc="slider_header.name"/></span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class='row sct_mid_row'>
+                <div class='col-md-12'>
+                    <div class="health_blogs" t-att-id="'%s-%s' % (slider_header.no_of_counts, slider_header.id)" t-if="blog_slider_details">
+                        <div class='row'>
+                            <t t-as="slide" t-foreach="blog_slider_details[:2]">
+                                <div class='col-lg-6 col-md-6 col-sm-6 health_slide'>
+                                    <div class='blog-thumb'>
+                                        <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='health_blog_img' t-if="slide.cover_properties">
+                                            <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                                            <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                                            </div>
+                                            <p class="date">
+                                                <span class='day' t-esc="datetime.date.strftime(slide.create_date, '%d')"/>
+                                                <t t-esc="datetime.date.strftime(slide.create_date, '%b %Y')"/>
+                                            </p>
+                                       </a>
+                                       <div class='sct_blog_desc'>
+                                            <h3 class='sct_blog_name' t-esc="slide.name"/>
+                                            <p class="blog-content p_count">
+                                                <t t-esc="slide.subtitle"/>
+                                            </p>
+                                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+                                                <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_link">Read More</a>
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row sct_btm_row'>
+                <div class='col-md-12'>
+                    <div class="sct_health_btn">
+                        <a class="btn btn-primary scita_cstm_btn  btn_border" href="/blog">
+                            <span>View All Articles</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- It Blog Slider Snippet -->
+    <template id="theme_scita_blog_custom_snippet" name="Blog Snippet 1">
+        <section id="theme_scita_custom_blog_snippet" class="blog scita_blog_slider" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+            <div class="container">
+                <div class="block-title">
+                    <h3 class="fancy">Blog post slider</h3>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="theme_scita_blog_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="theme_scita_blog_custom_snippet" data-selector=".scita_blog_slider" data-snippet-option-id="theme_scita_blog_custom_snippet">
+                <we-button class="dropdown-item scita_blog_slider" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="theme_scita_blog_slider_view" name="Blog Snippet">
+        <div class="container">
+            <div class='row sct_top_row'>
+                <div class='col-md-12'>
+                    <div class="block-title">
+                        <h2 class="section-title section-title btm_seprator" t-if="not slider_header">Blog post slider</h2>
+                        <h2 class="section-title section-title btm_seprator" t-if="slider_header">
+                            <t t-esc="slider_header.name"/>
+                        </h2>
+                        <p class="sct_simple_text"><t t-esc='slider_header.sub_title'/></p>
+                    </div>
+                </div>
+            </div>
+            <div class='row sct_mid_row'>
+                <div class='col-md-12'>
+                    <div class="it_blogs" t-att-id="'%s-%s' % (slider_header.no_of_counts, slider_header.id)" t-if="blog_slider_details">
+                        <div class='row'>
+                            <t t-as="slide" t-foreach="blog_slider_details[:3]">
+                                <div class='col-lg-4 col-md-6 col-sm-6'>
+                                    <div class='blog-thumb'>
+                                        <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+                                            <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                                            <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                                            </div>
+                                            <p class="date">
+                                                <span class="icon-calendar"></span>
+                                                <t t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+                                            </p>
+                                       </a>
+                                       <div class='sct_blog_desc'>
+                                            <h3 class='sct_blog_name' t-esc="slide.name"/>
+                                            <p class="author">By <span t-esc="slide.author_id.name"/>
+                                            </p>
+                                            <p class="blog-content">
+                                                <t t-esc="slide.subtitle"/>
+                                            </p>
+                                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img read_link' t-if="slide.cover_properties">
+                                                <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_link">Read More <span class="ti-arrow-right"></span>
+                                                </a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row sct_btm_row'>
+                <div class='col-md-12'>
+                    <div class="sct_cst_btn">
+                        <a class="btn btn-primary scita_cstm_btn  btn-lg it_btn o_default_snippet_text" href="/blog">
+                            <span>View More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- Blog 2 sliders -->
+    	<template id="blog_2_custom_snippet" name="Blog Slider 1">
+            <section id="blog_custom_2_snippet" class="blog blog_2_custom oe_img_bg" data-blog-slider-id="" data-blog-slider-type="" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_2_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_2_custom_snippet" data-selector=".blog_2_custom" data-snippet-option-id="blog_2_custom_snippet">
+                        <we-button class="dropdown-item blog_2_custom" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_2_slider_view" name="Blog Snippet 2">
+            <div class="container">
+                <div class="block-title">
+                    <h2 class="fancy" t-if="not slider_header">Blog post slider</h2>
+                    <h2 class="fancy" t-if="slider_header">
+                        <t t-esc="slider_header.name"/>
+                    </h2>
+                </div>
+                <div id='blog_2_owl_carosel' class="owl-carousel" t-if="blog_slider_details">
+                    <t t-as="slide" t-foreach="blog_slider_details">
+                        <div class="sct_blog_box">
+                        	<a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+                                <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                                <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                                </div>
+                                <div class='sct_base_class'>
+                                    <h3 t-field="slide.name"/>
+                                    <div class="sct_hover_blog_content">
+                                        <t t-esc="slide.subtitle"/>
+                                        <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_link">more</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </template>
+    <!-- Blog 3 sliders -->
+    	<template id="blog_3_custom_snippet" name="Blog Slider 2">
+            <section id="blog_custom_3_snippet" class="blog blog_3_custom" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_3_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_3_custom_snippet" data-selector=".blog_3_custom" data-snippet-option-id="blog_3_custom_snippet">
+                    <we-button class="dropdown-item blog_3_custom" tabindex="-1">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_3_slider_view" name="Blog Snippet 3">
+            <div class="container">
+                <div class="block-title">
+                    <h2 class="fancy" t-if="not slider_header">Blog post slider</h2>
+                    <h2 class="fancy" t-if="slider_header">
+                        <t t-esc="slider_header.name"/>
+                    </h2>
+                </div>
+                <div id='blog_3_owl_carosel' class="owl-carousel" t-if="blog_slider_details">
+                    <t t-as="slide" t-foreach="blog_slider_details">
+                        <div class="sct_blog_box">
+                        	
+                        	<a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+                                <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                                <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                                </div>
+                            </a>
+                            <div class='sct_blog_content'>
+                                <div class='sct_title_div'>
+    	                            <h3 class='sct_title' t-field="slide.name"/>
+                                    <p class="date">
+                                        <t t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+                                    </p>
+	                                <p class='sct_simple_text' t-esc="slide.subtitle"/>
+                                </div>
+                                <div class='sct_cst_btn'>
+    	                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_link">Read More</a>
+                                </div>
+	                        </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </template>
+        <!-- Blog 8 sliders -->
+    	<template id="blog_8_custom_snippet" name="Blog Slider 4">
+            <section id="blog_custom_8_snippet" class="blog blog_8_custom oe_img_bg" data-blog-slider-id="" data-blog-slider-type="" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_8_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_8_custom_snippet" data-selector=".blog_8_custom" data-snippet-option-id="blog_8_custom_snippet">
+                    <we-button class="dropdown-item blog_8_custom" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_8_slider_view" name="Blog Snippet 8">
+            <div class="container">
+                <div class='row sct_top_row'>
+                    <div class='col-md-12'>
+                        <div class="block-title">
+                            <div class='sct_left_side'>
+                                <h2 class="fancy" t-if="not slider_header">Blog post slider</h2>
+                                <h2 class="fancy" t-if="slider_header">
+                                    <t t-esc="slider_header.name"/>
+                                </h2>
+                                <p class='sct_sub_title' t-if="slider_header"><t t-esc="slider_header.name"/></p>
+                            </div>
+                            <div class='sct_right_side'>
+                                <p class="sct_simple_text"><t t-esc='slider_header.sub_title'/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div id='blog_8_owl_carosel' class="owl-carousel" t-if="blog_slider_details">
+                            <t t-as="slide" t-foreach="blog_slider_details">
+                                <div class="sct_blog_box">	
+                                	<a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+                                        <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                                        <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                                        </div>
+                                    </a>
+                                    <div class='sct_blog_content'>
+        	                            <h3 class='sct_title' t-field="slide.name"/>
+        	                            <p class="date">
+        	                                <t t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+        	                            </p>
+        	                        </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- Blog 5 sliders -->
+    	<template id="blog_5_custom_snippet" name="Blog Slider 3">
+            <section id="blog_custom_5_snippet" class="blog blog_5_custom" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_5_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_5_custom_snippet" data-selector=".blog_5_custom" data-snippet-option-id="blog_5_custom_snippet">
+                    <we-button class="dropdown-item blog_5_custom" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_5_slider_view" name="Blog Snippet 5">
+            <div class="container">
+                <div class="block-title">
+                    <h3 class='sct_sub_title' t-if="slider_header"><t t-esc="slider_header.name"/></h3>
+                    <h2 class="fancy" t-if="not slider_header">Blog post slider</h2>
+                    <h2 class="fancy" t-if="slider_header">
+                        <t t-esc="slider_header.name"/>
+                    </h2>
+                    <p class="sct_simple_text"><t t-esc='slider_header.sub_title'/></p>
+                </div>
+                <div id='blog_5_owl_carosel' class="owl-carousel" t-if="blog_slider_details">
+                    <t t-as="slide" t-foreach="blog_slider_details">
+                    	<div class="sct_blog_box">
+                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}">
+    	                    	<t t-as="tags" t-foreach="slide.tag_ids">
+                                    <p class='sct_label_blog'><t t-esc="tags.name"/></p>
+                                </t>
+    	                        <p class="date">
+    	                            <t t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+    	                        </p>
+    		                    <h3 class='sct_title' t-field="slide.name"/>
+    		                    <p class="author">By <span t-esc="slide.author_id.name"/></p>
+
+                            </a>
+		                </div>
+                    </t>
+                </div>
+            </div>
+        </template>
+        <!-- Blog 4 sliders -->
+    	<template id="blog_4_custom_snippet" name="Blog Snippet 4">
+            <section id="blog_custom_4_snippet" class="blog blog_4_custom" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_4_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_4_custom_snippet" data-selector=".blog_4_custom" data-snippet-option-id="blog_4_custom_snippet">
+                    <we-button class="dropdown-item blog_4_custom" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_4_slider_view" name="Blog Snippet 8">
+            <div class="container">
+	            <div class='row sct_top_row'>
+	                <div class='col-md-12'>
+	                    <div class="block-title">
+	                        <h2 class="section-title" t-if="not slider_header">Blog post slider</h2>
+	                        <h2 class="section-title" t-if="slider_header">
+	                            <t t-esc="slider_header.name"/>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class='row sct_mid_row'>
+	                <div class='col-md-12'>
+	                    <div class="news_4_blogs" t-att-id="'%s-%s' % (slider_header.no_of_counts, slider_header.id)" t-if="blog_slider_details">
+	                        <div class='row'>
+                                <t t-set='blog_loop' t-value='blog_slider_details'/>
+                        
+                                <t t-as="first_blog_slide" t-foreach="blog_loop[:1]">
+                                    <div class='sct_base_class col-md-6'>
+                                        <div class='img_blog'>
+                                            <a t-attf-href="/blog/#{slug(first_blog_slide.blog_id)}/post/#{slug(first_blog_slide)}" class='it_blog_img' t-if="first_blog_slide.cover_properties">
+                                                <t t-set="cover_property" t-value="json.loads(first_blog_slide.cover_properties)"/>
+                                                <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="first_blog_slide.cover_properties">
+                                                </div>
+                                                <div class='sct_img_content'>
+                                                    <p class="date">
+                                                        <span class='day' t-esc="datetime.date.strftime(first_blog_slide.create_date, '%d')"/>
+                                                        <span class='month' t-esc="datetime.date.strftime(first_blog_slide.create_date, '%b')"/>
+                                                    </p>
+                                                </div>
+                                           </a>
+                                       </div>
+                                       <div class='sct_img_content'>
+                                            <h3 class='sct_blog_name' t-esc="first_blog_slide.name"/>
+                                            <p class="blog-content">
+                                                <t t-esc="first_blog_slide.subtitle[:150]+'...'"/>
+                                            </p>
+                                       </div>
+                                    </div>
+                                </t>
+                                <div class='sct_info_class col-md-6'>
+                                    <t t-as="other_blog_slide" t-foreach="blog_loop[1:4]">
+                                        <div class='sct_blog_desc'>
+                                            <div class='sct_left_side'>
+                                                <p class="date">
+                                                    <span class='day' t-esc="datetime.date.strftime(other_blog_slide.create_date, '%d')"/>
+                                                    <span class='month' t-esc="datetime.date.strftime(other_blog_slide.create_date, '%b')"/>
+                                                </p>
+                                            </div>
+                                            <div class='sct_right_side'>
+                                                <a t-attf-href="/blog/#{slug(other_blog_slide.blog_id)}/post/#{slug(other_blog_slide)}" class="read_link">
+                                                    <h3 class='sct_blog_name' t-esc="other_blog_slide.name"/>
+                                                    <p class="blog-content">
+                                                        <t t-esc="other_blog_slide.subtitle[:65]+'...'"/>
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </template>
+       	<!-- Blog 4 sliders -->
+    	<template id="blog_6_custom_snippet" name="Blog Snippet 3">
+            <section id="blog_custom_6_snippet" class="blog blog_6_custom" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+                <div class="container">
+                    <div class="block-title">
+                        <h2 class="fancy">Blog post slider</h2>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="blog_6_custom_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="blog_6_custom_snippet" data-selector=".blog_6_custom" data-snippet-option-id="blog_6_custom_snippet">
+                    <we-button class="dropdown-item blog_6_custom" tabindex="-1" href="#" data-theme_scita_blog_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="scita_blog_6_slider_view" name="Blog Snippet 6">
+            <div class="container">
+	            <div class='row sct_top_row'>
+	                <div class='col-md-12'>
+	                    <div class="block-title">
+	                        <h2 class="section-title" t-if="not slider_header">Blog post slider</h2>
+	                        <h2 class="section-title" t-if="slider_header">
+	                            <t t-esc="slider_header.name"/>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class='row sct_mid_row'>
+	                <div class='col-md-12'>
+	                    <div class="news_6_blogs" t-att-id="'%s-%s' % (slider_header.no_of_counts, slider_header.id)" t-if="blog_slider_details">
+	                        <div class='row'>
+	                            <t t-set='n_blog' t-value='1'/>
+	                            <t t-as="slide" t-foreach="blog_slider_details">
+	                                <div class='col-lg-4 col-md-6'>
+	                                    <div class='blog-thumb'>
+	                                    	<div class='sct_base_class' t-if='n_blog==1'>
+	                                    		<div class='img_blog'>
+			                                        <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='it_blog_img' t-if="slide.cover_properties">
+			                                            <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+			                                            <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+			                                            </div>
+                                                        <div class='sct_img_content'>
+    			                                            <t t-as="tags" t-foreach="slide.tag_ids">
+                                                                <p class='sct_img_label_blog' style='display: inline-block;'><t t-esc="tags.name"/></p>
+                                                            </t>
+    			                                            <p class="date">
+    			                                            	<span class='date' t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+    			                                            </p>
+    			                                       		<h3 class='sct_blog_name' t-esc="slide.name"/>
+    			                                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_img_link ">Read More</a>
+                                                        </div>
+			                                       </a>
+			                                   </div>
+	                                    	</div>
+	                                    	<div class='sct_info_class' t-else=''>
+		                                        <div class='sct_blog_desc'>
+		                                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="read_link">
+		                                        		<t t-as="tags" t-foreach="slide.tag_ids">
+                                                            <p class='sct_img_label_blog' style='display: inline-block;'><t t-esc="tags.name"/></p>
+                                                        </t>
+		                                            	<h3 class='sct_blog_name' t-esc="slide.name"/>
+		                                            	 <p class="date">
+			                                            	<span class='date' t-esc="datetime.date.strftime(slide.create_date, '%B %d,%Y')"/>
+			                                            </p>
+		                                            	<p class="blog-content">
+			                                                <t t-esc="slide.subtitle[:65]+'...'"/>
+			                                            </p>
+			                                            <a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class="btn_read_link ">Read More</a>
+		                                        	</a>
+		                                        </div>
+	                                    	</div>
+                                        </div>
+                                    </div>
+                                    
+		                            <t t-set='n_blog' t-value='n_blog + 1'/>
+	                            </t>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </template>
+</odoo>

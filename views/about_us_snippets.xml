@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- IT About Company -->
+    <template id="it_about_cmp" name="About Us Snippet 1">
+        <section class="it_about_cmp"  style="background-image: url(/web/image/theme_scita.sct_about_us_snippet_1_bg);" data-disp='about_us'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator">About Us</h2>
+                        <p class="sct_simple_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo. Enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_info'>
+                        <h3 class='sct_blue_text'>Complete control over <span>your company.</span></h3>
+                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        <div class='sct_cst_btn'>
+                            <a href="/contactus" class="btn btn-primary scita_cstm_btn  it_btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_cmp_img'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt="About Company"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- About Healthcare Domain / Hospital -->
+    <template id="health_about_hospital" name="About Us Snippet 2">
+        <section class="health_about_hospital" data-disp='about_us'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-6 sct_hospital_img'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_2" class="img img-fluid" alt="About Hospital"/>
+                    </div>
+                    <div class='col-md-6 sct_hospital_info'>
+                        <h2 class='section-title'><span class='left_right_seprator'>About Healthcare</span></h2>
+                        <p class='sct_simple_text'>On the basis of the medical center “Brivona” can be given a thorough examination of the body and get the advice of highly qualified specialists in various fields of medicine. According to studies, our doctors will make an individual program of prevention and treatment of identified diseases, directed to a surgical treatment if necessary.On the basis of the medical center “Brivona” can be given a thorough examination of the body and get the advice of highly qualified specialists in various </p>
+                        <div class="sct_helth_btn">
+                            <a href="/contactus" class="btn btn_border btn-primary scita_cstm_btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="about_us_v_2" name="About Us Snippet 3">
+        <section class="about_us_v_2" data-disp='about_us'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">About Us</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_info'>
+                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                    </div>
+                    <div class='col-md-6 sct_cmp_list'>
+                        <ul class="sct_unorder_list">
+                            <li>
+                                <span class="fa fa-check"/><span class='text'>Lorem Ipsum is simply</span></li>
+                            <li>
+                                <span class="fa fa-check"/><span class='text'>Lorem Ipsum is simply</span></li>
+                            <li>
+                                <span class="fa fa-check"/><span class='text'>Lorem Ipsum is simply</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="about_us_v_3" name="About Us Snippet 4">
+        <section class="about_us_v_3" data-disp='about_us'>
+            <div class='container'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-6 sct_cmp_info'>
+                    	<div class='sct_content_info'>
+	                        <h3 class='sct_title'>About us</h3>
+	                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+	                    </div>
+                        <div class='sct_cst_btn'>
+                            <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Read More</a>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_cmp_img'>
+                    	<div class="video">
+                        	<img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt="About Company"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="about_us_v_4" name="About Us Snippet 5">
+        <section class="about_us_v_4 s_tabs" data-disp='about_us'>
+            <div class='container'>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_img'>
+                    	<div class="video">
+                        	<img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt="About Company"/>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_cmp_info'>
+                    	<div class='sct_content_info'>
+	                        <h3 class='sct_title'>40 years,we passionate about achieving better result for our client</h3>
+	                        <div class="navigation-tab">
+	                            <!-- Nav tabs -->
+	                            <ul class="nav nav-tabs" role="tablist">
+	                                <li class="nav-item">
+	                                    <a class="nav-link active" data-toggle="tab" href="#about_4_item1">What we do</a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link" data-toggle="tab" href="#about_4_item2">Client results</a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link" data-toggle="tab" href="#about_4_item3">
+	                                    Social impact</a>
+	                                </li>
+	                            </ul>
+	                            <!-- Tab panes -->
+	                            <div class="tab-content">
+	                                <div class="tab-pane fade in active show" id="about_4_item1" role="tabpanel">
+	                                    <div class='row sct_serv_row'>
+	                                        <div class='col-md-12'>
+	                                        	<div class='sct_base_class'>
+		                                            <div class='sct_text_info'>
+		                                               <p class='sct_simple_text'>What we do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		                                            </div>
+		                                            <div class='sct_cst_btn'>
+							                            <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Get in touch</a>
+							                        </div>
+	                                        	</div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade" id="about_4_item2" role="tabpanel">
+	                                    <div class='row sct_serv_row'>
+	                                        <div class='col-md-12'>
+	                                        	<div class='sct_base_class'>
+		                                            <div class='sct_text_info'>
+		                                               <p class='sct_simple_text'>Client results Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		                                            </div>
+		                                            <div class='sct_cst_btn'>
+							                            <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Get in touch</a>
+							                        </div>
+	                                        	</div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade" id="about_4_item3" role="tabpanel">
+	                                    <div class='row sct_serv_row'>
+	                                        <div class='col-md-12'>
+	                                        	<div class='sct_base_class'>
+		                                            <div class='sct_text_info'>
+		                                               <p class='sct_simple_text'>Social impact Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		                                            </div>
+		                                            <div class='sct_cst_btn'>
+							                            <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Get in touch</a>
+							                        </div>
+	                                        	</div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="about_us_v_5" name="About Us Snippet 6">
+        <section class="about_us_v_5" data-disp='about_us'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">About Us</h2>
+                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_title'>
+                        <div class='sct_base_class'>
+                            <h3 class='sct_title'>Trusted and Professional business consultant to fulfill your dreams.</h3>
+                            <div class='sct_cst_btn'>
+                                <p class='sct_simple_text'>Our story</p>
+                                <a href="https://www.youtube.com/watch?v=07d2dXHYb94" class="btn" target="_blank"><span class="fa fa-play"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_cmp_info'>
+                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                        <p class='sct_simple_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <div class='sct_cst_btn'>
+                            <a href="/contactus" class="btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+                    
+    <template id="accordion_v_1" name="Accordion Snippet 1">
+        <section class="accordion_v_1" data-disp='accordion'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Frequently Ask Question</h2>
+                    </div>
+                </div>
+                <div class="container sct_btm_row">
+                    <div id="myCollapse" class="accordion" role="tablist">
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header">Does hudly work with car?</a>
+                            <div class="collapse show" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header">Does hudly work with my phone?</a>
+                            <div class="collapse" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header">Lorem Ipsum is simply dummy text?</a>
+                            <div class="collapse" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="accordion_v_2" name="Accordion Snippet 2">
+        <section class="accordion_v_2" data-disp='accordion'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Frequently Ask Question</h2>
+                    </div>
+                </div>
+                <div class="container sct_btm_row">
+                    <div id="myAccorningCollapse" class="accordion" role="tablist">
+                        <div class="card bg-white active" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header">Does hudly work with car?</a>
+                            <div class="collapse show" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header">Does hudly work with my phone?</a>
+                            <div class="collapse" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header">Lorem Ipsum is simply dummy text?</a>
+                            <div class="collapse" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-white" data-name="Item">
+                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header">Lorem Ipsum is simply dummy text?</a>
+                            <div class="collapse" role="tabpanel">
+                                <div class="card-body">
+                                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

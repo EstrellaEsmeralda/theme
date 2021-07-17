@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="menu_shop_by_category" model="website.menu">
+            <field name="name">Shop By Category</field>
+            <field name="url">/allcategories</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">46</field>
+        </record>
+
+        <record id="shop_by_category" model="ir.ui.view">
+            <field name="name">Shop By Category</field>
+            <field name="type">qweb</field>
+            <field name="key">theme_scita.shop_by_category</field>
+            <field name="arch" type="xml">
+                <t name="Shop By Category" t-name="theme_scita.shop_by_category">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                            <div class="oe_structure"/>
+                            <div class="oe_structure">
+                                <section class="sct_category_page" id="sct_shop_by_category">
+                                    <div class="container">
+                                        <div class='row sct-top-row'>
+                                            <div class='col-md-12'>
+                                                <h2 class='section-title'>Our Categories</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row sct-btm-row justify-content-center">
+                                            <t t-foreach="pro" t-as="category">
+                                                <div class="col-md-4 col-xl-3 col-sm-6 cstm-category-main">
+                                                    <t t-if="category.child_id">
+                                                        <a t-att-href="'/allcategories/category/%s' % slug(category)">
+                                                            <div class="sct-cat-img">
+                                                                <img class="img img-responsive" itemprop="image" t-att-src="website.image_url(category, 'image_1920')" t-att-alt="category.name"/>
+                                                            </div>
+                                                             <div class="sct-cat-info text-center">
+                                                                <h3 class="title"><span t-field="category.name"/></h3>
+                                                            </div>
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-att-href="'/shop/category/%s' % slug(category)">
+                                                            <div class="sct-cat-img">
+                                                                <img class="img img-responsive" itemprop="image" t-att-src="website.image_url(category, 'image_1920')" t-att-alt="category.name"/>
+                                                            </div>
+                                                             <div class="sct-cat-info text-center">
+                                                                <h3 class="title"><span t-field="category.name"/></h3>
+                                                            </div>
+                                                        </a>
+                                                    </t>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="oe_structure"/>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+        <record id="page_shop_by_category" model="website.page">
+            <field name="url">/allcategories</field>
+            <field name="is_published">True</field>
+            <field name="name">Shop By Category</field>
+            <field name="track">True</field>
+            <field name="view_id" ref="theme_scita.shop_by_category"/>
+        </record>
+    </data>
+</odoo>

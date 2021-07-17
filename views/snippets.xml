@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Dynamic Product/Category snippets -->
+    <template id="custom_scita_product_category_slider" name="Dynamic Product/Category Snippet 1">
+        <section class="custom_oe_pro_cat_slider" data-prod-cat-slider-type="" contentEditable="false"  data-disp='category_snippet' data-disp1="multi_product">
+            <div class="container">
+                <div class="row custom_oe_our_slider">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1">
+                                <span>Product/Category Slider</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="custom_scita_product_category_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="custom_scita_product_category_slider"
+                 data-selector=".custom_oe_pro_cat_slider"
+                 data-snippet-option-id="custom_scita_product_category_slider">
+                <we-button class="dropdown-item custom_oe_pro_cat_slider" tabindex="-1" href="#" data-custom_pro_cat_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="custom_scita_cat_slider_view" name="Custom Product/Category Slider">
+        <div class='container'>
+            <div class="custom-title-block">
+                <h4 t-if="slider_header">
+                    <t t-esc="slider_header.name"/>
+                </h4>
+                <h4 t-else="">
+                    Trending
+                </h4>
+            </div>
+            <div class="custom_cat_prod" t-if="slider_details">
+                <t t-foreach="slider_details" t-as="slide">
+                    <t t-if="slider_type == 'product'">
+                        <div class="custom-cs-product">
+                            <a t-att-href="'/shop/product/%s' % slug(slide)">
+                                <img class="front" t-att-alt="slide.name" t-att-title="slide.name" t-att-src="website.image_url(slide, 'image_1920','90x65')"/>
+                                <p class="pwpi-title">
+                                    <t t-esc="slide.name"/>
+                                </p>
+                            </a>
+                        </div>
+                    </t>
+                    <t t-if="slider_type == 'category'">
+                        <div class="custom-cs-product">
+                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                <img t-att-src="website.image_url(slide, 'image_1920','90x65')" t-att-title="slide.name" t-att-alt="slide.name"/>
+                                <p class="pwpi-title">
+                                    <t t-esc="slide.name"/>
+                                </p>
+                            </a>
+                        </div>
+                    </t>
+                </t>
+            </div>
+        </div>
+    </template>
+<!-- Retial snippets Start -->
+    <!-- Multi Product slider snippet -->
+    <template id="scita_multi_cat_custom_snippet" name="Multi Product Slider 1">
+        <section class="oe_multi_category_slider" data-multi-cat-slider-type="" contentEditable="false" data-disp="multi_product">
+            <div class="container">
+                <div class="row our-categories">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1"><span>Multi Product Slider</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="scita_multi_cat_slider_option" inherit_id="website.snippet_options" name="Multi Product Slider 1">
+        <xpath expr="//div" position="after">
+            <div data-js="scita_multi_cat_custom_snippet"
+                 data-selector=".oe_multi_category_slider"
+                 data-snippet-option-id="scita_multi_cat_custom_snippet">
+                <we-button class="dropdown-item oe_multi_category_slider" tabindex="-1" href="#" data-multi_category_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="scita_multi_cat_slider_view" name="Multi Product Tabs Snippet">
+        <div class='retail_featured_product_1'>
+            <div class="container">
+                <div class="lns-inner latest-news-section">
+                    <div class="row">
+                        <div class="lns-post">
+                             <div class="psb-inner">
+                                <div class="title-block ">
+                                    <h2 class="section-title style1" t-if="not slider_header">
+                                        Featured Products
+                                    </h2>
+                                    <h2 class="section-title style1" t-if="slider_header">
+                                        <t t-esc="slider_header.name"/>
+                                    </h2>
+                                </div>
+                                <ul id="multi_dynamic_slider_tabs" class="nav nav-tabs">
+                                    <t t-if="slider_details.no_of_collection == '2'">
+                                        <li class="my-test">
+                                            <a 
+                                            t-att-href="'#multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="my-test">
+                                            <a t-att-href="'#multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '3'">
+                                        <li class="">
+                                            <a 
+                                            t-att-href="'#multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '4'">
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)"  data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_4'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '5'">
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_4'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#multi-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_5'/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <t t-if="slider_details.no_of_collection == '2'">
+                                        <div class="active multi_hide" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '3'">
+                                        <div class="active multi_hide" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide"  t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                   <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '4'">
+                                        <div class="active multi_hide" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_4_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '5'">
+                                        <div class="active multi_hide" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_4_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'multi-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel" t-att-id="'multi-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_5_ids" t-as="product">
+                                                    <t t-call='theme_scita.retail_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <template id='fashion_multi_slider_products'>
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class="cs-product" t-att-data-publish="product.website_published and 'on' or 'off'">
+            <div class="pwp-img">
+                <a role="button" t-if="not show_publish and not product.website_published" t-att-href="product_href" class="btn btn-secondary btn-sm btn-danger btn_unpub" title="This product is unpublished.">Unpublished</a>
+                <div t-if="product and product.product_style_tag_id.style=='style1'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'border-bottom-color:%s' % product.product_style_tag_id.color_code">
+                    <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style2'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'background-color: %s' % product.product_style_tag_id.color_code">
+                    <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='right'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="'border-right-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='left'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="'border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style4'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="' border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                    <span class="sct-top-left-part" t-att-style="'border-top-color: %s;' % product.product_style_tag_id.color_code"/>
+                </div>
+                <a t-att-href="'/shop/product/%s' % slug(product)">
+                    <img class="front" t-att-alt="product.name" t-att-title="product.name" t-att-src="website.image_url(product, 'image_1920','314x385')"/>
+                </a>
+            </div>
+            <div class="pwd-desc">
+                <div class="pink-box">
+                    <t t-if='slider_details.is_rating_enable'>
+                        <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                                    <div t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg')"/>
+                                    <t t-set="prod_curr_rate" t-value="0"/>
+                                    <t t-set="is_half_star" t-value="0"/>
+                                    <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                                      <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                                      <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                        <i class="fa fa-star"/>
+                                      </t>
+                                      <t t-else="">
+                                        <t t-if="rating_val % 1 > 0.01 and rating_val % 1 &lt;0.99 and is_half_star == 0">
+                                          <i class="fa fa-star-half-o"/>
+                                          <t t-set="is_half_star" t-value="1"/>
+                                        </t>
+                                        <t t-else="">
+                                          <i class="fa fa-star-o"/>
+                                        </t>
+                                      </t>
+                                    </t>
+                                </ul>
+                    </t>
+                </div>
+                <div class="pwp-info">
+                    <h3 class="pwpi-title">
+                        <a t-attf-href="/shop/product/#{ slug(product) }">
+                            <span t-field='product.name'/>
+                        </a>
+                    </h3>
+                    <p class="price">
+                        <b>
+                            <t t-if="True">
+                                <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                            </t>
+                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                        </b>
+                    </p>
+                    <div class='add_cart_div ajax_cart_template'>
+                        <form action="/shop/cart/update" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                             <button class="button btn btn-cart a-submit cart_view_sct_btn" t-att-data-id="product.id">
+                                ADD TO CART
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="sct-hover-info product_price">
+                    <form action="/shop/cart/update" method="post">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                        <div class="qvp-btn" id="quick_view_product">
+                            <button type="button" class="btn scita_cstm_btn quick_view_sct_btn qbtn" title="Quick View" t-att-data-id="product.id">
+                                <span class="fa fa-eye"/>
+                            </button>
+                        </div>
+                        <t t-if="request.website.viewref('theme_scita.add_to_wishlist').active and product.product_variant_ids">
+                            <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                            <a class="btn btn-default btn-xs o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist"><span class="fa fa-heart"></span></a>
+                        </t>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="sct_product_snippet_1" name="Multi Product Snippet 1">
+        <section class="sct_product_snippet_1" data-multi-cat-slider-type="" contentEditable="false" data-disp="multi_product">
+            <div class="container">
+                <div class="row our-config-products">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1"><span>Product Configuration</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="sct_product_snippet_1_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="sct_product_snippet_1"
+                 data-selector=".sct_product_snippet_1"
+                 data-snippet-option-id="sct_product_snippet_1">
+                <we-button class="dropdown-item sct_product_snippet_1" tabindex="-1" href="#" data-multi_category_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="sct_product_snippet_1_view" name="Multi Product Snippet Configuration 1">
+        <div class='sct-snippet-full'>
+            <div class="container-fluid">
+                <div class="row top">
+                    <div class="content col-md-12">
+                        <h2 class="section-title" t-if="not slider_header">Featured Products</h2>
+                        <h2 class="section-title " t-if="slider_header">
+                            <t t-esc="slider_header.name"/>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row bottom-row content justify-content-center">
+                    <t t-foreach="products" t-as="product">
+                        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                        <div class="col-md-4 col-lg-3 col-6 grid_product">
+                            <div class="cs-product" t-att-data-publish="product.website_published and 'on' or 'off'">
+                                <div class="pwp-img">
+                                    <a role="button" t-if="not show_publish and not product.website_published" t-att-href="product_href" class="btn btn-secondary btn-sm btn-danger btn_unpub" title="This product is unpublished.">Unpublished</a>
+                                    <div t-if="product and product.product_style_tag_id.style=='style1'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'border-bottom-color:%s' % product.product_style_tag_id.color_code">
+                                        <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style2'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'background-color: %s' % product.product_style_tag_id.color_code">
+                                        <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='right'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="'border-right-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='left'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="'border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style4'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="' border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                        <span class="sct-top-left-part" t-att-style="'border-top-color: %s;' % product.product_style_tag_id.color_code"/>
+                                    </div>
+                                    <a t-att-href="'/shop/product/%s' % slug(product)">
+                                        <img class="front" t-att-alt="product.name" t-att-title="product.name" t-att-src="website.image_url(product, 'image_1920','314x385')"/>
+                                    </a>
+                                </div>
+                                <div class="pwd-desc">
+                                    <div class="pink-box">
+                                        <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                                    <div t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg')"/>
+                                    <t t-set="prod_curr_rate" t-value="0"/>
+                                    <t t-set="is_half_star" t-value="0"/>
+                                    <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                                      <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                                      <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                        <i class="fa fa-star"/>
+                                      </t>
+                                      <t t-else="">
+                                        <t t-if="rating_val % 1 > 0.01 and rating_val % 1 &lt;0.99 and is_half_star == 0">
+                                          <i class="fa fa-star-half-o"/>
+                                          <t t-set="is_half_star" t-value="1"/>
+                                        </t>
+                                        <t t-else="">
+                                          <i class="fa fa-star-o"/>
+                                        </t>
+                                      </t>
+                                    </t>
+                                </ul>
+                                    </div>
+                                    <div class="pwp-info">
+                                        <h3 class="pwpi-title">
+                                            <a t-attf-href="/shop/product/#{ slug(product) }">
+                                                <span t-field='product.name'/>
+                                            </a>
+                                        </h3>
+                                        <p class="price">
+                                            <b>
+                                                <t t-if="True">
+                                                    <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                </t>
+                                                <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <div class="sct-hover-info product_price ajax_cart_template">
+                                        <form action="/shop/cart/update" method="post">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                                            <button type="button" class="btn scita_cstm_btn quick_view_sct_btn qbtn" title="Quick View" t-att-data-id="product.id">
+                                                <span class="fa fa-eye"/>
+                                            </button>
+                                            <t t-if="request.website.viewref('theme_scita.add_to_compare').active and product.product_variant_ids">
+                                               <a class="btn btn-xs o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist"><span class="fa fa-balance-scale"></span></a>
+                                            </t>
+                                            <t t-if="request.website.viewref('theme_scita.add_to_wishlist').active and product.product_variant_ids">
+                                                <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                                                <a class="btn btn-default btn-xs o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist"><span class="fa fa-heart"></span></a>
+                                            </t>
+                                            <button class="button btn btn-cart a-submit cart_view_sct_btn" t-att-data-id="product.id">
+                                                <span class="icon-basket"></span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="sct_product_snippet_2" name="Multi Product Snippet 2">
+        <section class="sct_product_snippet_2" data-multi-cat-slider-type="" contentEditable="false" data-disp="multi_product">
+            <div class="container">
+                <div class="row our-config-products">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1"><span>Product Configuration</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="sct_product_snippet_2_option" inherit_id="website.snippet_options" name="Modify Options 2">
+        <xpath expr="//div" position="after">
+            <div data-js="sct_product_snippet_2"
+                 data-selector=".sct_product_snippet_2"
+                 data-snippet-option-id="sct_product_snippet_2">
+                <we-button class="dropdown-item sct_product_snippet_2" tabindex="-1" href="#" data-multi_category_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="sct_product_snippet_2_view" name="Multi Product Snippet Configuration 2">
+        <div class='sct-snippet-full'>
+            <div class="container">
+                <div class="row top">
+                    <div class="content col-md-12">
+                        <h2 class="section-title" t-if="not slider_header">Featured Products</h2>
+                        <h2 class="section-title " t-if="slider_header">
+                            <t t-esc="slider_header.name"/>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row bottom-row content justify-content-center">
+                    <t t-foreach="products" t-as="product">
+                        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                        <div class="col-md-4 col-lg-3 col-6 grid_product">
+                            <div class="cs-product" t-att-data-publish="product.website_published and 'on' or 'off'">
+                                <div class="pwp-img">
+                                    <a role="button" t-if="not show_publish and not product.website_published" t-att-href="product_href" class="btn btn-secondary btn-sm btn-danger btn_unpub" title="This product is unpublished.">Unpublished</a>
+                                    <div t-if="product and product.product_style_tag_id.style=='style1'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'border-bottom-color:%s' % product.product_style_tag_id.color_code">
+                                        <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style2'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'background-color: %s' % product.product_style_tag_id.color_code">
+                                        <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='right'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="'border-right-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='left'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="'border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                    </div>
+                                    <div t-if="product and product.product_style_tag_id.style=='style4'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                                        <span class="sct-top-right-part" t-att-style="' border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                                        <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                                        <span class="sct-top-left-part" t-att-style="'border-top-color: %s;' % product.product_style_tag_id.color_code"/>
+                                    </div>
+                                    <a t-att-href="'/shop/product/%s' % slug(product)">
+                                        <img class="front" t-att-alt="product.name" t-att-title="product.name" t-att-src="website.image_url(product, 'image_1920','314x385')"/>
+                                    </a>
+                                </div>
+                                <div class="pwd-desc">
+                                    <div class="pink-box">
+                                        
+                                        <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                                    <div t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg')"/>
+                                    <t t-set="prod_curr_rate" t-value="0"/>
+                                    <t t-set="is_half_star" t-value="0"/>
+                                    <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                                      <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                                      <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                        <i class="fa fa-star"/>
+                                      </t>
+                                      <t t-else="">
+                                        <t t-if="rating_val % 1 > 0.01 and rating_val % 1 &lt;0.99 and is_half_star == 0">
+                                          <i class="fa fa-star-half-o"/>
+                                          <t t-set="is_half_star" t-value="1"/>
+                                        </t>
+                                        <t t-else="">
+                                          <i class="fa fa-star-o"/>
+                                        </t>
+                                      </t>
+                                    </t>
+                                </ul>
+                                    </div>
+                                    <div class="pwp-info">
+                                        <h3 class="pwpi-title">
+                                            <a t-attf-href="/shop/product/#{ slug(product) }">
+                                                <span t-field='product.name'/>
+                                            </a>
+                                        </h3>
+                                        <p class="price">
+                                            <b>
+                                                <t t-if="True">
+                                                    <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                </t>
+                                                <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <div class="sct-hover-info product_price ajax_cart_template">
+                                        <form action="/shop/cart/update" method="post">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                                            <button type="button" class="btn scita_cstm_btn quick_view_sct_btn qbtn" title="Quick View" t-att-data-id="product.id">
+                                                <span class="fa fa-eye"/>
+                                            </button>
+                                            <t t-if="request.website.viewref('theme_scita.add_to_compare').active and product.product_variant_ids">
+                                               <a class="btn btn-xs o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist"><span class="fa fa-balance-scale"></span></a>
+                                            </t>
+                                            <t t-if="request.website.viewref('theme_scita.add_to_wishlist').active and product.product_variant_ids">
+                                                <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                                                <a class="btn btn-default btn-xs o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist"><span class="fa fa-heart"></span></a>
+                                            </t>
+                                            <button class="button btn btn-cart a-submit cart_view_sct_btn" t-att-data-id="product.id">
+                                                <span class="icon-basket"></span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </template>
+     <template id="product_category_img_slider_config" name="Dynamic Product/Category Snippet 2">
+        <section class="multi_product_and_category_slider s_custom_img_category_slider" data-multi-cat-slider-type="" contentEditable="false" data-disp='category_snippet' data-disp1="multi_product">
+            <div class="container">
+                <div class="row our-config-products cst_top_row">
+                    <div class="col-md-12 cst_flex_base">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1"><span>Image Category Slider</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="product_category_img_slider_config_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="product_category_img_slider_config"
+                 data-selector=".multi_product_and_category_slider"
+                 data-snippet-option-id="product_category_img_slider_config">
+                <we-button class="dropdown-item multi_product_and_category_slider" tabindex="-1" href="#" data-multi_category_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="product_category_img_slider_config_view" name="Product And category Slider">
+        <div class='product_category_scita'>
+            <div class="container">
+                <div class='row cst_top_row'>
+                    <div class='col-md-12 cst_flex_base'>
+                        <div class="cstm-seprator"></div>
+                        <h2 class="section-title style1" t-if="not slider_header">
+                                        Category Image 
+                        </h2>
+                        <h2 class="section-title style1" t-if="slider_header">
+                            <t t-esc="slider_header.name"/>
+                        </h2>
+                        <div class="cstm-seprator"></div>
+                    </div>
+                </div>
+                <div class='row cst_btm_row'>
+                    <div class='col-md-3 cst_sct_left_side'>
+                        <div class='cst_sct_img'>
+                            <a t-att-href="'%s' % (slider_header.img_link) if slider_header.img_link else '#'">
+                                 <img t-att-alt="slider_header.name" t-att-src="website.sudo().image_url(slider_header, 'img_banner')" t-att-title="slider_header.name"/>
+                             </a>
+                        </div>
+                        <div class='cst_sct_content'>
+                            <t t-raw='slider_header.links'/>
+                        </div>
+                    </div>
+                    <div class='col-md-9 cst_sct_right_side'>
+                        <div class="cst_category-slider-section">                            
+                            <ul t-att-id="'cat_list_%s'% (slider_header.no_of_column) if slider_header.no_of_column else 'cat_list_id'" class='cat_list'>
+                                <t t-as="slide" t-foreach="slider_details">
+                                    <li class="cs-cat">
+                                        <t t-if="slider_type == 'category'">
+                                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                                <div class="cs-img">
+                                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                                </div>
+                                                <div class='sct_cat_content'>
+                                                    <p class="pwpi-title">
+                                                        <t t-esc="slide.name"/>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </t>
+                                        <t t-else="">
+                                            <a t-att-href=" '/shop/product/%s' % slug(slide)">
+                                                <div class="cs-img">
+                                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                                </div>
+                                                <div class='sct_cat_content'>
+                                                    <p class="pwpi-title">
+                                                        <t t-esc="slide.name"/>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </t>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <template id="timer_snippet_body" name="Timer">
+        <div class="js_counter_timer" data-date="nan" data-msg='nun' data-mins-1=""  data-disp="deal_days"/>
+    </template>
+
+    <template id="timer_snippet_snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js='js_counter_timer' data-selector=".js_counter_timer" data-drop-in=".timer_counter_div">
+                <we-button tabindex="-1" href="#" class="dropdown-item"
+                        data-choose-image="true" data-no-preview="true" data-date_configure="">
+                        <i class="fa fa-clock-o" />
+                        Modify Time
+                </we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id='retail_multi_slider_products'>
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class="cs-product" t-att-data-publish="product.website_published and 'on' or 'off'">
+            <div class="pwp-img">
+                <a role="button" t-if="not show_publish and not product.website_published" t-att-href="product_href" class="btn btn-secondary btn-sm btn-danger btn_unpub" title="This product is unpublished.">Unpublished</a>
+                <div t-if="product and product.product_style_tag_id.style=='style1'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'border-bottom-color:%s' % product.product_style_tag_id.color_code">
+                    <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style2'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position" t-att-style="'background-color: %s' % product.product_style_tag_id.color_code">
+                    <span t-att-style="'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='right'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="'border-right-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style3' and product.product_style_tag_id.position=='left'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="'border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                </div>
+                <div t-if="product and product.product_style_tag_id.style=='style4'" t-att-class="'img_lbl %s' % product.product_style_tag_id.style +' %s'% product.product_style_tag_id.position">
+                    <span class="sct-top-right-part" t-att-style="' border-left-color: %s;' % product.product_style_tag_id.color_code"/>
+                    <span class='sct-tag-name' t-att-style="'background-color: %s;' % product.product_style_tag_id.color_code +'color:%s' % product.product_style_tag_id.font_color_code" t-esc="product.product_style_tag_id.name"/>
+                    <span class="sct-top-left-part" t-att-style="'border-top-color: %s;' % product.product_style_tag_id.color_code"/>
+                </div>
+                <a t-att-href="'/shop/product/%s' % slug(product)">
+                    <img class="front" t-att-alt="product.name" t-att-title="product.name" t-att-src="website.image_url(product, 'image_1920','314x385')"/>
+                </a>
+            </div>
+            <div class="pwd-desc">
+                <t t-if='slider_details.is_rating_enable'>
+                    <div class="pink-box">
+                        <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                            <div t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg')"/>
+                            <t t-set="prod_curr_rate" t-value="0"/>
+                            <t t-set="is_half_star" t-value="0"/>
+                            <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                              <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                              <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                <i class="fa fa-star"/>
+                              </t>
+                              <t t-else="">
+                                <t t-if="rating_val % 1 > 0.01 and rating_val % 1 &lt;0.99 and is_half_star == 0">
+                                  <i class="fa fa-star-half-o"/>
+                                  <t t-set="is_half_star" t-value="1"/>
+                                </t>
+                                <t t-else="">
+                                  <i class="fa fa-star-o"/>
+                                </t>
+                              </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <div class="pwp-info">
+                    <p class="pwpi-title">
+                        <span t-esc='product.name'/>
+                    </p>
+                    <p class="price">
+                        <b>
+                            <t t-if="True">
+                                <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                            </t>
+                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                        </b>
+                    </p>
+                </div>
+                <div class="sct-hover-info product_price ajax_cart_template">
+                    <form action="/shop/cart/update" method="post">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                        <t t-if="request.website.viewref('theme_scita.add_to_compare').active and product.product_variant_ids">
+                           <a class="btn btn-xs o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist"><span class="fa fa-balance-scale"></span></a>
+                        </t>
+                        <t t-if="request.website.viewref('theme_scita.add_to_wishlist').active and product.product_variant_ids">
+                            <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                            <a class="btn btn-xs o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist"><span class="icon-heart"></span></a>
+                        </t>
+                        <button class="button btn btn-cart a-submit cart_view_sct_btn" t-att-data-id="product.id">
+                            <span class="icon-basket"/>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+<!-- Fashion indtries start -->
+    <!-- Multi Product slider snippet -->
+    <template id="fashion_multi_cat_custom_snippet" name="Multi Product Slider 2">
+        <section class="fashion_multi_category_slider" data-multi-cat-slider-type="" contentEditable="false" style="background-image: url('/web/image/theme_scita.sct_multi_product_slider_2');" data-disp="multi_product">
+            <div class="container">
+                <div class="row our-categories">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="snippet-title" class="section-title style1"><span>Multi Product Slider</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="fashion_multi_cat_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="fashion_multi_cat_custom_snippet"
+                 data-selector=".fashion_multi_category_slider"
+                 data-snippet-option-id="fashion_multi_cat_custom_snippet">
+                <we-button class="dropdown-item fashion_multi_category_slider" tabindex="-1" href="#" data-multi_category_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="fashion_multi_cat_slider_view" name="Fashion Multi Product Tabs Snippet">
+        <div class='fashion_featured_product_1'>
+            <div class="container">
+                <div class="lns-inner latest-news-section">
+                    <div class="row">
+                        <div class="lns-post">
+                             <div class="psb-inner">
+                                <div class="title-block ">
+                                    <h2 class="section-title style1" t-if="not slider_header">
+                                        Featured Products
+                                    </h2>
+                                    <h2 class="section-title style1" t-if="slider_header">
+                                        <t t-esc="slider_header.name"/>
+                                    </h2>
+                                </div>
+                                <ul id="multi_dynamic_slider_tabs" class="nav nav-tabs">
+
+                                    <t t-if="slider_details.no_of_collection == '2'">
+                                        <li class="my-test">
+                                            <a t-att-href="'#fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="my-test">
+                                            <a t-att-href="'#fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '3'">
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '4'">
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_4'/>
+                                            </a>
+                                        </li>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '5'">
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab" class="active show">
+                                                <t t-esc='slider_details.label_collection_1'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_2'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_3'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_4'/>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a t-att-href="'#fashion-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)" data-toggle="tab">
+                                                <t t-esc='slider_details.label_collection_5'/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <t t-if="slider_details.no_of_collection == '2'">
+                                        <div class="active multi_hide" t-att-id="'fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '3'">
+                                        <div class="active multi_hide" t-att-id="'fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '4'">
+                                        <div class="active multi_hide" t-att-id="'fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_4_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="slider_details.no_of_collection == '5'">
+                                        <div class="active multi_hide" t-att-id="'fashion-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection1-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_1_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection2-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_2_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection3-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_3_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)">
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection4-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_4_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="multi_hide" t-att-id="'fashion-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)"> 
+                                            <div class="owl-carousel fashion_cro" t-att-id="'multi-collection5-%s-%s' %(slider_header.no_of_collection, slider_details.id)" t-if="slider_details">
+                                                <t t-foreach="slider_details.collection_5_ids" t-as="product">
+                                                    <t t-call='theme_scita.fashion_multi_slider_products'/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+<!-- Fashion banner End -->
+<!-- IT Start -->
+    
+    <template id="it_skills_snippet" name="Skills Block">
+        <section class="it_skills_snippet" data-disp='statistics'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator">Technology Expertise</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_cmp_info'>
+                        <ul>
+                            <li>
+                                <p class='sct_simple_text'>Information Architecture</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:80%; Background:#f2662f;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>User Experiences</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:75%; Background:#3a147d;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>App Development</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:85%; Background:#299595;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>User Interface</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:90%; Background:#0d56d9;"></div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class='col-md-6 sct_cmp_img'>
+                        <h2 class='sct_big_text'>10</h2>
+                        <h3 class='sct_sub_title'><span>Years </span>Of Experience</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- html builder -->
+    <template id="html_builder_snippet" name="HTML Builder Snippet">
+        <section class="html_builder_new" data-multi-cat-slider-type="" contentEditable="false" data-disp='html_builder'>
+            <div class="container">
+                <div class="row our-config-products">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 id="html_builder_tittle" class="section-title style1"><span>HTML Snippet Builder</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="html_builder_snippet_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="html_builder_snippet"
+                 data-selector=".html_builder_new"
+                 data-snippet-option-id="html_builder_snippet">
+                <we-button class="dropdown-item html_builder_new" tabindex="-1" href="#" data-html_content_builder="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+
+   
+    
+<!-- IT industry End -->
+    
+    <template id="health_location_snippet" name="Service Location Block">
+        <section class="health_location_snippet" data-disp='contact_us'>
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span class='left_right_seprator'>Location we serve</span></h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_loc_info">
+                        <h3 class='sct_title'>New York</h3>
+                        <p class='sct_simple_text'>225 W. Creekside Avenue<br/>New York, NY 10027
+                            <span class='email'>Email: <a href="mailto:info@mediclinic.com">info@mediclinic.com</a></span>
+                            <span class='phone'>Phone: <a href="tel:+1323579832822">88(0) 10100000000</a></span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_loc_info">
+                        <h3 class='sct_title'>Amsterdam</h3>
+                        <p class='sct_simple_text'>
+                            225 W. Creekside Avenue<br/>Amsterdam, 70027
+                            <span class='email'>Email: <a href="mailto:info@mediclinic.com">info@mediclinic.com</a></span>
+                            <span class='phone'>Phone: <a href="tel:+13235798328p22">88(0) 10100000000</a></span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_loc_info">
+                        <h3 class='sct_title'>London</h3>
+                        <p class='sct_simple_text'>
+                            225 W. Creekside Avenue<br/>London, 20027
+                            <span class='email'>Email: <a href="mailto:info@mediclinic.com">info@mediclinic.com</a></span>
+                            <span class='phone'>Phone: <a href="tel:+13235798328p22">88(0) 10100000000</a></span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_loc_info">
+                        <h3 class='sct_title'>san francisco</h3>
+                        <p class='sct_simple_text'>
+                            225 W. Creekside Avenue<br/>San Francisco, 90027
+                            <span class='email'>Email: <a href="mailto:info@mediclinic.com">info@mediclinic.com</a></span>
+                            <span class='phone'>Phone: <a href="tel:+13235798328p22">88(0) 10100000000</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+<!-- Service industry End -->
+    <!-- snippets list  -->
+    <template id="theme_scita_snippets_list" inherit_id="website.snippets" name="Theme Scita Snippets List">
+        <xpath expr="//div[@id='snippet_structure']" position="before">
+            <div class="o_panel" id="scita_snippets">
+                <div class="o_panel_header">
+                    <span class="fa-stack">
+                        <img src="/theme_scita/static/src/img/scita_small_logo.png" class="img img-fluid" alt="Money back"/>
+                    </span>Theme Scita
+                    <select id="selSnippetCat" class="scita_snippet_sort">
+                        <option value="about_us">About Us Snippets</option>
+                        <option value="accordion">Accordion Snippets</option>
+                        <option value="banner">Banner Snippets</option>
+                        <option value="blog">Blog Snippets</option>
+                        <option value="brand">Brand Snippets</option>
+                        <option value="content_block">Content Snippets</option>
+                        <option value="client_snippet">Client Snippets</option>
+                        <option value="category_snippet">Category Snippets</option>
+                        <option value="case_study">Case Study Snippets</option>
+                        <option value="contact_us">Contact Us Snippets</option>
+                        <option value="deal_days">Deal of the Day Snippets</option>
+                        <option value="google_map_snippet">Google Map Snippets</option>
+                        <option value="how_it_works">How It Works Snippets</option>
+                        <option value="html_builder">HTML Snippet Builder</option>
+                        <option value="multi_product">Multi Product Snippets</option>
+                        <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                            <option value="newsletter">Newsletter Snippets</option>
+                        </t>
+                        <option value="our_team">Our Team Snippets</option>
+                        <option value="portfolio">Portfolio Snippets</option>
+                        <option value="advbanner">Promotion Snippets</option>
+                        <option value="pricing_table">Pricing Snippets</option>
+                        <option value="statistics">Statistics Snippets</option>
+                        <option value="service">Service Snippets</option>
+                        <option value="trust_icon">Trust Icons Snippets</option>
+                        <option value="testimonial">Testimonial Snippets</option>
+                        <option value="timeline">Timeline Snippets</option>
+                    </select>
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_scita.timer_snippet_body" t-thumbnail="/theme_scita/static/src/img/snippet_icon/timer.png" name="Style 2" priority="2" />
+                    <!-- banner snippets -->
+                    <t t-snippet="theme_scita.sct_banner_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-ful-banner-1.1.png"/>
+                    <t t-snippet="theme_scita.sct_banner_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_2.png"/>
+                    <t t-snippet="theme_scita.sct_banner_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_3.png"/>
+                    <t t-snippet="theme_scita.sct_banner_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_4.png"/>
+                    <t t-snippet="theme_scita.sct_banner_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_5.png"/>
+                    <t t-snippet="theme_scita.retail_sct_banner_slider_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-banner.png"/>
+                    <t t-snippet="theme_scita.fashion_main_banner_slider" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fasion_banner.png"/>
+                    <t t-snippet="theme_scita.helth_banner_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_2.png"/>
+                    <t t-snippet="theme_scita.it_main_banner" t-thumbnail="/theme_scita/static/src/img/snippet_icon/banner_6.png"/>
+                    <t t-snippet="theme_scita.banner_snippet_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/hero-image-snippet.png"/>
+                    <t t-snippet="theme_scita.dynamic_video_banner" t-thumbnail="/theme_scita/static/src/img/snippet_icon/video-banner.png"/>
+
+                    <!-- Deal of the Day snippets -->
+                    <t t-snippet="theme_scita.retial_deal_of_day_banner_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-deal-of-day.png"/>
+                    <t t-snippet="theme_scita.fashion_deal_of_day_banner_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fashion_deal_of_day.png"/>
+                    <t t-snippet="theme_scita.deal_of_day_banner_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Deal_of_the_Day_2.png"/>
+                    <t t-snippet="theme_scita.deal_of_day_banner_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Deal_of_the_Day_3.png"/>
+                    <t t-snippet="theme_scita.deal_of_day_banner_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/deal-of-the-day-5.png"/>
+                    <!-- Promo banners snippets -->
+                    <t t-snippet="theme_scita.retial_promo_banner_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/pro_banner_1.png"/>
+                    <t t-snippet="theme_scita.fashion_promo_banner_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fas_pro_banner.png"/>
+                    <t t-snippet="theme_scita.promo_banner_snippet_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/promo-banner-3.png"/>
+                    
+                    <!-- Multi product tab slidres -->
+                    <t t-snippet="theme_scita.scita_multi_cat_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-feature-product.png"/>
+                    <t t-snippet="theme_scita.fashion_multi_cat_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/multi_product.png"/>
+
+                    <!-- html builder -->
+                    <t t-snippet="theme_scita.html_builder_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/multi_product.png"/>
+
+                    <!-- brand snippets -->
+                    <t t-snippet="theme_scita.prod_brands" t-thumbnail="/theme_scita/static/src/img/snippet_icon/it_brand.png"/>
+                    <t t-snippet="theme_scita.brands_box_slider_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Brands_4.png"/>
+                    <t t-snippet="theme_scita.it_prod_brands" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-brand.png"/>
+
+                    <t t-snippet="theme_scita.fashion_static_brand_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fas_brand.png"/>
+                    <t t-snippet="theme_scita.custom_scita_brand_custom_slider" t-thumbnail="theme_scita/static/src/img/snippet_icon/Category-brand-snippet.png"/>
+                    
+
+                    <t t-snippet="theme_scita.theme_scita_category_slider_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/category-slider-1.png"/>
+                    <t t-snippet="theme_scita.theme_scita_category_slider_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/category-slider-2.png"/>
+                    
+                    <t t-snippet="theme_scita.retial_category_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-categories.png"/>
+                    <t t-snippet="theme_scita.fashion_category_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fs_cate_pro.png"/>    
+                    
+
+                    <t t-snippet="theme_scita.retial_advertisement_banner_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-trending-offer.png"/>
+                    <t t-snippet="theme_scita.fashion_advertisement_banner_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fas_adv.png"/>
+                    <t t-snippet="theme_scita.health_advertisement_banner" t-thumbnail="/theme_scita/static/src/img/snippet_icon/video_icon.png"/>
+                    <t t-snippet="theme_scita.it_skills_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/it_skill2.png"/>
+
+                    <!-- IT snippets End -->
+                    <!-- Helth snippets start -->
+                    <t t-snippet="theme_scita.health_location_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/location.png"/>
+                    
+                    <!-- Helth snippets End -->
+                    <!-- Testimonial veriants -->
+                    <t t-snippet="theme_scita.health_testimonials_slider_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial1.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_2.png"/>
+                    <t t-snippet="theme_scita.fashion_testimonials_slider_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/fas_testimonial.png"/>
+                    <t t-snippet="theme_scita.it_testimonials_slider_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/it_testimonial.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_1.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_3.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_4.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_5.png"/>
+                    <t t-snippet="theme_scita.testinomial_varient_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/testimonial_v_6.png"/>
+
+
+                    
+                    <!-- Case Study veriants -->
+                    <t t-snippet="theme_scita.health_cash_study_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/helth_case.png"/>
+                    <t t-snippet="theme_scita.case_study_varient_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Case_Study_Varient_1.png"/>
+                    <t t-snippet="theme_scita.case_study_varient_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Case_Study_Varient_2.png"/>
+                    <!-- service veriants -->
+                    <t t-snippet="theme_scita.it_grids_service" t-thumbnail="/theme_scita/static/src/img/snippet_icon/ser_grid.png"/>
+                    <t t-snippet="theme_scita.service_varient_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/service_v_1.png"/>
+                    <t t-snippet="theme_scita.service_varient_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/service_v_2.png"/>
+                    <t t-snippet="theme_scita.service_varient_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/service_v_3.png"/>
+                    <t t-snippet="theme_scita.service_varient_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/service_v_4.png"/>
+                    <t t-snippet="theme_scita.service_varient_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/service_v_5.png"/>
+                    <t t-snippet="theme_scita.service_varient_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_6.png"/>
+                    <t t-snippet="theme_scita.service_varient_7" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_7.png"/>
+                    <t t-snippet="theme_scita.service_varient_10" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_10.png"/>
+                    <t t-snippet="theme_scita.service_varient_11" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_11.png"/>
+                    <t t-snippet="theme_scita.service_varient_12" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_12.png"/>
+                    <t t-snippet="theme_scita.service_varient_13" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_13.png"/>
+                    <t t-snippet="theme_scita.service_varient_14" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Service_Varient_14.png"/>
+                    <t t-snippet="theme_scita.helth_portfolio_tabs_snippets" t-thumbnail="/theme_scita/static/src/img/snippet_icon/helth_pro.png"/>
+                    <t t-snippet="theme_scita.health_department_snippets" t-thumbnail="/theme_scita/static/src/img/snippet_icon/helth_dep.png"/>
+                    <!-- pricing_table veriants-->
+
+                    <t t-snippet="theme_scita.s_theme_scita_pricing_table_1_4column_v1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Pricing_Varient_1.png"/>
+                    <t t-snippet="theme_scita.s_theme_scita_pricing_table_1_4column_v2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Pricing_Varient_2.png"/>
+                    <t t-snippet="theme_scita.s_theme_scita_pricing_table_1_3column_v3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Pricing_Varient_3.png"/>
+                    <t t-snippet="theme_scita.s_theme_scita_pricing_table_1_4column_v4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Pricing_Varient_4.png"/>
+                    <t t-snippet="theme_scita.s_theme_scita_pricing_table_1_3column_v5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Pricing_Varient_5.png"/>
+                    <!-- Our team veriants -->
+                    <t t-snippet="theme_scita.it_our_team" t-thumbnail="/theme_scita/static/src/img/snippet_icon/our_team.png"/>
+
+                    <t t-snippet="theme_scita.our_team_varient_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_2.png"/>
+                    <t t-snippet="theme_scita.our_team_varient_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_3.png"/>
+                    <t t-snippet="theme_scita.our_team_varient_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_4.png"/>
+                    <t t-snippet="theme_scita.our_team_varient_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_5.png"/>
+                    <t t-snippet="theme_scita.our_team_varient_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_6.png"/>
+                    <t t-snippet="theme_scita.our_team_varient_7" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Our_Team_Varient_7.png"/>
+                    <t t-snippet="theme_scita.helth_experts_tabs_snippets" t-thumbnail="/theme_scita/static/src/img/snippet_icon/expert.png"/>
+                    <!-- Policy Trust snippets veriants -->
+                    <t t-snippet="theme_scita.retial_trust_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/trust_1.png"/>
+                    <t t-snippet="theme_scita.fashion_trust_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/retail-trust-icon.png"/>
+                    <t t-snippet="theme_scita.policy_trust_snippet_v_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Policy_Trust_Varient_3.png"/>
+                    <t t-snippet="theme_scita.policy_trust_snippet_v_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Trust_Icons_Type_4.png"/>
+                    
+
+                    <!-- Product Snippet -->
+                    <t t-snippet="theme_scita.sct_product_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/multi-product-snippet-1.png"/>
+                    <t t-snippet="theme_scita.sct_product_snippet_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/multi-product-snippet-2.png"/>
+
+                    <!-- How it work snippets -->
+
+                    <t t-snippet="theme_scita.how_it_work_v_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_1.png"/>
+                    <t t-snippet="theme_scita.how_it_work_v_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_2.png"/>
+                    <t t-snippet="theme_scita.how_it_work_v_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_3.png"/>
+                    <t t-snippet="theme_scita.how_it_work_v_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_4.png"/>
+                    <t t-snippet="theme_scita.how_it_work_v_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_5.png"/>
+                    <t t-snippet="theme_scita.how_it_work_v_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/How_it_works_variant_6.png"/>
+                    <t t-snippet="theme_scita.it_work_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/how_work.png"/>
+                    <!-- Expertise Statistics Snippets -->
+                    <t t-snippet="theme_scita.it_fact_sheet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/static.png"/>
+                    <t t-snippet="theme_scita.health_fact_sheet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/helth_static.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_4.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_5.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_6.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_7" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_7.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_8" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_8.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_9" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_9.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_10" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_10.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_11" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_11.png"/>
+                    <t t-snippet="theme_scita.expertise_statistics_12" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Expertise_Statistics_12.png"/>
+                    <!-- contact us snippets -->
+
+                    <t t-snippet="theme_scita.contact_us_v_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Contact_us_1.png"/>
+                    <t t-snippet="theme_scita.contact_us_v_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Contact_us_2.png"/>
+                    <t t-snippet="theme_scita.contact_us_v_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Contact_us_3.png"/>
+                    <t t-snippet="theme_scita.contact_us_v_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Contact_us_4.png"/>
+                    <t t-snippet="theme_scita.letstalk_v2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Lets_Talk_Variant_2.png"/>
+                    <t t-snippet="theme_scita.it_letstalk" t-thumbnail="/theme_scita/static/src/img/snippet_icon/talk.png"/>
+                    
+                    <!-- content snippets -->
+
+                    <t t-snippet="theme_scita.content_snippets_v_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_4.png"/>
+                    <t t-snippet="theme_scita.content_snippets_v_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_5.png"/>
+                    <t t-snippet="theme_scita.content_snippets_v_6" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_6.png"/>
+                    <t t-snippet="theme_scita.content_snippets_v_9" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_9.png"/>
+                    <t t-snippet="theme_scita.content_snippets_v_10" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_10.png"/>
+                    <t t-snippet="theme_scita.content_snippets_v_11" t-thumbnail="/theme_scita/static/src/img/snippet_icon/content_according_11.png"/>
+
+
+
+                    <!-- About us -->
+                    <t t-snippet="theme_scita.it_about_cmp" t-thumbnail="/theme_scita/static/src/img/snippet_icon/about_us1.png"/>
+                    <t t-snippet="theme_scita.health_about_hospital" t-thumbnail="/theme_scita/static/src/img/snippet_icon/about_us2.png"/>
+                    <t t-snippet="theme_scita.about_us_v_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/About_Us_2.png"/>
+                    <t t-snippet="theme_scita.about_us_v_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/About_Us_3.png"/>
+                    <t t-snippet="theme_scita.about_us_v_4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/About_Us_4.png"/>
+                    <t t-snippet="theme_scita.about_us_v_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/About_Us_5.png"/>
+                    <!-- accordion_v_1 -->
+                    <t t-snippet="theme_scita.accordion_v_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/accordion_1.png"/>
+                    <t t-snippet="theme_scita.accordion_v_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/accordion_2.png"/>
+
+                    <!-- Google Map Snippet -->
+                    <t t-snippet="theme_scita.s_appjetty_google_map" t-thumbnail="/theme_scita/static/src/img/snippet_icon/google-map-1.png"/>
+                    <t t-snippet="theme_scita.s_appjetty_google_map_content" t-thumbnail="/theme_scita/static/src/img/snippet_icon/google-map-2.png"/>
+                    
+                    
+                    <!-- Blog snippets  -->
+                    <t t-snippet="theme_scita.theme_scita_blog_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/blog1.png"/>
+                    <t t-snippet="theme_scita.health_blog_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/helth_blog.png"/>
+                    <t t-snippet="theme_scita.blog_6_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_6.png"/>
+                    <t t-snippet="theme_scita.blog_4_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_9.png"/>
+                    <t t-snippet="theme_scita.blog_2_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_3.png"/>
+                    <t t-snippet="theme_scita.blog_3_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_4.png"/>
+
+                    <t t-snippet="theme_scita.blog_5_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_5.png"/>
+            
+                    <t t-snippet="theme_scita.blog_8_custom_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Blog_Slider_7.png"/>
+                    
+                    
+                    <!-- Client sliders -->
+                    <t t-snippet="theme_scita.s_theme_scita_client_slider_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Client_Variant_1.png"/>
+                    <t t-snippet="theme_scita.second_client_slider_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Client_Variant_2.png"/>
+                    <t t-snippet="theme_scita.third_client_slider_snippet" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Client_Variant_3.png"/>
+
+                    <!-- category sliders -->
+                    <t t-snippet="theme_scita.s_theme_scita_category_slider" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Category_Slider_1.png"/>
+                    <t t-snippet="theme_scita.second_theme_scita_category_slider" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Category_Slider_2.png"/>
+
+                    
+                    <!-- product and category snippet -->
+                    <t t-snippet="theme_scita.custom_scita_product_category_slider" t-thumbnail="theme_scita/static/src/img/snippet_icon/Category-brand-snippet.png"/>
+                    <t t-snippet="theme_scita.product_category_img_slider_config" t-thumbnail="theme_scita/static/src/img/snippet_icon/image_banner_catgory.png"/>
+                    <!-- Timeline snippets  -->
+                    <t t-snippet="theme_scita.timeline_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Timeline_1.png"/>
+                    <t t-snippet="theme_scita.timeline_snippet_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Timeline_2.png"/>
+                    <t t-snippet="theme_scita.timeline_snippet_3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Timeline_3.png"/>
+                    
+                    <!-- portfolio_snippet_1 -->
+                    <t t-snippet="theme_scita.portfolio_snippet_1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Portfolio_2.png"/>
+                    <t t-snippet="theme_scita.portfolio_snippet_2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Portfolio_1.png"/>
+                    <t t-snippet="theme_scita.it_portfolio_tabs_snippets" t-thumbnail="/theme_scita/static/src/img/snippet_icon/prot1.png"/>
+                    <!-- newsletter snippets veriants -->
+                    <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                        <t t-snippet="theme_scita.it_sign_up_newsletter" t-thumbnail="/theme_scita/static/src/img/snippet_icon/nesletter_1.png"/>
+                    </t>
+                    <t t-else=''>
+                        <t t-install="mass_mailing" string="Newsletter Snippet 1" t-thumbnail="/theme_scita/static/src/img/snippet_icon/nesletter_1.png"/>
+                    </t>
+                    <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                        <t t-snippet="theme_scita.scita_sign_up_newsletter" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_2.png"/>
+                    </t>
+                    <t t-else=''>
+                        <t t-install="mass_mailing" string="Newsletter Snippet 2" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_2.png"/>
+                    </t>
+                    <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                        <t t-snippet="theme_scita.retail_sign_up_newsletter" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_2.png"/>
+                    </t>
+                    <t t-else=''>
+                        <t t-install="mass_mailing" string="Newsletter Snippet 3" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_2.png"/>
+                    </t>
+                    <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                        <t t-snippet="theme_scita.fashion_sign_up_newsletter" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_4.png"/>
+                    </t>
+                    <t t-else=''>
+                        <t t-install="mass_mailing" string="Newsletter Snippet 4" t-thumbnail="/theme_scita/static/src/img/snippet_icon/newsletter_4.png"/>
+                    </t>
+                    <t t-if="request.env['ir.module.module'].sudo().search([
+                    ('name', '=', 'mass_mailing'),('state','=','installed')])">
+                        <t t-snippet="theme_scita.newsletter_varient_5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Newsletter_veriant_5.png"/>
+                    </t>
+                    <t t-else=''>
+                        <t t-install="mass_mailing" string="Newsletter Snippet 5" t-thumbnail="/theme_scita/static/src/img/snippet_icon/Newsletter_veriant_5.png"/>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template id="scita_snippets_animation_effect_option" name="Animaion Effect Option" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div id="main_snippets_animation_effect" data-selector="img" data-js="animaion_effect">
+                <we-select string="Image Transition Effect">
+                    <we-button data-select-class="none_effect">Remove Effect</we-button>
+                    <we-button data-select-class="sct_img_effect1">Effect 1</we-button>
+                    <we-button data-select-class="sct_img_effect2">Effect 2</we-button>
+                    <we-button data-select-class="sct_img_effect3">Effect 3</we-button>
+                    <we-button data-select-class="sct_img_effect4">Effect 4</we-button>
+                    <we-button data-select-class="sct_img_effect5">Effect 5</we-button>
+                </we-select>
+            </div>
+        </xpath>
+    </template>
+</odoo>

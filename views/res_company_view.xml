@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="inherit_res_company_view" model="ir.ui.view">
+        <field name="name">res.company.view.form.inherit.mail</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//group[@name='social_media']" position="after">
+                <group string="Header Sidebar Configuration" name="header_sidebar">
+            		<field name="company_desc"/>
+                    <field name="header_link_name_1"/>
+                    <field name="header_link_1"/>
+                    <field name="header_link_name_2"/>
+                    <field name="header_link_2"/>
+                    <field name="header_link_name_3"/>
+                    <field name="header_link_3"/>
+                </group>
+                <group string="Delivery Zip Code Configuration" name="zipcode_config">
+                    <field name="delivery_icon" placeholder="Ex., fa fa-map-marker"/>
+                    <field name="delivery_text"/>
+                    <field name="delivery_btn_name"/>
+                    <field name="delivery_blank_msg"/>
+                    <field name="delivery_success_msg"/>
+                    <field name="delivery_fail_msg"/>
+                </group>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

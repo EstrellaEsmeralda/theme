@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <!-- Blog slider modal -->
+    <t t-name="theme_scita.scita_blog_slider_block">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050" tabindex="1">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Blog Slider Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="blog_slider_type">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="blog_slider_type" name="blog_slider_type"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="blog_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <!-- Coming Soon -->
+    <t t-name="theme_scita.model_dialog_commingsoon">
+        <div t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" id="userlist" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Coming Soon</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            
+                            
+                            <label class="col-sm-3 control-label text-left">Date : </label>
+                            <div class="form-group col-sm-9">
+                                <input class="form-control" data-min="0" id="date" name="date" required="required" type="date" t-att-min="new Date().toJSON().split('T')[0]" value="0"/>
+                            </div>
+                            <label class="col-sm-3 control-label text-left">Hours : </label>
+                            <div class="form-group col-sm-9">
+                                <input class="form-control" data-min="0" id="hours" name="hours" required="required" type="text" value="0"/>
+                            </div>
+                            <label class="col-sm-3 control-label text-left">Minutes : </label>
+                            <div class="form-group col-sm-9">
+                                <input class="form-control" data-min="0" id="minutes" name="min" required="required" type="text" value="0"/>
+                            </div>
+                            <label class="col-sm-3 control-label text-left">Second : </label>
+                            <div class="form-group col-sm-9">
+                                <input class="form-control" data-min="0" id="second" name="sec" required="required" type="text" value="0"/>
+                            </div>
+                            <label class="col-sm-3 control-label text-left">Sale Over Message : </label>
+                            <div class="form-group col-sm-9">
+                                <input class="form-control" data-min="0" id="sale_over" name="sale_over" required="required" type="text" value="Sale is expired"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="biz_cancle" type="button">Cancel</button>
+                        <button class="btn btn-danger" id="biztech_coumtdown_btn" type="submit">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <!-- Product slider modal -->
+    <t t-name="theme_scita.scita_dynamic_product_slider">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal_prod">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Products Slider Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="slider_type">Type</label>
+                                <div class="col-sm-9 form-group ">
+                                    <select class="form-control" id="slider_type" name="slider_type"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="prod_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <!-- Category slider modal -->
+    <t t-name="theme_scita.scita_dynamic_category_slider">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Category Slider Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="slider_type">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="slider_type" name="slider_type"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="cat_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_scita.multi_product_custom_slider_block">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Multi Product Slider Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="row">
+                                <label for="slider_type" class="col-sm-3 control-label">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select id="slider_type" class="form-control" name="slider_type">
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="snippnet_submit">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="theme_scita.scita_brand_configration">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal" contenteditable="False" role="dialog" style="z-index:2001" tabindex="1">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Brand Configuration</h4>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="col-sm-12 form-group">
+                                <label for="slider_type" class="col-sm-3 control-label">Type</label>
+                                <div class="col-sm-7">
+                                    <select id="slider_type" class="form-control" name="slider_type">
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="pro_brand_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_scita.html_build">
+        <div class="sct_html_snippet_builder">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>HTML:</h4>
+                    <textarea rows="20" id="get_content_html"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <h4>CSS:</h4>
+                    <textarea rows="20"  id="get_content_css"></textarea>
+                </div>
+            </div>
+            <t t-esc="data"/>
+        </div>
+    </t>
+    <t t-name="theme_scita.scita_product_category_img_slider_config">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Product Category Img Slider Config</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="slider_type">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="slider_type" name="slider_type"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="snippnet_submit">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_scita.scita_dynamic_product_snippet_configuration">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Product Snippet Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="slider_type">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="slider_type" name="slider_type"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="snippnet_submit">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_scita.video_banner_block">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" backdrop="false" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_media_block_modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Video Banner Configuration</h4>
+                        <button aria-hidden="true" class="close" data-dismiss="modal" id="cancel" type="button">×</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="video-url">Video Banner URL</label>
+                                <div class="form-group col-sm-9">
+                                    <input class="form-control" id="video-url" placeholder="Ex., https://sitedummy.com/video.mp4" type="text" required="required"/>
+                                    <p class='mb0'>For better browser support add video in mp4 format</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="video_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+</templates>

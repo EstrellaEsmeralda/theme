@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+	<!-- Pricing Table 1 - 4 column-->
+    <template id="s_theme_scita_pricing_table_1_4column_v1" name="Pricing Snippet 1">
+        <section class="pricing_table_v1" data-disp="pricing_table">
+            <div class="container">
+            	<div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title sct_red_line">Pricing</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Basic</span>
+                                <p class="sct_simple_text sct_black_line">Lorem ipsum dolor amet</p>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>10</span>
+                                    <span class='sct_dev_mon'>Per Month</span>
+                                </p>
+                            </div>
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply dummy text</li>
+                                <li>
+                                    Lorem Ipsum is simply dummy text of the printing</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is </li>
+                                <li>
+                                    Lorem Ipsum is</li>
+                                <li>
+                                    3 users(+$20/mo per User)</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_org_btn">Read More<span class="fa fa-arrow-circle-o-right"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Basic</span>
+                                <p class="sct_simple_text sct_black_line">Lorem ipsum dolor amet</p>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>10</span>
+                                    <span class='sct_dev_mon'>Per Month</span>
+                                </p>
+                            </div>
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply dummy text</li>
+                                <li>
+                                    Lorem Ipsum is simply dummy text of the printing</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is </li>
+                                <li>
+                                    Lorem Ipsum is</li>
+                                <li>
+                                    3 users(+$20/mo per User)</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_org_btn">Read More<span class="fa fa-arrow-circle-o-right"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Basic</span>
+                                <p class="sct_simple_text sct_black_line">Lorem ipsum dolor amet</p>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>10</span>
+                                    <span class='sct_dev_mon'>Per Month</span>
+                                </p>
+                            </div>
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply dummy text</li>
+                                <li>
+                                    Lorem Ipsum is simply dummy text of the printing</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is </li>
+                                <li>
+                                    Lorem Ipsum is</li>
+                                <li>
+                                    3 users(+$20/mo per User)</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_org_btn">Read More<span class="fa fa-arrow-circle-o-right"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Basic</span>
+                                <p class="sct_simple_text sct_black_line">Lorem ipsum dolor amet</p>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>10</span>
+                                    <span class='sct_dev_mon'>Per Month</span>
+                                </p>
+                            </div>
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply dummy text</li>
+                                <li>
+                                    Lorem Ipsum is simply dummy text of the printing</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is </li>
+                                <li>
+                                    Lorem Ipsum is</li>
+                                <li>
+                                    3 users(+$20/mo per User)</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_org_btn">Read More<span class="fa fa-arrow-circle-o-right"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_theme_scita_pricing_table_1_4column_v2" name="Pricing Snippet 2">
+        <section class="pricing_table_v2 s_tabs" data-disp="pricing_table">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">Pricing</h2>
+                            <p class="sct_simple_text">Lorem ipsum dolor amet, adipiscing, sed do   eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12 sct_service_nav">
+                        <div class="navigation-tab">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#price_v2_item1">
+                                    Monthly</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#price_v2_item2">Annually</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active show" id="price_v2_item1" role="tabpanel">
+                                    <div class="row sct_btm_row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/Mo</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/Mo</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb price_active">
+                                            <div class="package">
+                                                <p class='sct_label_yellow'>Recommended</p>
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/Mo</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/Mo</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="price_v2_item2" role="tabpanel">
+                                    <div class="row sct_btm_row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/An</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/An</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb price_active">
+                                            <div class="package">
+                                                <p class='sct_label_yellow'>Recommended</p>
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Professional</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/An</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                                            <div class="package">
+                                                <div class='sct_price_type_div'>
+                                                    <span class="sct_price_type">Free</span>
+                                                </div>
+                                                <div class='sct_price_mon_div'>
+                                                    <p class="sct_per_month">
+                                                        <span class='sct_dollar'>$</span>
+                                                        <span class='sct_rs'>10</span>
+                                                        <span class='sct_dev_mon'>/An</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="sct_unorder_list">
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                    <li>
+                                                        <span class="fa fa-check"/>Lorem Ipsum is simply</li>
+                                                
+                                                </ul>
+                                                <div class='sct_cst_btn'>
+                                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_theme_scita_pricing_table_1_3column_v3" name="Pricing Snippet 3">
+        <section class="pricing_table_v3" data-disp="pricing_table">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title">Pricing</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class='sct_base_class'>
+                            <div class="package">
+                                <div class='sct_price_type_div'>
+                                    <span class="sct_price_type">Free</span>
+                                </div>
+                                <div class='sct_price_mon_div'>
+                                    <p class="sct_per_month">
+                                        <span class='sct_dollar'>R$</span>
+                                        <span class='sct_rs'>10</span>
+                                        <span class='sct_dev_mon'>Per Month</span>
+                                    </p>
+                                </div>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>30 dias</strong></li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>15 mb</strong></li>
+                                
+                                </ul>
+                                <div class='sct_cst_btn'>
+                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                </div>
+                            </div>
+                            <div class='sct_price_info'>
+                                <p class='sct_simple_text'>Lorem ipsum dolor amet, adipiscing</p>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class='sct_base_class'>
+                            <div class="package">
+                                <div class='sct_price_type_div'>
+                                    <span class="sct_price_type">Free</span>
+                                </div>
+                                <div class='sct_price_mon_div'>
+                                    <p class="sct_per_month">
+                                        <span class='sct_dollar'>R$</span>
+                                        <span class='sct_rs'>10</span>
+                                        <span class='sct_dev_mon'>Per Month</span>
+                                    </p>
+                                </div>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>30 dias</strong></li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>15 mb</strong></li>
+                                
+                                </ul>
+                                <div class='sct_cst_btn'>
+                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                </div>
+                            </div>
+                            <div class='sct_price_info'>
+                                <p class='sct_simple_text'>Lorem ipsum dolor amet, adipiscing</p>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb price_active">
+                        <div class='sct_base_class'>
+                            <div class="package">
+                                <p class='sct_label_blue'>popular</p>
+                                <div class='sct_price_type_div'>
+                                    <span class="sct_price_type">Free</span>
+                                </div>
+                                <div class='sct_price_mon_div'>
+                                    <p class="sct_per_month">
+                                        <span class='sct_dollar'>R$</span>
+                                        <span class='sct_rs'>10</span>
+                                        <span class='sct_dev_mon'>Per Month</span>
+                                    </p>
+                                </div>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>30 dias</strong></li>
+                                    <li>
+                                        Lorem Ipsum is simply <strong>15 mb</strong></li>
+                                
+                                </ul>
+                                <div class='sct_cst_btn'>
+                                    <a href="#" class="btn btn-primary scita_cstm_btn ">Sign Up Today</a>
+                                </div>
+                            </div>
+                            <div class='sct_price_info'>
+                                <p class='sct_simple_text'>Lorem ipsum dolor amet, adipiscing</p>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                    <li>
+                                        Lorem Ipsum is simply</li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <template id="s_theme_scita_pricing_table_1_4column_v4" name="Pricing Snippet 4">
+        <section class="pricing_table_v4" data-disp="pricing_table">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        
+                        <div class='sct_title_div'>
+                            <h3 class="sct_title">Shared Hosting</h3>
+                        </div>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply dummy text
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply dummy text of the printing
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='sct_right_side'>
+                                <img src="/theme_scita/static/src/img/secure-payment.png" class="img img-fluid" alt='web icon'/>
+                            </div>
+                        </div>
+                        <div class='sct_price_content'>
+                            <p class='sct_simple_text'>Starting</p>
+                            <p class="sct_per_month">
+                                <span class='sct_mont'>$3.00/mo*</span>
+                                
+                            </p>
+                        </div>
+                        <div class='sct_cst_btn'>
+                            <a href="#" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Get Started</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        
+                            <div class='sct_title_div'>
+                                <h3 class="sct_title">Shared Hosting</h3>
+                            </div>
+                            <div class='sct_base_class'>
+                                <div class='sct_left_side'>
+                                    <ul class="sct_unorder_list">
+                                        <li>
+                                            Lorem Ipsum is simply dummy text
+                                        </li>
+                                        <li>
+                                            Lorem Ipsum is simply dummy text of the printing
+                                        </li>
+                                        <li>
+                                            Lorem Ipsum is simply
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <img src="/theme_scita/static/src/img/secure-payment.png" class="img img-fluid" alt='web icon'/>
+                                </div>
+                            </div>
+                            <div class='sct_price_content'>
+                                <p class='sct_simple_text'>Starting</p>
+                                <p class="sct_per_month">
+                                    <span class='sct_mont'>$3.00/mo*</span>
+                                    
+                                </p>
+                            </div>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Get Started</a>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        
+                        <div class='sct_title_div'>
+                            <h3 class="sct_title">Shared Hosting</h3>
+                        </div>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply dummy text
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply dummy text of the printing
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='sct_right_side'>
+                                <img src="/theme_scita/static/src/img/secure-payment.png" class="img img-fluid" alt='web icon'/>
+                            </div>
+                        </div>
+                        <div class='sct_price_content'>
+                            <p class='sct_simple_text'>Starting</p>
+                            <p class="sct_per_month">
+                                <span class='sct_mont'>$3.00/mo*</span>
+                                
+                            </p>
+                        </div>
+                        <div class='sct_cst_btn'>
+                            <a href="#" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Get Started</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 sct_pri_thumb">
+                        
+                        <div class='sct_title_div'>
+                            <h3 class="sct_title">Shared Hosting</h3>
+                        </div>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <ul class="sct_unorder_list">
+                                    <li>
+                                        Lorem Ipsum is simply dummy text
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply dummy text of the printing
+                                    </li>
+                                    <li>
+                                        Lorem Ipsum is simply
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='sct_right_side'>
+                                <img src="/theme_scita/static/src/img/secure-payment.png" class="img img-fluid" alt='web icon'/>
+                            </div>
+                        </div>
+                        <div class='sct_price_content'>
+                            <p class='sct_simple_text'>Starting</p>
+                            <p class="sct_per_month">
+                                <span class='sct_mont'>$3.00/mo*</span>
+                                
+                            </p>
+                        </div>
+                        <div class='sct_cst_btn'>
+                            <a href="#" class="btn btn-primary scita_cstm_btn  sct_blue_btn">Get Started</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_theme_scita_pricing_table_1_3column_v5" name="Pricing Snippet 5">
+        <section class="pricing_table_v5" data-disp="pricing_table">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <div class="sct_section_title">
+                            <h2 class="section-title sct_green_line">Pricing</h2>
+                            <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Classic</span>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>49</span>
+                                    <span class='sct_text'>Per Month</span>
+                                </p>
+                                <span class="fa fa-shopping-bag"/>
+                            </div>     
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_black_btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Classic</span>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>49</span>
+                                    <span class='sct_text'>Per Month</span>
+                                </p>
+                                <span class="fa fa-lightbulb-o"/>
+                            </div>     
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_black_btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 sct_pri_thumb">
+                        <div class="package">
+                            <div class='sct_price_type_div'>
+                                <span class="sct_price_type">Classic</span>
+                            </div>
+                            <div class='sct_price_mon_div'>
+                                <p class="sct_per_month">
+                                    <span class='sct_dollar'>$</span>
+                                    <span class='sct_rs'>49</span>
+                                    <span class='sct_text'>Per Month</span>
+                                </p>
+                                <span class="fa fa-database"/>
+                            </div>     
+                            <ul class="sct_unorder_list">
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                                <li>
+                                    Lorem Ipsum is simply</li>
+                            </ul>
+                            <div class='sct_cst_btn'>
+                                <a href="#" class="btn btn-primary scita_cstm_btn  sct_black_btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

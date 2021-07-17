@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- for brand snippets -->
+    <template id="prod_brands" name="Brand Slider 1">
+        <section class="oe_brand_slider" data-brand-config-type="" data-brand-config-id="" contentEditable="false"  data-disp='brand'>
+            <div class="container" >
+                <div class="row our-brands">
+                    <div class="col-md-12">
+                        <h3 class="section-title style1" id="snippet-title">
+                            <span>Brands</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="product_brand_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="prod_brands" data-selector=".oe_brand_slider" data-snippet-option-id="prod_brands">
+                <we-button class="dropdown-item oe_brand_slider" tabindex="-1" href="#" data-scita_brand_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="retial_brand_snippet_1" name="Brand Snippet">
+        <div class="retial_brand_snippet_1">
+            <div class="container">
+                <div class="custom-title-block">
+                    <h2 class="section-title style1" t-if="not slider_header">
+                        BRANDS
+                    </h2>
+                    <h2 class="section-title style1" t-if="slider_header">
+                        <t t-esc="slider_header.name"/>
+                    </h2>
+                </div>
+                <div class="row our-brands">
+                    <div class="col-sm-12">
+                        <div t-if="website_brands">
+                            <div class="owl-carousel sct-brand-snip" id="website_brands_slider">
+                                <t t-foreach="website_brands" t-as="brand">
+                                    <a t-attf-href="/shop/brands?brand=#{ brand.id }">
+                                        <div class="brand-logo text-center">
+                                            <div class="carousel-item">
+                                                <img t-att-src="website.image_url(brand, 'image','210x88')" t-att-title="brand.name" t-att-alt="brand.name"/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- It Brands snippets -->
+    <template id="it_prod_brands" name="Brand Snippet 1">
+        <section  class="it_brand_slider" data-brand-config-type="" data-brand-config-id="" contentEditable="false"  data-disp='brand'>
+            <div class="container">
+                <div class="row our-brands">
+                    <div class="col-md-12">
+                        <h3 class="section-title style1" id="snippet-title">
+                            <span>Brands</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="it_brand_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="it_prod_brands" data-selector=".it_brand_slider" data-snippet-option-id="it_prod_brands">
+                <we-button class="dropdown-item it_brand_slider" tabindex="-1" href="#" data-brand_it_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="it_brand_snippet_1" name="Brand Snippet">
+        <div class="it_brand_snippet_1">
+            <div class="container">
+                <div class='row'>
+                    <div class="col-md-12 title-block">
+                        <h2 class="section-title section-title btm_seprator" t-if="not slider_header">
+                            Brands
+                        </h2>
+                        <h2 class="section-title section-title btm_seprator" t-if="slider_header">
+                            <t t-esc="slider_header.name"/>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row our-brands">
+                    <div class="col-sm-12">
+                        <t t-if="website_brands">
+                            <t t-as="brand" t-foreach="website_brands">
+                                <a t-attf-href="/shop/brands?brand=#{ brand.id }" class='it_brand_border'>
+                                    <div class="brand-logo text-center">
+                                        <img t-att-alt="brand.name" t-att-src="website.image_url(brand, 'image','210x88')" class="img img-fluid" t-att-title="brand.name"/>
+                                    </div>
+                                </a>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- Brand static snippet -->
+    <template id="fashion_static_brand_snippet" name="Brand Snippet 2">
+        <section class="fashion_static_brand_snippet" data-disp='brand'>
+            <div class="container-fluid">
+                <div class="row s_nb_column_fixed">
+                    <div class="sct_section_title">
+                        <h2 class="section-title">Shop Brands</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_brand_row">
+                    <div class="col-md-4 col-sm-4 sct_brand_box">
+                        <div class="sct_back_img">
+                            <img src="/theme_scita/static/src/img/fashion/brand-1.jpg" class="img img-fluid" alt='Background image'/>
+                            <div class="sct_middle_img">
+                                <img src="/theme_scita/static/src/img/fashion/brand-obj-1.png" class="img img-fluid" alt='Offer Banner'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 sct_brand_box">
+                        <div class="sct_back_img">
+                            <img src="/theme_scita/static/src/img/fashion/brand-2.jpg" class="img img-fluid" alt='Background image'/>
+                            <div class="sct_middle_img">
+                                <img src="/theme_scita/static/src/img/fashion/brand-obj-2.png" class="img img-fluid" alt='Offer Banner'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 sct_brand_box">
+                        <div class="sct_back_img">
+                            <img src="/theme_scita/static/src/img/fashion/brand-3.jpg" class="img img-fluid" alt='Background image'/>
+                            <div class="sct_middle_img">
+                                <img src="/theme_scita/static/src/img/fashion/brand-obj-3.png" class="img img-fluid" alt='Offer Banner'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- for brands_box_slider_4 snippets -->
+    <template id="brands_box_slider_4" name="Brand Slider 2">
+        <section class="box_brand_slider" contentEditable="false" data-product-count="0" data-disp='brand'>
+            <div class="container">
+                <div class="row our-brands">
+                    <div class="col-md-12">
+                        <h3 class="section-title style1" id="snippet-title">
+                            <span>Brands</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="brands_box_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="brands_box_slider_4" data-selector=".box_brand_slider" data-snippet-option-id="brands_box_slider_4">
+                <we-button class="dropdown-item box_brand_slider" tabindex="-1" href="#" data-box_brand_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="box_brand_snippet_4" name="Brand Snippet">
+        <div class="box_brand_snippet_4">
+            <div class="container">
+                <div class="row our-brands">
+                    <div class="col-sm-12">
+                        <t t-if="website_brands">
+                            <div class="owl-carousel sct-brand-slider-2" id="box_brands_slider_owl">
+                                <t t-as="brand" t-foreach="website_brands">
+                                    <a t-attf-href="/shop/brands?brand=#{ brand.id }">
+                                        <div class="sct_brand_box text-center">
+                                            <div class="brand-logo-box">
+                                                <img t-att-alt="brand.name" t-att-src="website.image_url(brand, 'image','210x88')" class="img img-fluid" t-att-title="brand.name"/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </t>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="custom_scita_brand_custom_slider" name="Brand Snippet 3">
+        <section class="custom_scita_pro_brand_slider" data-brand-config-type="" data-brand-config-id="" contentEditable="false" data-disp='brand'>
+            <div class="container">
+                <div class="row our-brands">
+                    <div class="col-md-12">
+                        <div class="title-block">
+                            <h4 class="section-title style1" id="snippet-title">
+                                <span>Our Brands</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="scita_brand_slider_option" inherit_id="website.snippet_options" name="Modify brand options">
+        <xpath expr="//div" position="after">
+            <div data-js="custom_scita_brand_custom_slider"
+                 data-selector=".custom_scita_pro_brand_slider"
+                 data-snippet-option-id="custom_scita_brand_custom_slider">
+                <we-button class="dropdown-item custom_scita_pro_brand_slider" tabindex="-1" href="#" data-custom_scita_brand_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    
+    <template id="custom_scita_brand_slider_view" name="Brand Snippet">
+        <div class="container">
+            <div class="custom-title-block">
+                <h4 class="section-title style1" t-if="not slider_header">
+                    <span>Our Brands</span>
+                </h4>
+                <h4 class="section-title style1" t-if="slider_header">
+                    <span>
+                        <t t-esc="slider_header.name"/>
+                    </span>
+                </h4>
+            </div>
+            <div class='custom_cat_prod' t-if="website_brands">
+                <t t-foreach="website_brands" t-as="brand">
+                    <div class='custom-cs-product'>
+                        <a t-attf-href="/shop/brands?brand=#{ brand.id }">
+                            <img t-att-src="website.image_url(brand, 'image','90x65')" t-att-title="brand.name" t-att-alt="brand.name"/>
+                            <p class="pwpi-title">
+                                <t t-esc="brand.name"/>
+                            </p>
+                        </a>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </template>
+</odoo>

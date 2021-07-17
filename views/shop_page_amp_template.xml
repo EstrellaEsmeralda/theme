@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="amp_main" name="AMP Custom layout">
+        <t name="AMP Main layout" t-name="theme_scita.layout">&lt;!DOCTYPE html&gt;
+            <html amp="amp" t-att-lang="lang and lang.replace('_', '-')" t-att-data-website-id="website.id if (editable or translatable) and website else None" t-att-data-editable="'1' if editable else None" t-att-data-translatable="'1' if translatable else None" t-att-data-edit_translations="'1' if edit_translations else None" t-att-data-view-xmlid="xmlid if editable or translatable else None" t-att-data-main-object="repr(main_object) if editable or translatable else None" t-att-data-oe-company-name="res_company.name">
+                <head>
+                    <meta charset="utf-8"/>
+                    <script async="async" src="https://cdn.ampproject.org/v0.js"/>
+                    <script async="async" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"/>
+                    <script async="async" custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+                    <script async="async" custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+                    <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async="async"></script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                    <link rel="canonical" t-att-href="request.httprequest.url"/>
+                    <t t-if="main_object and 'website_meta_title' in main_object and not title">
+                        <t t-set="title" t-value="main_object.website_meta_title"/>
+                    </t>
+                    <t t-if="main_object and 'name' in main_object and not title and not additional_title">
+                        <t t-set="additional_title" t-value="main_object.name"/>
+                    </t>
+                    <t t-if="not title">
+                        <t t-set="title"><t t-if="additional_title"><t t-raw="additional_title"/> | </t><t t-esc="(website or res_company).name"/></t>
+                    </t>
+                    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+                    <meta name="description" t-att-content="main_object and 'website_meta_description' in main_object                     and main_object.website_meta_description or website_meta_description"/>
+                    <meta name="keywords" t-att-content="main_object and 'website_meta_keywords' in main_object                     and main_object.website_meta_keywords or website_meta_keywords"/>
+                    <meta name="generator" content="Odoo"/>
+                    <!-- OpenGraph tags for Facebook sharing -->
+                    <meta property="og:title" t-att-content="additional_title"/>
+                    <meta property="og:site_name" t-att-content="res_company.name"/>
+                    <t t-if="main_object and 'plain_content' in main_object and main_object.plain_content">
+                        <t t-set="og_description" t-value="main_object.plain_content[0:500]"/>
+                        <meta property="og:description" t-att-content="og_description"/>
+                        <meta property="og:image" t-att-content="request.httprequest.url_root+'logo.png'"/>
+                        <meta property="og:url" t-att-content="request.httprequest.url_root+request.httprequest.path[1:end]"/>
+                    </t>
+                    <title><t t-esc="title"/></title>
+                    <t t-raw="head or ''" name="layout_head"/>
+                    <style amp-boilerplate="amp-boilerplate">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+                    <noscript><style amp-boilerplate="amp-boilerplate">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+                    </noscript>
+                   
+                    <style amp-custom="amp-custom">
+                        :root {
+                          --main-bg-color: #202020;
+                          --main-font-color: #202020;
+                          --main-head-color: #202020;
+                          --main-white-color: #ffffff;
+                        }
+
+                        .scrollToTop {
+                          cursor: pointer;
+                          color: var(--main-white-color);
+                          width: 35px;
+                          height: 35px;
+                          border-radius: 0;
+                          border: none;
+                          outline: none;
+                          background: var(--main-bg-color);
+                          z-index: 9999;
+                          bottom: 130px;
+                          right: 20px;
+                          position: fixed;
+                          opacity: 0;
+                          visibility: hidden;
+                          z-index: 999;
+                          line-height: 35px;
+                          font-size: 0.875rem;
+                          padding: 0;
+                          text-align: center;
+                        }
+                        /* we move the anchor down to componsate the fixed header */
+                        .target {
+                          position: relative;
+                        }
+                        .target-anchor {
+                          position: absolute;
+                          top: -72px;
+                          left: 0;
+                        }
+
+                        .side-menu&gt;ul li a, a {
+                            text-decoration: none;
+                        }
+                        .badge, .btn {
+                            vertical-align: middle;
+                            white-space: nowrap;
+                            text-align: center;
+                        }
+                        .list-unstyled, ul {
+                            list-style: none;
+                        }
+                        .add_qty&gt;input, .badge, .btn, .category_head {
+                            text-align: center;
+                        }
+                        #wrapwrap &gt; main {
+                            max-width: 100%;
+                            margin: 0 auto;
+                        }
+                        body {
+                            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: 14px;
+                            color: #333;
+                            line-height: 1.42857143;
+                        }
+                        .container {
+                            margin-right: auto;
+                            margin-left: auto;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            width: 90%}
+                        a {
+                            color: var(--main-font-color);
+                            cursor: pointer;
+                        }
+                        .row {
+                            width: 100%}
+                        .input-group {
+                            position: relative;
+                            display: table;
+                            border-collapse: separate;
+                        }
+                        .btn-group, .btn-group-vertical {
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        amp-sidebar {
+                            padding-right: 10px;
+                            background-color: #FFF;
+                        }
+                        .side-menu {
+                            position: relative;
+                            display: block;
+                            overflow-x: hidden;
+                        }
+                        .side-menu ul.sct-dw {
+                            height: auto;
+                            overflow: auto;
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .text-danger {
+                            color: #a94442;
+                        }
+                        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+                            font-family: inherit;
+                            font-weight: 500;
+                            line-height: 1.1;
+                            color: inherit;
+                        }
+                        .h4, .h5, .h6, h4, h5, h6 {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .h1, h1 {
+                            font-size: 36px;
+                        }
+                        .h2, h2 {
+                            font-size: 30px;
+                        }
+                        .h3, h3 {
+                            font-size: 24px;
+                        }
+                        .h4, h4 {
+                            font-size: 18px;
+                        }
+                        .h5, h5 {
+                            font-size: 14px;
+                        }
+                        .h6, h6 {
+                            font-size: 12px;
+                        }
+                        p {
+                            margin: 0 0 10px;
+                        }
+                        *:focus {
+                            outline:none;
+                        }
+                        .menu_head {
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 100%;
+                            border: none;
+                            background-color: var(--main-white-color);
+                            outline: 0;
+                            -webkit-box-shadow: 0 0 5px 0 rgba(148,150,159,.3);
+                            box-shadow: 0 0 5px 0 rgba(148,150,159,.3);
+                        }
+                        .menu_head .navbar-brand.logo img {
+                            height: auto;
+                            min-height: min-content;
+                        }
+                        .btn-primary, span.input-group-btn.form-control {
+                            background-color: var(--main-bg-color);
+                        }
+                        .btn, .form-control {
+                            background-image: none;
+                        }
+                        .btn {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            font-weight: 400;
+                            touch-action: manipulation;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+                            padding: 6px 12px;
+                            font-size: 14px;
+                            line-height: 1.428571429;
+                            border-radius: 4px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                        }
+                        .btn-primary {
+                            color: #fff;
+                        }
+                        .btn-group-lg&gt;.btn, .btn-lg {
+                            padding: 10px 16px;
+                            font-size: 18px;
+                            line-height: 1.3333333;
+                            border-radius: 6px;
+                        }
+                        .btn-danger {
+                            color: #fff;
+                            background-color: #d9534f;
+                            border-color: #d43f3a;
+                        }
+                        .oe_default_price {
+                            text-decoration: line-through;
+                        }
+                        .css_non_editable_mode_hidden {
+                            display: none;
+                        }
+                        .display_none {
+                            display: none;
+                        }
+                        .add_qty&gt;input {
+                            width: 70px;
+                            height: 25px;
+                            font-size: 17px;
+                        }
+                        section&gt;h5 {
+                            float: left;
+                        }
+                        form.amp-form-submit-error [submit-error], form.amp-form-submit-success [submit-success] {
+                            color: green;
+                        }
+
+                        .list-unstyled {
+                            padding-left: 0;
+                        }
+                        .oe_search, span.input-group-btn {
+                            float: left;
+                        }
+                        .input-group .form-control {
+                            position: relative;
+                            z-index: 2;
+                            float: left;
+                            margin-bottom: 0;
+                        }
+                        .input-group .form-control, .input-group-addon, .input-group-btn {
+                            display: table-cell;
+                        }
+                        .form-control {
+                            display: block;
+                            height: 34px;
+                            padding: 6px 12px;
+                            font-size: 14px;
+                            line-height: 1.428571429;
+                            color: #555;
+                            background-color: #fff;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                        }
+                        .carousel-inner&gt;.item&gt;a&gt;img, .carousel-inner&gt;.item&gt;img, .img-responsive, .thumbnail a&gt;img, .thumbnail&gt;img {
+                            display: block;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        .category_head {
+                            color: #fff;
+                            background-color: var(--main-head-color);
+                            padding: 5px;
+                            font-weight: 900;
+                            font-family: 'Dosis';
+                            text-transform: uppercase
+                        }
+                        #wrapwrap &gt; footer {
+                            height: 100%;
+                            background: rgba(200, 200, 200, 0.1);
+                        }
+                        ul.nav-stacked &gt; li &gt; a {
+                            padding: 2px 15px;
+                        }
+                        footer #footer {
+                            padding-top: 10px;
+                        }
+                        .text-muted {
+                            color: #777777;
+                        }
+                        .d-none {
+                            display: none;
+                        }
+                        .menu_head { padding: 15px 0; cursor: auto; height: auto; }
+                        .menu_head .menu_right ul { margin: 0; padding: 0; }
+                        .menu_head .menu_right ul li { display: inline-block; vertical-align: middle; }
+                        .menu_head .menu_right ul li + li { margin-left: 10px; }
+                        .menu_head .menu_right ul li a { font-size: 16px; }
+                        .menu_head .menu_right ul li.toggler button { color:#7f7f7f; font-size:22px; border:1px solid #d9d9d9; padding:0.15rem 0.75rem; border-radius:0.25rem; display:block }
+                        .menu_head .container {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                        }
+                        .main_menu_icon { background-color: transparent; border: none; box-shadow: none; padding: 0; cursor: pointer; }
+                        .sct-nav-menu { padding: 0; margin: 0; }
+                        .sct-nav-menu .nav-item + .nav-item { border-top: 1px solid var(--main-bg-color); }
+                        .sct-nav-menu .nav-item a { display: block; padding: 0 20px; line-height: 40px; color: var(--main-font-color); }
+                        .sct-nav-menu .nav-item:hover a { color: var(--main-white-color); }
+                        .sct-nav-menu .nav-item:hover {background-color: var(--main-bg-color); }
+                        .sct-cat-sidebar { padding:0; width: 350px; }
+                        .sct-cat-sidebar .sct-close-icon { position: absolute; z-index: 9; right: 10px; top: 15px; color: var(--main-white-color); font-size: 24px; background: transparent; border: none; padding: 0; width: 30px; text-align: center; cursor: pointer; height: 30px; }
+                        .sct-cat-sidebar .sct-close-icon:focus { outline: none; }
+                        .sct-cat-sidebar .side-menu { height: 100vh; box-sizing: border-box; padding-bottom: 50px;}
+                        .sct-cat-sidebar .side-menu-head { padding: 20px; font-size: 20px; background-color: var(--main-font-color); color: var(--main-white-color); margin:0; border-bottom:1px solid #d9d9d9; }
+                        #product_detail {
+                            padding-bottom: 50px;
+                        }
+                        .ab-mob-view {
+                            position: fixed;
+                            left: 0;
+                            bottom: 0;
+                            background-color: white;
+                            width: 100%;
+                            z-index: 999;
+                            border-top: 1px solid #929292;
+                            padding: 5px 2px;
+                            display:flex;
+                            flex-wrap: wrap;
+                            box-sizing: border-box;
+                        }
+
+                        .ab-mob-view .ab-icons {
+                            flex: 0 0 20%;
+                            max-width: 20%;
+                            text-align: center;
+                            -ms-flex-item-align: center;
+                            -ms-grid-row-align: center;
+                            align-self: center;
+                        }
+
+                        .ab-mob-view .ab-icons .btn-link {
+                            padding: 5px 2px;
+                            width: 100%;
+                            display: block;
+                            background:transparent;
+                        }
+
+                        .ab-mob-view .ab-icons .btn-link a {
+                            width: 100%;
+                            display: block;
+                        }
+
+                        .ab-mob-view .ab-icons .btn-link span {
+                            display: block;
+                            color: #929292;
+                        }
+
+                        .ab-mob-view .ab-icons .btn-link span.fa {
+                            font-size: 24px;
+                        }
+
+                        .ab-mob-view .ab-icons .btn-link span.name-text {
+                            font-weight: bold;
+                            padding-top: 3px;
+                            font-size: 14px;
+                        }
+
+                        @media (max-width: 410px) {
+                            .ab-mob-view .ab-icons .btn-link span.name-text {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .ab-mob-view .ab-icons:hover {
+                            border-radius: 8px;
+                            background-color: rgba(128, 128, 128, 0.4);
+                        }
+
+                        .ab-mob-view .ab-icons:hover .btn-link span {
+                            color: grey;
+                        }
+                        <t t-raw="custom_css or ''" name="custom_css"/>
+                    </style>
+                </head>
+                <body>
+                    <div class="page-body-amp">
+                    <div class="target">
+                        <a class="target-anchor" id="top"></a>
+                        <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+                        </amp-position-observer>
+                    </div>
+                    <div id="wrapwrap">
+                        <div class="menu_head">
+                            <div class="container">
+                                <a href="/" class="navbar-brand logo">
+                                    <amp-img layout="fixed" width="100" height="40" t-att-src="website.image_url(res_company, 'logo', None if product_image_big else '100x40')" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                </a>
+                                <div class="menu_right">
+                                    <ul>
+                                        <li>
+                                            <a class="top-link-checkout" href="/shop/cart" id="my_cart" title="Cart">
+                                                <i class="fa fa-shopping-cart"/>
+                                                <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                                                <span class="theme_scita_cart_quantity" t-esc="website_sale_order and website_sale_order.cart_quantity or 0"/>
+                                            </a>
+                                        </li>
+                                        <li class="configuration">
+                                            <t t-if="website.user_id != user_id">
+                                                <a class="top-link-configration" href="/my/home" id="user_account" title="My Profile">
+                                                    <i class="fa fa-user" id="user_account_icon"/>
+                                                </a>
+                                            </t>
+                                            <t t-if="website.user_id == user_id">
+                                                <a class="top-link-configration" href="
+                                                /web/login" id="user_account" title="My Profile">
+                                                    <i class="fa fa-user" id="user_account_icon"/>
+                                                </a>
+                                            </t>
+                                        </li>
+                                        <li class="toggler">
+                                            <button id="toggler" class="main_menu_icon top-link-toggler" on="tap:menu_sidebar.toggle"><i class="fa fa-bars"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="custom_menu_bar">
+                                </div>
+                                <div id="custom_sidebar">
+                                </div>
+                            </div>
+                        </div>
+                        <main>
+                            <t t-raw="0"/>
+                        </main>
+                    </div>
+                    </div>
+                    <!-- Scroll to top start -->
+                    <amp-animation id="showAnim" layout="nodisplay">
+                        <script type="application/json">
+                            {
+                                "duration": "200ms",
+                                 "fill": "both",
+                                 "iterations": "1",
+                                 "direction": "alternate",
+                                 "animations": [
+                                   {
+                                     "selector": "#scrollToTopButton",
+                                     "keyframes": [
+                                       { "opacity": "1", "visibility": "visible" }
+                                     ]
+                                   }
+                                 ]
+                            }
+                        </script>
+                    </amp-animation>
+                    <amp-animation id="hideAnim" layout="nodisplay">
+                        <script type="application/json">
+                            {
+                               "duration": "200ms",
+                                 "fill": "both",
+                                 "iterations": "1",
+                                 "direction": "alternate",
+                                 "animations": [
+                                   {
+                                     "selector": "#scrollToTopButton",
+                                     "keyframes": [
+                                       { "opacity": "0", "visibility": "hidden" }
+                                     ]
+                                   }
+                                 ]
+                            }
+                        </script>
+                    </amp-animation>
+                    <button id="scrollToTopButton" on="tap:top.scrollTo(duration=200)" class="scrollToTop"><i class="fa fa-chevron-up"></i></button>
+                    
+                    <div class="ab-mob-view d-flex flex-wrap d-md-none">
+                        <div t-att-class="'ab-icons ab-home active' if request.httprequest.path == '/' else 'ab-icons ab-home' ">
+                            <button class="btn btn-link" type="button">
+                                <a class="redirect-home" href="/">
+                                    <span class="fa fa-home"/>
+                                    <span class="name-text">Home</span>
+                                </a>
+                            </button>
+                        </div>
+                        <div class="ab-icons ab-category">
+                            <button class="btn btn-link" data-target="#product_category_list" on="tap:cat_sidebar.toggle" type="button">
+                                <span class="fa fa-th-large"/>
+                                <span class="name-text">Categories</span>
+                            </button>
+                        </div>
+                        <div t-att-class="'ab-icons ab-cart active' if request.httprequest.path == '/shop/cart' else 'ab-icons ab-cart' ">
+                            <button class="btn btn-link" type="button">
+                                <a class="redirect-cart-page" href="/shop/cart">
+                                    <span class="fa fa-shopping-bag"/>
+                                    <span class="name-text">Bag</span>
+                                </a>
+                            </button>
+                        </div>
+                        <div t-att-class="'ab-icons ab-help active' if request.httprequest.path == '/help' else 'ab-icons ab-help' ">
+                            <button class="btn btn-link" type="button">
+                                <a class="redirect-help" href="/help">
+                                    <span class="fa fa-question-circle"/>
+                                    <span class="name-text">Help</span>
+                                </a>
+                            </button>
+                        </div>
+                        <div t-att-class="'ab-icons ab-myaccount active' if request.httprequest.path == '/my/home' or request.httprequest.path == '/web/login'  else 'ab-icons ab-myaccount' ">
+                            <t t-if="not user_id._is_public()">
+                                <button class="btn btn-link" type="button">
+                                    <a class="redirect-my-account" href="/my/home">
+                                        <span class="fa fa-user-circle"/>
+                                        <span class="name-text">Account</span>
+                                    </a>
+                                </button>
+                            </t>
+                            <t t-else="">
+                                <button class="btn btn-link d-md-none" type="button">
+                                    <a class="redirect-my-account" href="/web/login">
+                                        <span class="fa fa-user-circle"/>
+                                        <span class="name-text">My Account</span>
+                                    </a>
+                                </button>
+                            </t>
+                        </div>
+                    </div>
+                </body>
+            </html>
+        </t>
+    </template>
+    <template id="apm_category_list_view" name="AMP Category List">
+        <li t-att-class="'active' if c.id == int(category or 0) else ''">
+            <a t-if="not c.child_id" t-att-href="keep('/shop/amp/category/' + slug(c), category=0)" t-field="c.name"/>
+            <t t-if="c.child_id">
+                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
+                    <section>
+                        <header><a t-att-href="keep('/shop/amp/category/' + slug(c), category=0)" t-field="c.name"/><i class="fa fa-plus"></i></header>
+                        <ul class="ampstart-dropdown-items list-reset m0 p0">
+                            <t t-foreach="c.child_id" t-as="c">
+                                <t t-call="theme_scita.apm_category_list_view"/>
+                            </t>
+                        </ul>
+                    </section>
+                </amp-accordion>
+            </t>
+        </li>
+    </template>
+    <template id="apm_sidebar_menu_bar_view" name="AMP Menu Sidebar" inherit_id="theme_scita.amp_main">
+        <xpath expr="//div[@id='custom_menu_bar']" position="replace">
+            <amp-sidebar id="menu_sidebar" layout="nodisplay" side="right" class="sct-cat-sidebar">
+                <div class="side-menu" id="amp_menu_category_sidebar">
+                    <button on="tap:menu_sidebar.close" class="sct-close-icon">x</button>
+                    <h1 class="side-menu-head">Menu</h1>
+                    <ul class="sct-nav-menu">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-if="not submenu.is_megamenu and not submenu.is_mega_menu and not submenu.child_id">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                        </t>
+                    </ul>
+                </div>
+            </amp-sidebar>
+            <amp-sidebar id="cat_sidebar" layout="nodisplay" side="right" class="sct-cat-sidebar">
+                <div class="side-menu" id="amp_category_sidebar">
+                    <button on="tap:cat_sidebar.close" class="sct-close-icon">x</button>
+                    <h1 class="side-menu-head">Categories</h1>
+                    <div class="sct-cust-cat">
+                        <!-- <h2 class="sct-cat-tile">Categories</h2> -->
+                        <ul class="nav nav-pills nav-stacked mt16 sct-dw">
+                            <li t-att-class=" '' if category else 'active' "><a t-att-href="keep('/shop/amp',category=0)">All Products</a></li>
+                            <t t-foreach="categories" t-as="c">
+                               <t t-call="theme_scita.apm_category_list_view"/>
+                            </t>
+                        </ul>
+                    </div>
+                </div>
+            </amp-sidebar>
+        </xpath>
+    </template>
+    
+    <template id="apm_sidebar_category_view" name="AMP Sidebar Category" inherit_id="theme_scita.amp_main">
+        <xpath expr="//div[@id='custom_sidebar']" position="replace">
+            <amp-sidebar id="sidebar" layout="nodisplay" side="right" class="sct-cat-sidebar">
+                <div class="side-menu" id="amp_menu_category_sidebar">
+                    <button on="tap:sidebar.close" class="sct-close-icon">x</button>
+                    <h1 class="side-menu-head">Filters</h1>
+                    <div class="sct-cust-cat">
+                        <h2 class="sct-cat-tile">Categories</h2>
+                        <ul class="nav nav-pills nav-stacked mt16 sct-dw">
+                            <li t-att-class=" '' if category else 'active' "><a t-att-href="keep('/shop/amp',category=0)">All Products</a></li>
+                            <t t-foreach="categories" t-as="c">
+                               <t t-call="theme_scita.apm_category_list_view"/>
+                            </t>
+                        </ul>
+                    </div>
+                    <div class="sct_amp_product_attributes">
+                        <h2 class='sct-cat-tile'>Product Attributes</h2>
+                        <form class="amp_form_view" method="GET" action="/shop" target="_top">
+                            <input t-if="category" type="hidden" name="category" t-att-value="category.id" />
+                            <input type="hidden" name="search" t-att-value="search" />
+                            <ul class="">
+                                <t t-foreach="attributes" t-as="a">
+                                    <li t-if="a.value_ids and len(a.value_ids) &gt; 1" class="nav-item">
+                                        <div class="sct-atr-name">
+                                            <h3 class="sct-sub-atr-title" t-field="a.name" />
+                                        </div>
+                                        <t t-if="a.display_type == 'select'">
+                                            <select class="form-control" name="attrib">
+                                                <option value="" />
+                                                <t t-foreach="a.value_ids" t-as="v">
+                                                    <option t-att-value="'%s-%s' % (a.id,v.id)" t-esc="v.name" t-att-selected="v.id in attrib_set" />
+                                                </t>
+                                            </select>
+                                        </t>
+                                        <t t-if="a.display_type == 'radio'">
+                                            <ul class="">
+                                                <t t-foreach="a.value_ids" t-as="v">
+                                                    <li class="nav-item">
+                                                        <label t-attf-class="nav-link#{' active' if v.id in attrib_set else ''}">
+                                                            <input type="checkbox" name="attrib" t-att-value="'%s-%s' % (a.id,v.id)" t-att-checked="'checked' if v.id in attrib_set else None" />
+                                                            <span style="font-weight: normal" t-field="v.name" />
+                                                        </label>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </t>
+                                        <t t-if="a.display_type == 'color'">
+                                            <t t-foreach="a.value_ids" t-as="v">
+                                                <label t-attf-style="background-color:#{v.html_color or v.name}" t-attf-class="css_attribute_color #{'active' if v.id in attrib_set else ''}">
+                                                    <input type="checkbox" name="attrib" t-att-value="'%s-%s' % (a.id,v.id)" t-att-checked="'checked' if v.id in attrib_set else None" t-att-title="v.name" />
+                                                </label>
+                                            </t>
+                                        </t>
+                                    </li>
+                                </t>
+                            </ul>
+                            <input type="submit"  class='amp_apply_btn' value="Apply"></input>
+                        </form>
+                    </div>
+                </div>
+            </amp-sidebar>
+        </xpath>
+    </template>
+    <template id="apm_shop_page_view" name="AMP Shop page">
+        <t t-set="head">
+            <script async="async" custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"/>
+        </t>
+        <t t-call="theme_scita.amp_main">
+            <t t-set="additional_title">Shop</t>
+            <div id="wrap" class="js_sale">
+                <div class="oe_structure" id="oe_structure_website_sale_products_1"/>
+                <div class="container oe_website_sale">
+                    <div class="products_pager form-inline flex-md-nowrap justify-content-between justify-content-md-center">
+                        <div class='amp_search_box'>
+                            <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="_classes" target="_top">
+                                <t t-if="attrib_values">
+                                    <t t-foreach="attrib_values" t-as="a">
+                                        <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
+                                    </t>
+                                </t>
+                                <t t-call="website.website_search_box" />
+                                <div class="sct-pr-lst">
+                                    <div class="paging_sort">
+                                        <t t-if="products and website.get_pager_selection()">
+                                            <t t-set="website_ppp" t-value="website.get_pager_selection()"/>
+                                            <span t-attf-class="#{website_ppp and len(website_ppp['page_no'])&gt;1 and 'simple_name' or 'o_hidden'}">
+                                                <span class="label"><t t-esc="website_ppp['name']"/>:</span>
+                                                <div t-attf-class="#{website_ppp and len(website_ppp['page_no'])&gt;1 and 'dropdown' or 'o_hidden'} btn-group">
+                                                    <t t-set="curr_ppp" t-value="website.get_current_pager_selection()"/>
+                                                    <div class="sct-dw-title">
+                                                        <t t-esc="curr_ppp or ' - '"/>
+                                                        <i class="fa fa-caret-down"></i>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li t-as="pl" t-foreach="website_ppp['page_no']">
+                                                                <a t-att-href="'/shop/pager_selection/%s' % pl.id">
+                                                                    <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-esc="pl.name"/>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </t>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row o_wsale_products_main_row">
+                        <div t-if="enable_left_column" id="products_grid_before" class="col-lg-3"/>
+                        <div id="products_grid" t-attf-class="col #{'o_wsale_layout_list' if layout_mode == 'list' else ''}">
+                            <t t-if="category">
+                                <t t-set='editor_msg'>Drag building blocks here to customize the header for "<t t-esc='category.name'/>" category.</t>
+                                <div class="mb16" id="category_header" t-att-data-editor-message="editor_msg" t-field="category.website_description"/>
+                            </t>
+                            <div t-if="bins" class="o_wsale_products_grid_table_wrapper">
+                                <div id="amp_products_grid_view">
+                                    <div class='row sct_list_box'>
+                                        <t t-as="tr_product" t-foreach="bins">
+                                            <t t-as="td_product" t-foreach="tr_product">
+                                                <t t-if="td_product">
+                                                    <t t-set="product" t-value="td_product['product']"/>
+                                                    <div class="col-md-4 col-sm-6 list-items grid_column">
+                                                        <t t-call="theme_scita.shop_page_products_item">
+                                                            <t t-set="product_image_big" t-value="td_product['x'] + td_product['y'] &gt; 2"/>
+                                                        </t>
+                                                    </div>
+                                                </t>
+                                            </t>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                            <t t-else="">
+                                <div class="text-center text-muted">
+                                    <t t-if="not search">
+                                        <h3 class="mt8">No product defined</h3>
+                                        <p t-if="category">No product defined in category "<strong t-esc="category.display_name"/>".</p>
+                                    </t>
+                                    <t t-else="">
+                                        <h3 class="mt8">No results</h3>
+                                        <p>No results for "<strong t-esc='search'/>"<t t-if="category"> in category "<strong t-esc="category.display_name"/>"</t>.</p>
+                                    </t>
+                                    <p t-ignore="true" groups="sales_team.group_sale_manager">Click <i>'New'</i> in the top-right corner to create your first product.</p>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+
+                    
+                    <div class="products_pager form-inline justify-content-center mt-3">
+                        <t t-call="website.pager"/>
+                    </div>
+                    <t t-set="list_price_desc_label">Catalog price: High to Low</t>
+                    <t t-set="list_price_asc_label">Catalog price: Low to High</t>
+                    <t t-set="name_asc_label">Name - A to Z</t>
+                    <t t-set="name_desc_label">Name - Z to A</t>
+                    <t t-set="website_sale_sortable" t-value="[
+                        (list_price_desc_label, 'list_price desc'),
+                        (list_price_asc_label, 'list_price asc'),
+                        (name_asc_label, 'name asc'),
+                        (name_desc_label, 'name desc')
+                    ]"/>
+                    <div class="fixed-footer">
+                        <button class="sortbybtn sct-btn" on="tap:my_sort_by.show" style=""><i class="fa fa-sort"></i><span>Sort By</span></button>
+                        <button class="main_menu_icon sct-btn" on="tap:sidebar.toggle"><i class="fa fa-filter"></i><span>Filters</span></button>
+                    </div>
+                    <t t-set="website_sale_sortable_current" t-value="[sort for sort in website_sale_sortable if sort[1]==request.params.get('order', '')]"/>
+                    <div id='my_sort_by' hidden="">
+                        <div class="sct-box">
+                            <t t-foreach="website_sale_sortable" t-as="sortby">
+                                <a role="menuitem" t-att-href="keep('/shop/amp', order=sortby[1])" class="sort-links">
+                                    <span t-raw="sortby[0]"/>
+                                </a>
+                            </t>
+                            <button class="sct-close" on="tap:my_sort_by.hide">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="oe_structure mb32" id="oe_structure_website_sale_products_2"/>
+            </div>
+
+        </t>
+    </template>
+    <template id="shop_page_products_item" name="AMP Shop Products item">
+        <t t-set="product_href" t-value="keep('/shop/product/amp/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" />
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class="card oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'"
+            itemscope="itemscope" itemtype="http://schema.org/Product">
+            <div class="card-body p-1 oe_product_image">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <a t-att-href="product_href" class="d-block h-100" itemprop="url">
+                    <amp-img layout="responsive" width="300" height="300" itemprop="image" class="img img-responsive product_detail_img" t-att-src="website.image_url(product, 'image_1920', None if product_image_big else '300x300')"/>
+                </a>
+            </div>
+            <div class="card-body p-0 text-center o_wsale_product_information">
+                <div class="p-2 o_wsale_product_information_text">
+                    <div class="pink-box">
+                        <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                            <span t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg') / 2"/>
+                            <t t-set="prod_curr_rate" t-value="0"/>
+                            <t t-set="is_half_star" t-value="0"/>
+                            <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                              <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                              <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                <i class="fa fa-star"/>
+                              </t>
+                              <t t-else="">
+                                <t t-if="rating_val % 1 &gt; 0.01 and rating_val % 1 &lt; 0.99 and is_half_star == 0">
+                                  <i class="fa fa-star-half-o"/>
+                                  <t t-set="is_half_star" t-value="1"/>
+                                </t>
+                                <t t-else="">
+                                  <i class="fa fa-star-o"/>
+                                </t>
+                              </t>
+                            </t>
+                        </ul>
+                    </div>
+                    <h6 class="o_wsale_products_item_title">
+                        <a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" />
+                    </h6>
+                    <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+                        <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                        <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                        <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                        <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                    </div>
+                </div>
+                <div class="o_wsale_product_btn"/>
+            </div>
+        </div>
+    </template>
+    <template id="apm_products_page_url" name="Amp Shop page Url" inherit_id="website_sale.products">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-if='website.is_amp_enable'>
+                <t t-set="head">
+                    <link rel="amphtml" t-att-href="'%sshop/amp' % request.httprequest.url_root"/>
+                </t>
+            </t>
+        </xpath>
+    </template>
+    <template id="apm_shop_page_products_css" name="Amp Shop page CSS" inherit_id="theme_scita.apm_shop_page_view">    
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="custom_css">
+                .products_pager {
+                    text-align:  center;
+                }
+                 .products_pager > div {
+                    margin:  0 auto;
+                    display:  inline-block;
+                }
+                 .products_pager > div > * {
+                    vertical-align:  middle;
+                    float:  none;
+                    padding:  0;
+                }
+                 .products_pager > div > ul {
+                    padding-left:  10px;
+                }
+                 .products_pager > ul {
+                    margin-left:  auto;
+                    margin-right:  auto;
+                }
+                .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+                    z-index: 2;
+                    color: #fff;
+                    background-color: var(--main-head-color);
+                    border-color: var(--main-head-color);
+                    cursor: default;
+                }
+                .pagination>li>a, .pagination>li>span, body {
+                    line-height: 1.428571429;
+                    background-color: #fff;
+                }
+                .pagination, ul.pagination>li {
+                    display: inline-block;
+                }
+                .pagination {
+                    padding-left: 0;
+                    margin:0 0 30px 0;
+                    border-radius: 4px;
+                }
+                .pagination>li>a, .pagination>li>span {
+                    position: relative;
+                    float: left;
+                    padding: 6px 12px;
+                    text-decoration: none;
+                    color: var(--main-head-color);
+                    border: 1px solid #ddd;
+                    margin-left: -6px;
+                    display: inline-block;
+                }
+                .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+                    color: #777777;
+                    background-color: #fff;
+                    border-color: #ddd;
+                    cursor: not-allowed;
+                }
+                .pagination > li > a:hover {
+                    background-color: #e7e7e7;
+                }
+                .input-group .search-query { float: left; width: 300px; border-radius: 0; height: auto; line-height: 30px; }
+                .input-group .input-group-append { float: left; }
+                .input-group .input-group-append .oe_search_button { border-radius: 0; line-height: 30px; background-color: var(--main-head-color); color: #ffffff; width: 50px; }
+                .products_pager .amp_search_box { display: block; margin: 30px 0; }
+                .products_pager .amp_search_box .input-group { margin-left: auto; margin-right: auto; }
+                *:focus { outline: none; }
+                .sct_list_box {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+                .sct_list_box .list-items { width: 23%; margin-bottom: 50px; border:1px solid #d9d9d9; margin-left: 10px; margin-right: 10px; }
+                .sct_list_box .list-items .oe_product_image { padding: 20px; }
+                .sct_list_box .list-items .oe_product_image img { object-fit: scale-down; }
+                .sct_list_box .list-items .o_wsale_product_information { border-top: 1px solid #d9d9d9; padding: 10px; text-align: center; }
+                .sct_list_box .list-items .o_wsale_product_information .o_wsale_products_item_title a { font-size: 16px; }
+                .sct_list_box .list-items .o_wsale_product_information .product_price { font-size: 16px; }
+                .fixed-footer {
+                    position: fixed;
+                    z-index: 9;
+                    bottom: 67px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    padding: 20px 0;
+                    background-color: var(--main-white-color);
+                    -webkit-box-shadow: 0 0 10px 0 rgba(148,150,159,.3);
+                    box-shadow: 0 0 10px 0 rgba(148,150,159,.3);
+                }
+                .fixed-footer { font-size: 0; }
+                .fixed-footer .sct-btn .fa { font-size: 16px; padding-right: 7px; }
+                .fixed-footer .sct-btn:focus { outline: none; }
+                .oe_website_sale {
+                    margin-bottom: 110px;
+                }
+                #my_sort_by .sct-box {
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    z-index: 99;
+                    width: 300px;
+                    transform: translateY(-50%);
+                    margin: auto;
+                    background: var(--main-bg-color);
+                    padding: 30px;
+                }
+                #my_sort_by {
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 9999;
+                    margin: auto;
+                    background: rgba(0,0,0,0.5);
+                }
+                #my_sort_by a {
+                    display: block;
+                    color: #ffffff;
+                }
+                #my_sort_by a + a {
+                    margin-top: 10px;
+                }
+                #my_sort_by .sct-close { cursor: pointer; position: absolute; z-index: 9; right: 10px; top: 10px; color: #ffffff; font-size: 18px; background-color: transparent; border:none; box-shadow: none; }
+                #my_sort_by .sct-close:focus { outline: none; }
+                .sct-cat-sidebar { padding:0; width: 350px; }
+                .sct-cat-sidebar .sct-close-icon { position: absolute; z-index: 9; right: 10px; top: 15px; color: var(--main-white-color); font-size: 24px; background: transparent; border: none; padding: 0; width: 30px; text-align: center; cursor: pointer; height: 30px; }
+                .sct-cat-sidebar .side-menu { height: 100vh; box-sizing: border-box; padding-bottom: 50px;}
+                .sct-cat-sidebar .side-menu-head { padding: 20px; font-size: 20px; background-color: var(--main-font-color); color: var(--main-white-color); margin:0; border-bottom:1px solid #d9d9d9; }
+                .sct-cat-sidebar .sct-dw li + li  { border-top: 1px solid var(--main-bg-color); }
+                .sct-cat-sidebar .sct-dw li a { display: block; padding: 0 20px; line-height: 40px; }
+                .sct-cat-sidebar .sct-dw li header { background-color: transparent; border: 0; padding-right: 50px; }
+                .sct-cat-sidebar .sct-dw li header .fa { position: absolute; z-index: 9; right: 10px; top: 0; bottom: 0; margin: auto; text-align: center; background-color: var(--main-bg-color); color: var(--main-white-color); width: 30px; height: 30px; line-height: 30px; cursor: pointer;}
+                .sct-cat-sidebar .sct-dw li ul { padding-left: 0; background-color: #d9d9d9; }
+                .sct-cat-sidebar .sct-dw li.active { background-color: #f0f0f0; }
+                .sct-cat-sidebar .sct-dw li header[aria-expanded="true"] .fa:before { content: "\f068"; }
+                .sct-cat-sidebar .sct-cat-tile { margin-top: 10px; font-size: 20px; color: var(--main-font-color); font-weight: bold; margin: 0; padding: 0 20px; line-height: 40px; border-bottom: 1px solid #d9d9d9; }
+                .sct-cat-sidebar .amp_form_view ul { padding: 0; }
+                .sct-cat-sidebar .amp_form_view { padding: 0 20px; }
+                .sct-cat-sidebar .amp_form_view .sct-sub-atr-title { font-size: 16px; padding: 0; margin-bottom: 10px; margin-top: 10px; color: var(--main-font-color); border-bottom: 1px solid #d9d9d9; padding-bottom: 10px; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color input { margin: 8px; height: 13px; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color { display: inline-block; border: 1px solid #999999; text-align: center; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color.active { border: 3px ridge #66ee66; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color.active input { margin: 6px; }
+                .sct-cat-sidebar .amp_form_view .form-control { width: 100%; border-radius: 0; box-shadow: none; }
+                .sct-cat-sidebar .amp_form_view .amp_apply_btn { border: none; box-shadow: none; background: var(--main-bg-color); padding: 0 25px; line-height: 35px; color: var(--main-white-color); font-size: 16px; font-weight: bold; cursor: pointer; }
+                .sct-pr-lst { text-align: center; margin-top: 20px; }
+                .sct-pr-lst .paging_sort { display: inline-block; }
+                .sct-pr-lst .paging_sort .simple_name { display: block; }
+                .sct-pr-lst .paging_sort .label { font-size: 14px; color: var(--main-font-color); padding-right: 2px; }
+                .sct-pr-lst .paging_sort .dropdown > .sct-dw-title { cursor: pointer; font-size: 14px; color: var(--main-font-color); padding: 0 10px; line-height: 30px; border:1px solid #d9d9d9; border-radius: 0.25rem; min-width: 30px; }
+                .sct-pr-lst .paging_sort .dropdown .dropdown-menu { display: none; }
+                .sct-pr-lst .paging_sort .dropdown > .sct-dw-title:hover .dropdown-menu { display: block;  margin:0; padding: 0; background-color: var(--main-white-color); position: absolute; z-index: 99; right: 0; border:1px solid #d9d9d9; width: 150px; text-align: left; }
+                .sct-pr-lst .paging_sort .dropdown .dropdown-menu a { display: block; font-size: 14px; color: var(--main-font-color); padding: 0 10px; line-height: 30px; }
+                .sct-pr-lst .paging_sort .dropdown .dropdown-menu a:hover { color: var(--main-white-color); background-color: var(--main-bg-color); }
+                .sct-pr-lst .paging_sort .dropdown .dropdown-menu li + li { border-top: 1px solid #d9d9d9; }
+
+                .o_wsale_product_information .pink-box .ratings { text-align:center; margin:0; padding:0; }
+
+                @media (min-width: 768px){
+                    .fixed-footer .sct-btn { display: inline-block; cursor: pointer; background-color: var(--main-font-color); padding: 10px 25px; margin: 0 2px; color: var(--main-white-color);font-size: 16px; border:none; font-weight: bold;  }
+                }
+                @media (max-width: 1199px) {
+                    .sct_list_box .list-items { margin-bottom: 30px; margin-left: 5px; margin-right: 5px; }
+                }
+                @media (max-width: 767px) {
+                    .sct_list_box .list-items { width: 45%; margin-bottom: 20px; }
+                    .menu_head .sct-catg span { display: none; }
+                    .fixed-footer { padding: 0; }
+                    .oe_website_sale { margin-bottom: 110px; }
+                    .sct_list_box .list-items .o_wsale_product_information .o_wsale_products_item_title a { font-size: 14px; }
+                    .fixed-footer { background-color: var(--main-bg-color); }
+                    .fixed-footer .sct-btn { padding: 15px 5px; display: inline-block; vertical-align: middle; width: 50%; box-shadow: none; color: var(--main-white-color); font-size: 16px; text-align: center; background-color: transparent; border: none; }
+                    .fixed-footer .sct-btn.sortbybtn { border-right: 1px solid #d9d9d9; }
+                }
+                @media (max-width: 575px) {
+                    .input-group .search-query { width: 210px; }
+                }
+                @media (max-width: 399px) {
+                    #my_sort_by .sct-box {
+                        width: 280px;
+                        padding: 20px;
+                    }
+                }
+            </t>
+        </xpath>
+    </template>
+    <template id="apm_product_details_page_url" name="Amp Product Details page Url" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='wrap']" position="after">
+            <t t-if='website.is_amp_enable'>
+                <t t-set="head">
+                    <link rel="amphtml" t-att-href="'%sshop/product/amp/%s' % (request.httprequest.url_root,slug(product)) "/>
+                </t>
+            </t>
+        </xpath>
+    </template>
+    <template id="amp_variants">
+        <t t-set="first_possible_combination" t-value="product._get_first_possible_combination()"/>                         
+        <t t-if="first_possible_combination">
+            <ul class="sct-cus-variant">
+                <t t-foreach="product.valid_product_template_attribute_line_ids" t-as="variant_id">
+                    <li t-att-data-attribute_id="variant_id.attribute_id.id"
+                        t-att-data-attribute_name="variant_id.attribute_id.name">
+                        <strong t-field="variant_id.attribute_id.name" class="attribute_name"/>
+                        <t t-if="variant_id.attribute_id.display_type in ['select', 'hidden']">
+                            <ul>
+                                <t t-as="value_id" t-foreach="variant_id.value_ids">
+                                    <li class="form-group js_attribute_value">
+                                        <label class="control-label">
+                                            <span t-field="value_id.name"/>
+                                        </label>
+                                    </li>
+                                </t>
+                            </ul>
+                        </t>
+                        <t t-if="variant_id.attribute_id.display_type == 'radio'">
+                            <ul class="list-unstyled">
+                                <t t-as="value_id" t-foreach="variant_id.value_ids">
+                                    <li class="form-group js_attribute_value">
+                                        <label class="control-label">
+                                            <span t-field="value_id.name"/>
+                                        </label>
+                                    </li>
+                                </t>
+                            </ul>
+                        </t>
+
+                        <t t-if="variant_id.attribute_id.display_type == 'color'">
+                            <ul t-att-data-attribute_id="variant_id.attribute_id.id" class="list-inline sct-color-atrb">
+                                <li t-foreach="variant_id.product_template_value_ids" t-as="value_id" class="list-inline-item">
+                                    <label t-attf-style="background-color:#{value_id.html_color or value_id.name if not value_id.is_custom else ''}"
+                                        t-attf-class="css_attribute_color #{'' if first_possible_combination[variant_id_index] == value_id else ''} #{'custom_value' if value_id.is_custom else ''}">
+                                        <input type="radio"
+                                            t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)"
+                                            t-att-title="value_id.name"
+                                            t-att-data-value_id="value_id.product_attribute_value_id.id"
+                                            t-att-data-value_name="value_id.name"
+                                            t-att-data-attribute_name="value_id.attribute_id.name"
+                                            t-att-data-is_custom="value_id.is_custom" />
+                                    </label>
+                                </li>
+                            </ul>
+                        </t>
+                    </li>
+                </t>
+            </ul>
+        </t>
+    </template>
+    <template id="apm_product_view" name="AMP product view">
+        <t t-set="head">
+            <script async="async" custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"/>
+        </t>
+        <t t-call="theme_scita.amp_main">
+            <t t-set="additional_title" t-value="product.name"/>
+            <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
+                <section t-attf-class="oe_website_sale" id="product_detail">
+                    <div class="row">
+                        <section class="page-title">
+                            <div class="container">
+                                <h2 class="brandcum_title">
+                                    <span t-esc="product.name"/>
+                                </h2>
+                                <ul class="breadcrumb">
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/shop/amp">Products</a>
+                                    </li>
+                                    <li t-if="category">
+                                        <a t-att-href="keep('/shop/amp/category/%s' % slug(category), category=0)" t-field="category.name"/>
+                                    </li>
+                                    <li class="active">
+                                        <a class="prod_link" t-field="product.name"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                        <section class="prod-detail">
+                            <div class="container">
+                                <div class="sct-prod-img">
+                                    <amp-img layout="responsive" width="300" height="300" itemprop="image" class="img img-responsive product_detail_img" t-att-src="website.image_url(product, 'image_1920')"/>
+                                </div>
+                                <div class="sct-prod-desc" id="product_details">
+                                    <div class="sct-main-name-rating">
+                                        <h1 itemprop="name" t-field="product.name" class="sct-prod-name">Product Name</h1>
+                                        <div class="pink-box">
+                                            <ul class='ratings' t-if="request.website.viewref('theme_scita.theme_scita_rating').active">
+                                                <span t-set="rating_val" t-value="product.sudo().rating_get_stats().get('avg') / 2"/>
+                                                <t t-set="prod_curr_rate" t-value="0"/>
+                                                <t t-set="is_half_star" t-value="0"/>
+                                                <t t-foreach="range(0, 5)" t-as="every_prod_rate">
+                                                  <t t-set="prod_curr_rate" t-value="prod_curr_rate + 1"/>
+                                                  <t t-if="prod_curr_rate &lt;= int(rating_val // 1)">
+                                                    <i class="fa fa-star"/>
+                                                  </t>
+                                                  <t t-else="">
+                                                    <t t-if="rating_val % 1 &gt; 0.01 and rating_val % 1 &lt; 0.99 and is_half_star == 0">
+                                                      <i class="fa fa-star-half-o"/>
+                                                      <t t-set="is_half_star" t-value="1"/>
+                                                    </t>
+                                                    <t t-else="">
+                                                      <i class="fa fa-star-o"/>
+                                                    </t>
+                                                  </t>
+                                                </t>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class='sct-main-description-div'>
+                                        <p t-field="product.description_sale" class="text-muted"/>
+                                    </div>
+                                    <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+                                    <t t-if="combination" t-call="theme_scita.amp_variants">
+                                        <t t-set="ul_class" t-value="'flex-column'" />
+                                        <t t-set="parent_combination" t-value="None" />
+                                    </t>
+                                    <div class='sct-price-option'>
+                                        <t t-call="website_sale.product_price" />
+                                    </div>
+                                    <div class="js_product">
+                                        <a t-att-href="'/shop/product/%s' % slug(product)" class="btn btn-primary btn-lg">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+    <template id="amp_product_css" inherit_id="theme_scita.apm_product_view" name="AMP Custom Product CSS">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="custom_css">
+                .badge {
+                    display: inline-block;
+                    padding: 0.25em 0.4em;
+                    font-size: 75%;
+                    font-weight: 700;
+                    line-height: 1;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: baseline;
+                    border-radius: 0.25rem;
+                }
+                .badge-pill {
+                    padding-right: 0.6em;
+                    padding-left: 0.6em;
+                    border-radius: 10rem;
+                }
+                .img-responsive {
+                    max-height: 300px;
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+                hr {
+                    padding: 4px 0px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border: 0;
+                    border-top: 1px solid #eeeeee;
+                }
+                .variant_attribute {
+                    padding-bottom: 0.5rem;
+                }
+                .variant_attribute .attribute_name {
+                    padding-bottom: 0.5rem;
+                    display: inline-block;
+                }
+                .variant_attribute .radio_input {
+                    margin-right: 0.7rem;
+                    vertical-align: middle;
+                }
+                .variant_attribute .radio_input_value {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 1;
+                }
+                .css_attribute_color {
+                    display: inline-block;
+                    border: 1px solid #999999;
+                    text-align: center;
+                }
+                .css_attribute_color.active {
+                    border: 3px ridge #66ee66;
+                }
+                .css_attribute_color input {
+                    margin: 8px;
+                    height: 13px;
+                    opacity: 0;
+                }
+                .oe_website_sale ul ul {
+                    margin-left: 1.5rem;
+                }
+                .list-inline {
+                    padding-left: 0;
+                    list-style: none;
+                }
+                .list-inline-item {
+                    display: inline-block;
+                }
+                inline-item:not(:last-child) {
+                    margin-right: 0.5rem;
+                }
+                .page-title {
+                    background: #f0f0f0;
+                    padding:15px 0;
+                }
+                .page-title .container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap;flex-wrap: wrap; }
+                .brandcum_title {
+                    color: var(--main-font-color);
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .breadcrumb {
+                    padding: 0;
+                    margin: 0;
+                }
+                .breadcrumb li { display: inline-block; vertical-align: middle; }
+                .breadcrumb li + li { margin-left: 10px; }
+                .breadcrumb li + li a { padding-left: 15px; }
+                .breadcrumb li a { font-size: 15px; position: relative; }
+                .breadcrumb li + li a:before { position: absolute; content: '\f105'; font-family: 'FontAwesome'; left: 0; }
+                .breadcrumb li.active a { color: #5076DB; }
+                .prod-detail { margin: 50px 0; }
+                .prod-detail .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap;flex-wrap: wrap;}
+                .prod-detail .sct-prod-img { flex: 0 0 45%; max-width: 45%; box-sizing: border-box; }
+                .prod-detail .sct-prod-img .img { width:100%; padding:10px; border:1px solid #d9d9d9; max-width: unset; box-sizing: border-box;}
+                .prod-detail .sct-prod-img img { -o-object-fit: scale-down; object-fit: scale-down; }
+                .prod-detail .sct-prod-desc { flex: 0 0 55%; max-width: 55%; }
+                .prod-detail .sct-prod-desc .sct-main-name-rating { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap;flex-wrap: wrap;}
+                .prod-detail .sct-prod-desc .sct-main-name-rating .sct-prod-name { font-size: 20px; font-weight: bold; color: var(--main-font-color); margin: 0; }
+                .prod-detail .sct-prod-desc .sct-main-name-rating .pink-box .ratings { margin: 0; padding: 0; }
+                .prod-detail .sct-prod-desc .sct-main-description-div { margin: 20px 0; }
+                .prod-detail .sct-prod-desc .sct-main-description-div p { margin-bottom: 0; }
+                .prod-detail .sct-prod-desc .sct-price-option { border-top: 1px solid #d9d9d9; }
+                .prod-detail .sct-prod-desc .sct-price-option h4 { font-size: 20px; }
+                .prod-detail .sct-prod-desc .js_product a { font-size: 16px; line-height: 40px; padding: 0 15px; text-align: center; border-radius: 0;  }
+                .oe_website_sale .sct-cus-variant { margin: 0; padding: 0; }
+                .oe_website_sale .sct-cus-variant ul { margin: 0; padding: 0; }
+                .oe_website_sale .sct-cus-variant > li  { display: inline-block; vertical-align: top; width: 49.5%; margin-bottom: 15px; }
+                .oe_website_sale .sct-cus-variant > li strong { font-size: 16px; display: block; }
+                .oe_website_sale .sct-cus-variant > li li { margin-top: 5px; }
+                .oe_website_sale .sct-cus-variant .sct-color-atrb .css_attribute_color { width: 18px; height: 18px; border-radius: 50%; }
+                .oe_website_sale .sct-cus-variant .sct-color-atrb .css_attribute_color input { width: auto; height: auto; margin: 0; }
+                .oe_website_sale .sct-cus-variant .sct-color-atrb li { margin-right: 5px; }
+                .sct-cat-sidebar { padding:0; width: 350px; }
+                .sct-cat-sidebar .sct-close-icon { position: absolute; z-index: 9; right: 10px; top: 15px; color: var(--main-white-color); font-size: 24px; background: transparent; border: none; padding: 0; width: 30px; text-align: center; cursor: pointer; height: 30px; }
+                .sct-cat-sidebar .side-menu { height: 100vh; box-sizing: border-box; padding-bottom: 50px;}
+                .sct-cat-sidebar .side-menu-head { padding: 20px; font-size: 20px; background-color: var(--main-font-color); color: var(--main-white-color); margin:0; border-bottom:1px solid #d9d9d9; }
+                .sct-cat-sidebar .sct-dw li + li  { border-top: 1px solid var(--main-bg-color); }
+                .sct-cat-sidebar .sct-dw li a { display: block; padding: 0 20px; line-height: 40px; }
+                .sct-cat-sidebar .sct-dw li header { background-color: transparent; border: 0; padding-right: 50px; }
+                .sct-cat-sidebar .sct-dw li header .fa { position: absolute; z-index: 9; right: 10px; top: 0; bottom: 0; margin: auto; text-align: center; background-color: var(--main-bg-color); color: var(--main-white-color); width: 30px; height: 30px; line-height: 30px; cursor: pointer;}
+                .sct-cat-sidebar .sct-dw li ul { padding-left: 0; background-color: #d9d9d9; }
+                .sct-cat-sidebar .sct-dw li.active { background-color: #f0f0f0; }
+                .sct-cat-sidebar .sct-dw li header[aria-expanded="true"] .fa:before { content: "\f068"; }
+                .sct-cat-sidebar .sct-cat-tile { margin-top: 10px; font-size: 20px; color: var(--main-font-color); font-weight: bold; margin: 0; padding: 0 20px; line-height: 40px; border-bottom: 1px solid #d9d9d9; }
+                .sct-cat-sidebar .amp_form_view ul { padding: 0; }
+                .sct-cat-sidebar .amp_form_view { padding: 0 20px; }
+                .sct-cat-sidebar .amp_form_view .sct-sub-atr-title { font-size: 16px; padding: 0; margin-bottom: 10px; margin-top: 10px; color: var(--main-font-color); border-bottom: 1px solid #d9d9d9; padding-bottom: 10px; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color input { margin: 8px; height: 13px; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color { display: inline-block; border: 1px solid #999999; text-align: center; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color.active { border: 3px ridge #66ee66; }
+                .sct-cat-sidebar .amp_form_view .css_attribute_color.active input { margin: 6px; }
+                .sct-cat-sidebar .amp_form_view .form-control { width: 100%; border-radius: 0; box-shadow: none; }
+                .sct-cat-sidebar .amp_form_view .amp_apply_btn { border: none; box-shadow: none; background: var(--main-bg-color); padding: 0 25px; line-height: 35px; color: var(--main-white-color); font-size: 16px; font-weight: bold; cursor: pointer; }
+                @media (min-width:992px){
+                    .prod-detail .sct-prod-img .img { max-width:80%;}
+                }
+                @media (max-width: 991px){
+                    .brandcum_title { flex: 0 0 100%; max-width: 100%; margin-bottom: 10px; text-align: center; }
+                    .breadcrumb { flex: 0 0 100%; max-width: 100%; text-align: center; }
+                    .prod-detail .sct-prod-img, .prod-detail .sct-prod-desc { flex: 0 0 100%; max-width: 100%; }
+                    .prod-detail .sct-prod-desc { margin-top: 30px; max-width: 100%; }
+                    .prod-detail .sct-prod-desc .sct-main-name-rating .pink-box .ratings { margin-top: 3px; }
+                }
+                @media (max-width: 767px){
+                    .oe_website_sale .sct-cus-variant > li  { width: 49%; }
+                }
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

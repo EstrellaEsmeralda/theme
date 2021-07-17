@@ -1,0 +1,28 @@
+.btn-primary {
+	cursor: pointer;
+	background: $theme;
+	line-height: 45px;
+	padding: 0 30px;
+	text-align: center;
+	font-size: $title;
+	font-weight: bold;
+	color: $light-color;
+	border-radius: 40px;
+	-webkit-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    border:1px solid transparent;
+    @include transition(all, 0.3s, ease);
+    @media (max-width: 1023px){
+    	line-height: 40px;
+    	font-size: $title - 2;
+    }
+	&:focus, &:hover, &:active{
+		background:$light-color;
+		color: $dark-color;
+		box-shadow: none;
+		border:1px solid $dark-color;
+		@include transition(all, 0.3s, ease);
+		outline: none;
+	}
+}

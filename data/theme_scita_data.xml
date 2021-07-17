@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_website" model="ir.actions.act_url">
+        <field name="name">Website</field>
+        <field name="url">/</field>
+        <field name="target">self</field>
+    </record>
+    <record id="base.open_menu" model="ir.actions.todo">
+        <field name="action_id" ref="action_website"/>
+        <field name="state">open</field>
+    </record>
+    <data noupdate='1'>
+	    <record id="website.default_website" model="website">
+	        <field name="pwa_app_icon_512" type="base64" file="theme_scita/static/src/img/PWA/image_512.png"/>
+	    </record>
+	</data>
+</odoo>

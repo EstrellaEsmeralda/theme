@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="theme_scita.s_google_map_modal">
+        <div aria-hidden="true" contenteditable="False" role="dialog" class="modal" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Google Map Snippet Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label">Embed Code</label>
+                                <div class="form-group col-sm-9">
+                                    <!-- <input type="text" class="form-control" id="address_html_code" placeholder="Add Embed Code"/> -->
+                                    <textarea rows="4" cols="50" id="address_html_code" placeholder="Add Embed Code"></textarea>
+                                    <p>Go to google map. Find address then click on share button. Click on embed a map and copy html.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="set_map_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_scita.s_google_map_content_modal">
+        <div aria-hidden="true" contenteditable="False" role="dialog" class="modal" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Google Map Snippet Configuration</h4>
+                        <button class="close" data-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label">Embed Code</label>
+                                <div class="form-group col-sm-9">
+                                    <!-- <input type="text" class="form-control" id="address_content_html_code" placeholder="Add Embed Code"/> -->
+                                    <textarea rows="4" cols="50" id="address_content_html_code" placeholder="Add Embed Code"></textarea>
+                                    <p>Go to google map. Find address then click on share button. Click on embed a map and copy html.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-dismiss="modal" id="set_map_data_content">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

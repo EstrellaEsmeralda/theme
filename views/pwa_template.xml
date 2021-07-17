@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <template id="website_pwa_support_temp" name="Web layout PWA Support" inherit_id="portal.frontend_layout">
+        <xpath expr="//head" position="inside">
+            <t t-set='website_obj' t-value="request.env['website']" />
+            <t t-set='current_website_obj' t-value="website_obj.sudo().get_current_website()" />
+            <t t-if="current_website_obj.is_app_pwa">
+                <link rel="manifest" t-attf-href="/theme_scita/manifest_file/#{current_website_obj.id}" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+                <meta name="apple-mobile-web-app-title" t-att-content="current_website_obj.pwa_app_name or 'PWA'" />
+                <link rel="apple-touch-icon" t-att-href="website_obj.image_url(current_website_obj, 'pwa_app_icon_512', '152x152') or '/theme_scita/static/src/img/image_152.png'"
+                />
+                <meta name="theme-color" t-att-content="current_website_obj.pwa_app_theme_color" />
+            </t>
+        </xpath>
+    </template>
+    <template id="assets_fronted_pwa" name="Theme PWA Fronted Assets" inherit_id="theme_scita.asset_frontend_theme_scita">
+        <xpath expr="." position="inside">
+            <t t-if="request.env['website'].sudo().get_current_website().is_app_pwa">
+                <link href="/theme_scita/static/src/scss/pwa_design.scss" rel="stylesheet" type="text/scss"/>
+                <script type="text/javascript" src="/theme_scita/static/src/js/pwa_implementation.js"/>
+            </t>
+        </xpath>
+    </template>
+    <template id="pwa_service_worker" name="Service Worker PWA">
+        'use strict';
+        const PWA_CACHE_NAME = '<t t-esc="pwa_cache_version" />';
+        const URL_TO_CACHE = [
+          <t t-foreach="urls_to_cache" t-as="url_to_cache">
+              '<t t-esc="url_to_cache" />',
+          </t>
+        ];
+        self.addEventListener('install', function (ev) {
+          ev.waitUntil(
+           caches.open(PWA_CACHE_NAME).then(function (cache) {
+               return cache.addAll(URL_TO_CACHE);
+           })
+          );
+        });
+        self.addEventListener('activate', function(ev) {
+           ev.waitUntil(
+               caches.keys().then(function(keyList) {
+                   return Promise.all(keyList.map(function(key) {
+                       if (key !== PWA_CACHE_NAME) {
+                           return caches.delete(key);
+                       }
+                   }));
+               })
+           );
+          self.clients.claim();
+        });
+        self.addEventListener('fetch', function(ev) {
+        ev.respondWith(
+            fetch(ev.request) 
+            .then(function(res) {
+                if(!res || res.status !== 200 || res.type !== 'basic') {
+                  return res;
+                }
+                var reqMethod = ev.request.method
+                if(!reqMethod || reqMethod != 'POST'){
+                    var resToCache = res.clone();
+                    caches.open(PWA_CACHE_NAME)
+                    .then(function(cache) {
+                        cache.put(ev.request, resToCache);
+                    });
+                }
+                return res;
+            })
+            .catch(function(err) {
+                return caches.open(PWA_CACHE_NAME) 
+                .then(function(cache) {
+                    return cache.match(ev.request)
+                    .then(function(res) {
+                        if(res != undefined){
+                            return res
+                        }
+                        return cache.match('/theme_scita/pwa/offline') || Promise.resolve()
+                    })
+                });
+            })
+        );
+    });
+    </template>
+    <template id="manifest_temp" name="PWA Manifest Template">
+        {
+          "name": "<t t-esc="pwa_name" />",
+          "short_name": "<t t-esc="pwa_short_name" />",
+          "start_url": "<t t-esc="start_url" />",
+          "scope": "/",
+          "display": "standalone",
+          "background_color": "<t t-esc="background_color" />",
+          "theme_color": "<t t-esc="theme_color" />",
+          "icons": [{
+                "src": "<t t-esc="image_72" />",
+                "sizes": "72x72",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_96" />",
+                "sizes": "96x96",
+                "type": "image/png"
+            },{
+                "src": "<t t-esc="image_128" />",
+                "sizes": "128x128",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_144" />",
+                "sizes": "144x144",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_152" />",
+                "sizes": "152x152",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_192" />",
+                "sizes": "192x192",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_256" />",
+                "sizes": "256x256",
+                "type": "image/png"
+            }, {
+                "src": "<t t-esc="image_512" />",
+                "sizes": "512x512",
+                "type": "image/png"
+            }]
+        }
+    </template>  
+    <template id="pwa_mobile_device_popup" inherit_id="web.frontend_layout" name='Mobile Device PWA Popup'>
+         <xpath expr="//div[@id='wrapwrap']/main" position="inside">
+            <t t-set='current_website_obj' t-value="website_obj.sudo().get_current_website()" />  
+            <div class="mobile-deive-popup" t-if='current_website_obj.is_app_pwa'>
+                <img t-att-src="request.env['website'].image_url(current_website_obj, 'pwa_app_icon_512', '50x50')" class='img pwa-icon-img'/>
+                <p>
+                    <button type="button" class='sct_pwa_iphone_close float-right'>X
+                    </button>
+                    To install this Web App in your ISO device press<img src="/theme_scita/static/src/img/PWA/mobile_icon.png" class='pwa-small-img'/> and then Add to Home Screen.
+                </p>
+            </div>
+        </xpath>
+    </template>
+    <template id='pwa_offline_template' name="PWA Offline Page">
+        <t t-call="website.layout">
+            <div class='oe_structure'/>
+            <section class='pwa_off_section pt64 pb64'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12 pwa_offline_main_div'>
+                            <div class='pwa_off_image_div'>
+                                <img t-att-src="'/theme_scita/static/src/img/PWA/network-error.png'" class='img pwa_off_image'/>
+                            </div>
+                            <div class='pwa_offline_content_div'>
+                                <h1 class='pwa_offline_content mb32'>Unable to connect internet</h1>
+                            </div>
+                            <div class='pwa_back_btn_div'>
+                                <a href="/" class="btn btn-primary">BACK TO HOME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

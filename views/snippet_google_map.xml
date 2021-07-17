@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Google Map" id="s_appjetty_google_map">
+        <section class="google_map_v1" data-map=""  data-disp='google_map_snippet'>
+            <div class="map_container">
+                <span>Google Map Address</span>
+            </div>           
+        </section>
+    </template>
+
+    <template name="Google Map With content" id="s_appjetty_google_map_content">
+        <section class="google_map_v2" data-map_section=""  data-disp='google_map_snippet'>
+            <div class="container">
+                <div class="row top_row">
+                    <div class="col-md-7 sct_map">
+                        <div class="map_data_container">
+                            <span>Google Map Address</span>
+                        </div>  
+                    </div>
+                    <div class="col-md-5 sct_map_info">
+                        <h2 class='section-title'>A Section Subtitle</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Start with the customer – find out what they want and give it to them.</p>
+                        <div class='sct_cst_btn'>
+                            <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_google_map_option" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="s_google_map" data-selector="section.google_map_v1">
+                <we-button data-map="" data-no-preview="true">
+                    <i class="fa fa-fw fa-cog"/>Map Options
+                </we-button>
+            </div>
+            <div data-js="s_google_map_content" data-selector="section.google_map_v2">
+                <we-button data-map_section="" data-no-preview="true">
+                    <i class="fa fa-fw fa-cog"/>Map Options
+                </we-button>
+            </div>
+        </xpath>
+    </template>
+</odoo>

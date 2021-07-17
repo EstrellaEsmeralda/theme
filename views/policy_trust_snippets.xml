@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+	<!--  Retail Trust Snippet -->
+    <template id="retial_trust_snippet_1" name="Trust Icons Snippet 1">
+        <section class="retial_trust_snippet_1" data-disp="trust_icon">
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-4 col-sm-6'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_trust_icon_snippet_1_img_1" class="img img-fluid" alt="Free Shipping"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>FREE SHIPPING, RETURN</h4>
+                            <p>Free Shipping On All US Orders</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_trust_icon_snippet_1_img_2" class="img img-fluid" alt="Secure Payment"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>SECURE PAYMENTS</h4>
+                            <p>All Payment Are Secured.</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_how_it_work_snippet_3" class="img img-fluid" alt="Money back"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>MONEY BACK GUARANTEE</h4>
+                            <p>30 Days Money Back Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--  Fashion Trust Snippet -->
+    <template id="fashion_trust_snippet_1" name="Trust Icons Snippet 2">
+        <section class="fashion_trust_snippet_1" data-disp="trust_icon">
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-4 col-sm-6 sct_test_box'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_trust_icon_snippet_1_img_1" class="img img-fluid" alt="Free Shipping"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>FREE SHIPPING, RETURN</h4>
+                            <p>Free Shipping On All US Orders</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_test_box'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_trust_icon_snippet_1_img_2" class="img img-fluid" alt="Secure Payment"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>SECURE PAYMENTS</h4>
+                            <p>All Payment Are Secured.</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_test_box'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_how_it_work_snippet_3" class="img img-fluid" alt="Money back"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4>MONEY BACK GUARANTEE</h4>
+                            <p>30 Days Money Back Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="policy_trust_snippet_v_3" name="Trust Icons Snippet 3">
+        <section class="policy_trust_snippet_v_3" data-disp="trust_icon">
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-4 col-sm-6 sct_thumb'>
+                    	<div class='sct_test_box sct_gray_clr'>
+                    		<div class='sct_base_class'>
+		                        <div class="sct-left-side">
+		                            <span class="fa fa-plane"/>
+		                        </div>
+		                        <div class="sct-right-side">
+		                            <h3 class='sct_title'>Shipping and Delivery</h3>
+		                        </div>
+		                    </div>
+	                        <div class='sct_trust_content'>
+	                        	<p class='sct_simple_text'>
+	                        		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+	                        	</p>
+	                        </div>
+	                    </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_thumb'>
+                    	<div class='sct_test_box sct_no_clr'>
+                    		<div class='sct_base_class'>
+		                        <div class="sct-left-side">
+		                            <span class="fa fa-credit-card-alt"/>
+		                        </div>
+		                        <div class="sct-right-side">
+		                            <h3 class='sct_title'>Payment Methods</h3>
+		                        </div>
+		                    </div>
+	                        <div class='sct_trust_content'>
+	                        	<p class='sct_simple_text'>
+	                        		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+	                        	</p>
+	                        </div>
+	                    </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_thumb'>
+                    	<div class='sct_test_box sct_aqua_clr'>
+                    		<div class='sct_base_class'>
+		                        <div class="sct-left-side">
+		                            <span class="fa fa-mobile"/>
+		                        </div>
+		                        <div class="sct-right-side">
+		                            <h3 class='sct_title'>+(234) 567-8901</h3>
+		                        </div>
+		                    </div>
+	                        <div class='sct_trust_content'>
+	                        	<p class='sct_simple_text'>
+	                        		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+	                        	</p>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="policy_trust_snippet_v_4" name="Trust Icons Snippet 4">
+        <section class="policy_trust_snippet_v_4" data-disp="trust_icon">
+            <div class='container-fluid'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-4 col-sm-4 sct_base_class'>
+                        <div class='sct_title_div'>
+                            <h3 class='sct_title'><span class='fa fa-cubes'/><span class='text'>Unique solution</span></h3>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-4 sct_base_class'>
+                        <div class='sct_title_div'>
+                            <h3 class='sct_title'><span class='fa fa-shield'/><span class='text'>Information security</span></h3>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-4 sct_base_class'>
+                        <div class='sct_title_div'>
+                            <h3 class='sct_title'><span class='fa fa-cloud-download'/><span class='text'>Deep domain expertise</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

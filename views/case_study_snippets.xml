@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--  Use Cases varient snippet -->
+    <template id="health_cash_study_snippet" name="Case Study Snippet 1">
+        <section class='health_cash_study_snippet' data-disp='case_study'>
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span class='left_right_seprator'>Case Studies</span></h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_mid_row">
+                    <div class='col-md-4'>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <img src="/web/image/theme_scita.sct_case_study_snippet_1" class="img img-fluid" alt='person img'/>
+                            </div>
+                            <div class='sct_right_side'>
+                                <h3 class='sct_title'>DEN LEONARDI</h3>
+                                <p class='sct_simple_text'>Nullam bibendum odio a sem bibendum, ut vestibulum ipsum porttitor. Sed finibus nec orci et cursus. Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi...</p>
+                                <div class='sct_health_btn'>
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <img src="/web/image/theme_scita.sct_case_study_snippet_1" class="img img-fluid" alt='person img'/>
+                            </div>
+                            <div class='sct_right_side'>
+                                <h3 class='sct_title'>DEN LEONARDI</h3>
+                                <p class='sct_simple_text'>Nullam bibendum odio a sem bibendum, ut vestibulum ipsum porttitor. Sed finibus nec orci et cursus. Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi...</p>
+                                <div class='sct_health_btn'>
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='sct_base_class'>
+                            <div class='sct_left_side'>
+                                <img src="/web/image/theme_scita.sct_case_study_snippet_1" class="img img-fluid" alt='person img'/>
+                            </div>
+                            <div class='sct_right_side'>
+                                <h3 class='sct_title'>DEN LEONARDI</h3>
+                                <p class='sct_simple_text'>Nullam bibendum odio a sem bibendum, ut vestibulum ipsum porttitor. Sed finibus nec orci et cursus. Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi...</p>
+                                <div class='sct_health_btn'>
+                                    <a href="/shop" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row s_nb_column_fixed sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div class="sct_health_btn">
+                            <a class="btn btn-primary scita_cstm_btn  btn_border" href="/contectus"><span>View All</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="case_study_varient_1" name="Case Study Snippet 2">
+        <section class="case_study_varient_1" data-disp='case_study'>
+            <div class='container-fluid'>
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <p class='simple_green_text'>AUTOMATE &amp; SIMPLIFY THE WHOLE PROCESS</p>
+                        <h2 class="section-title">Case Studies</h2>
+                    </div>
+                </div>
+                <div class='row s_nb_column_fixed sct_btm_row'>
+                    <div class='col-md-3 col-sm-6 case_study_box'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                        <p class='sct_simple_text'>Global Business Management Tracking App</p>
+                    </div>
+                    <div class='col-md-3 col-sm-6 case_study_box'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                        <p class='sct_simple_text'>Global Business Management Tracking App</p>
+                    </div>
+                    <div class='col-md-3 col-sm-6 case_study_box'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                        <p class='sct_simple_text'>Global Business Management Tracking App</p>
+                    </div>
+                    <div class='col-md-3 col-sm-6 case_study_box'>
+                        <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                        <p class='sct_simple_text'>Global Business Management Tracking App</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="case_study_varient_2" name="Case Study Snippet 3">
+        <section class="case_study_varient_2" data-disp='case_study'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-3 col-sm-6'>
+                        <div class='case_study_box'>
+                            <div class='sct_above'>
+                                <div class='sct_case_icon'>
+                                     <img src="/web/image/theme_scita.sct_case_study_snippet_3" class="img img-fluid" alt='case study icon'/>
+                                </div>
+                                <div class='sct_cst_btn'>
+                                    <a href="/shop" class="btn sct_round_border">Try it for free</a>
+                                </div>
+                            </div>
+                            <div class='sct_below'>
+                                <h3 class='sct_title'>Sentiment Analysis</h3>
+                                <p class='sct_simple_text'>Global Business management Tracking App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6'>
+                        <div class='case_study_box'>
+                            <div class='sct_above'>
+                                <div class='sct_case_icon'>
+                                     <img src="/web/image/theme_scita.sct_case_study_snippet_3" class="img img-fluid" alt='case study icon'/>
+                                </div>
+                                <div class='sct_cst_btn'>
+                                    <a href="/shop" class="btn sct_round_border">Try it for free</a>
+                                </div>
+                            </div>
+                            <div class='sct_below'>
+                                <h3 class='sct_title'>Product Sentiment</h3>
+                                <p class='sct_simple_text'>Global Business management Tracking App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6'>
+                        <div class='case_study_box'>
+                            <div class='sct_above'>
+                                <div class='sct_case_icon'>
+                                     <img src="/web/image/theme_scita.sct_case_study_snippet_3" class="img img-fluid" alt='case study icon'/>
+                                </div>
+                                <div class='sct_cst_btn'>
+                                    <a href="/shop" class="btn sct_round_border">Try it for free</a>
+                                </div>
+                            </div>
+                            <div class='sct_below'>
+                                <h3 class='sct_title'>Emotional Classifier</h3>
+                                <p class='sct_simple_text'>Global Business management Tracking App</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6'>
+                        <div class='case_study_box'>
+                            <div class='sct_above'>
+                                <div class='sct_case_icon'>
+                                     <img src="/web/image/theme_scita.sct_case_study_snippet_3" class="img img-fluid" alt='case study icon'/>
+                                </div>
+                                <div class='sct_cst_btn'>
+                                    <a href="/shop" class="btn sct_round_border">Try it for free</a>
+                                </div>
+                            </div>
+                            <div class='sct_below'>
+                                <h3 class='sct_title'>Urgency Detection</h3>
+                                <p class='sct_simple_text'>Global Business management Tracking App</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--   Use Cases snippet End-->
+</odoo>

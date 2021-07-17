@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Testimonial varient snippet  -->
+    <template id="fashion_testimonials_slider_1" name="Testimonial Slider 3">
+        <section class="fashion_testimonials_slider_1" style="background-image: url('/web/image/theme_scita.sct_testinomail_slider_3_img_1');" data-disp="testimonial" data-vxml="001">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class='col-md-12 test_box'>
+                        <div class="sct_vertical_text">
+                            <h2 class="section-title">Testimonials</h2>
+                        </div>
+                        <section class="sct_slider s_carousel_wrapper">
+                            <div id="myQuoteCarousel_3" class="s_carousel carousel quotecarousel slide carousel-fade" data-interval="10000">
+                                
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-12 sct_base_class">
+                                                    <div class='test_img'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_3_img_2" class="img img-fluid" alt=''/>
+                                                    </div>
+                                                    <div class="sct_test_content">
+                                                        <p class='sct_simple_text'>
+                                                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                                                        </p>    
+                                                        <h5 class="sct_pers_name">Jeck nalsomes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-12 sct_base_class">
+                                                    <div class='test_img'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_3_img_2" class="img img-fluid" alt=''/>
+                                                    </div>
+                                                    <div class="sct_test_content">
+                                                        <p class='sct_simple_text'>
+                                                           But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                                                        </p>    
+                                                        <h5 class="sct_pers_name">Jeck nalsomes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <div class='carousel-control'>
+                                    <div class="carousel-control-prev" data-target="#myQuoteCarousel_3" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                                        <span class="carousel-control-prev-icon"/>
+                                        <span class="sr-only">Previous</span>
+                                    </div>
+                                    <div class="carousel-control-next" data-target="#myQuoteCarousel_3" data-slide="next" role="img" aria-label="Next" title="Next">
+                                        <span class="carousel-control-next-icon"/>
+                                        <span class="sr-only">Next</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- Tetimonial snippet-->
+    <template id="it_testimonials_slider_1" name="Testimonial Slider 4">
+        <section class="it_testimonials_slider_1" style="background-image: url('/web/image/theme_scita.sct_testinomail_slider_4_img_2');" data-disp="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class='col-md-12 test_box'>
+                        <div class="sct_vertical_text">
+                            <h2 class="section-title btm_seprator light-seprator">Testimonials</h2>
+                        </div>
+                        <section class="sct_test_slider s_carousel_wrapper">
+                            <div id="myQuoteCarousel_4" class="s_carousel carousel quotecarousel slide" data-interval="10000">
+                                
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 sct_base_class">
+                                                    <div class="sct_test_content">
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>    
+                                                    </div>
+                                                    <div class='test_img_info'>
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_4_img_1" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <h4 class="sct_pers_name">Mary Deborah</h4>
+                                                            <p class='sct_simple_text'>Lorem ipsum</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 sct_base_class">
+                                                    <div class="sct_test_content">
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>    
+                                                    </div>
+                                                    <div class='test_img_info'>
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_4_img_1" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <h4 class="sct_pers_name">Mary Deborah</h4>
+                                                            <p class='sct_simple_text'>Lorem ipsum</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <div class='carousel-control'>
+                                    <div class="carousel-control-prev" data-target="#myQuoteCarousel_4" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                                        <span class="carousel-control-prev-icon"/>
+                                        <span class="sr-only">Previous</span>
+                                    </div>
+                                    <div class="carousel-control-next" data-target="#myQuoteCarousel_4" data-slide="next" role="img" aria-label="Next" title="Next">
+                                        <span class="carousel-control-next-icon"/>
+                                        <span class="sr-only">Next</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="health_testimonials_slider_1" name="Testimonial Slider 1">
+        <section class="health_testimonials_slider_1" data-disp="testimonial">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12 test_box'>
+                        <div class="sct_health_title">
+                            <h2 class="section-title"><span class='left_right_seprator'>Testimonials</span></h2>
+                        </div>
+                        <section class="sct_test_slider s_carousel_wrapper">
+                            <div id="myQuoteCarousel_1" class="s_carousel carousel quotecarousel slide" data-interval="10000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-6 sct_base_class">
+                                                    
+                                                    <div class='sct_left_side'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                                    </div>
+                                                    <div class='sct_right_side'>
+                                                        <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                        <div class="s_rating row" data-vcss="001" data-icon="fa-star">
+                                                            <div class="col-lg-12 s_rating_icons o_not_editable">
+                                                               <span class="s_rating_active_icons">
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                </span>
+                                                                <span class="s_rating_inactive_icons">
+                                                                    <i class="fa fa-star-o"/>
+                                                                    <i class="fa fa-star-o"/>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-6 sct_base_class">
+                                                    
+                                                    <div class='sct_left_side'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_2" class="img img-fluid" alt='person img'/>
+                                                    </div>
+                                                    <div class='sct_right_side'>
+                                                        <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                        <div class="s_rating row" data-vcss="001" data-icon="fa-star">
+                                                            <div class="col-lg-12 s_rating_icons o_not_editable">
+                                                               <span class="s_rating_active_icons">
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                </span>
+                                                                <span class="s_rating_inactive_icons">
+                                                                    <i class="fa fa-star-o"/>
+                                                                    <i class="fa fa-star-o"/>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-6 sct_base_class">
+                                        
+                                                    <div class='sct_left_side'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                                    </div>
+                                                    <div class='sct_right_side'>
+                                                        <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                        <div class="s_rating row" data-vcss="001" data-icon="fa-star">
+                                                            <div class="col-lg-12 s_rating_icons o_not_editable">
+                                                               <span class="s_rating_active_icons">
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                </span>
+                                                                <span class="s_rating_inactive_icons">
+                                                                    <i class="fa fa-star-o"/>
+                                                                    <i class="fa fa-star-o"/>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-6 sct_base_class">
+                                  
+                                                    <div class='sct_left_side'>
+                                                        <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_2" class="img img-fluid" alt='person img'/>
+                                                    </div>
+                                                    <div class='sct_right_side'>
+                                                        <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                        <div class="s_rating row" data-vcss="001" data-icon="fa-star">
+                                                            <div class="col-lg-12 s_rating_icons o_not_editable">
+                                                               <span class="s_rating_active_icons">
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                    <i class="fa fa-star"/>
+                                                                </span>
+                                                                <span class="s_rating_inactive_icons">
+                                                                    <i class="fa fa-star-o"/>
+                                                                    <i class="fa fa-star-o"/>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <p class='sct_simple_text'>
+                                                           Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <div class='carousel-control'>
+                                    <div class="carousel-control-prev" data-target="#myQuoteCarousel_1" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                                        <span class="ti-arrow-top-right"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </div>
+                                    <div class="carousel-control-next" data-target="#myQuoteCarousel_1" data-slide="next" role="img" aria-label="Next" title="Next">
+                                        <span class="ti-arrow-top-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                <div class='row s_nb_column_fixed sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div class="sct_health_btn">
+                            <a class="btn btn-primary scita_cstm_btn  btn_border" href="/contectus"><span>View All</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_1" name="Testimonial Snippet 1">
+        <section class="testinomial_varient_1" data-disp="testimonial">
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-md-3 test_box'>
+                        <div class='sct_above'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        </div>
+                        <div class='sct_below'>
+                            <h3 class='sct_pers_name'>Aendre Mendoza</h3>
+                            <p class='sct_simple_text'>Creative Market</p>
+                        </div>
+                    </div>
+                    <div class='col-md-3 test_box'>
+                        <div class='sct_above'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        </div>
+                        <div class='sct_below'>
+                            <h3 class='sct_pers_name'>Aendre Mendoza</h3>
+                            <p class='sct_simple_text'>Creative Market</p>
+                        </div>
+                    </div>
+                    <div class='col-md-3 test_box'>
+                        <div class='sct_above'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        </div>
+                        <div class='sct_below'>
+                            <h3 class='sct_pers_name'>Aendre Mendoza</h3>
+                            <p class='sct_simple_text'>Creative Market</p>
+                        </div>
+                    </div>
+                    <div class='col-md-3 test_box'>
+                        <div class='sct_above'>
+                            <img src="/web/image/theme_scita.sct_about_us_snippet_1" class="img img-fluid" alt='case study image'/>
+                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        </div>
+                        <div class='sct_below'>
+                            <h3 class='sct_pers_name'>Aendre Mendoza</h3>
+                            <p class='sct_simple_text'>Creative Market</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_2" name="Testimonial Slider 2">
+        <section class="testinomial_varient_2" data-disp="testimonial">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class='col-md-12 test_box'>
+                        <div class="sct_health_title">
+                            <p class="simple_green_text">Testimonial</p>
+                            <h2 class="section-title">What People Say</h2>
+                        </div>
+                        <section class="sct_test_slider s_carousel_wrapper">
+                            <div id="myQuoteCarousel_2" class="s_carousel carousel quotecarousel slide" data-interval="10000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-6 ">
+                                                    <div class="sct_base_class">
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <p class='sct_simple_text'>
+                                                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                            </p>
+                                                            <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                            <p class='test_desig'>Marketing Lead</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="sct_base_class">
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_2" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <p class='sct_simple_text'>
+                                                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                            </p>
+                                                            <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                            <p class='test_desig'>Network Lead</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row s_nb_column_fixed">
+                                                <div class="col-md-6">
+                                                    <div class="sct_base_class">
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <p class='sct_simple_text'>
+                                                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                            </p>
+                                                            <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                            <p class='test_desig'>Marketing Lead</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="sct_base_class">
+                                                        <div class='sct_left_side'>
+                                                            <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_2" class="img img-fluid" alt='person img'/>
+                                                        </div>
+                                                        <div class='sct_right_side'>
+                                                            <p class='sct_simple_text'>
+                                                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                                            </p>
+                                                            <h4 class="sct_pers_name">Thomas Lee</h4>
+                                                            <p class='test_desig'>Marketing Lead</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='carousel-control'>
+                                    <div class="carousel-control-prev" data-target="#myQuoteCarousel_2" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                                        <span class="fa fa-angle-left"/>
+                                        <span class="sr-only">Previous</span>
+                                    </div>
+                                    <div class="carousel-control-next" data-target="#myQuoteCarousel_2" data-slide="next" role="img" aria-label="Next" title="Next">
+                                        <span class="fa fa-angle-right"/>
+                                        <span class="sr-only">Next</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_3" name="Testimonial Snippet 2">
+        <section class="testinomial_varient_3" data-disp="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sct_base_class">
+                            <div class='sct_msg_box'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <p class='sct_simple_text'>
+                                       Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='sct_write_by'>
+                                <h4 class="sct_pers_name">Nancy Wise</h4>
+                                <p class='test_desig'>Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sct_base_class">
+                            <div class='sct_msg_box'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_slider_1_img_1" class="img img-fluid" alt='person img'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <p class='sct_simple_text'>
+                                       Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='sct_write_by'>
+                                <h4 class="sct_pers_name">Cecilia Moss</h4>
+                                <p class='test_desig'>Team Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_4" name="Testimonial Snippet 3">
+        <section class="testinomial_varient_4" data-disp="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 sct_light_blue sct_thumb">
+                        <div class='sct_top_side'>
+                            <span class="fa fa-quote-right"/>
+                        </div>
+                        <div class='sct_right_side'>
+                            <p class='sct_simple_text'>
+                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                            </p>
+                        </div>
+                        <div class='sct_write_by'>
+                            <h4 class="sct_pers_name">Tour customer Name</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 sct_blue_sides sct_thumb">
+                        <div class='sct_top_side'>
+                            <span class="fa fa-quote-right"/>
+                        </div>
+                        <div class='sct_right_side'>
+                            <p class='sct_simple_text'>
+                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                            </p>
+                        </div>
+                        <div class='sct_write_by'>
+                            <h4 class="sct_pers_name">Tour customer Name</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 sct_dark_blue sct_thumb">
+                        <div class='sct_top_side'>
+                            <span class="fa fa-quote-right"/>
+                        </div>
+                        <div class='sct_right_side'>
+                            <p class='sct_simple_text'>
+                               Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                            </p>
+                        </div>
+                        <div class='sct_write_by'>
+                            <h4 class="sct_pers_name">Tour customer Name</h4>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_5" name="Testimonial Snippet 4">
+        <section class="testinomial_varient_5" data-disp="testimonial">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <h2 class="section-title"> Testimonials </h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-4">
+                        <div class='sct_test_box'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <h4 class="sct_pers_name">Thomas Lee</h4>
+                                    <p class='test_desig'>Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class='sct_test_box'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <h4 class="sct_pers_name">Thomas Lee</h4>
+                                    <p class='test_desig'>Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class='sct_test_box'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <h4 class="sct_pers_name">Thomas Lee</h4>
+                                    <p class='test_desig'>Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="testinomial_varient_6" name="Testimonial Snippet 5">
+        <section class="testinomial_varient_6" data-disp="testimonial">
+            <div class="container">
+                <div class="row s_nb_column_fixed sct_top_row">
+                    <div class='col-md-12'>
+                        <h2 class="section-title">What people are saying</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-4">
+                        <div class='sct_light_box sct_thumb'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <p class="sct_simple_text">Thomas Lee - Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class='sct_dark_box sct_thumb'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <p class="sct_simple_text">Thomas Lee - Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class='sct_light_box sct_thumb'>
+                            <div class='sct_above'>
+                                <p class='sct_simple_text'>
+                                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.Lorem ipsum dolor amet, adipiscing, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class='sct_below'>
+                                <div class='sct_left_side'>
+                                    <img src="/web/image/theme_scita.sct_testinomail_snippet_4" class="img img-fluid" alt='case study image'/>
+                                </div>
+                                <div class='sct_right_side'>
+                                    <p class="sct_simple_text">Thomas Lee - Marketing Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- Testimonial varient snippet  End-->
+
+</odoo>

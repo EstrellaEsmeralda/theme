@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Category Slider Snippet -->
+        <template id="s_theme_scita_category_slider" name="Category Snippet 3">
+            <section id="theme_scita_custom_category_slider" class="oe_cat_slider categ_slider s_theme_scita_category_slider" contentEditable="false" data-cat-slider-id=""  data-disp='category_snippet'>
+                <div class="container">
+                    <div class="block-title">
+                        <h3 class="fancy">Category Snippet</h3>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="theme_scita_category_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="oe_cat_slider" data-selector=".oe_cat_slider">
+                    <we-button class="dropdown-item oe_cat_slider" tabindex="-1" href="#" data-cat_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="theme_scita_cat_slider_view" name="Category 1">
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class="category-slider-section">
+                            <div class='row'>
+                                <t t-as="slide" t-foreach="slider_details">
+                                    <div class='col-md-4 col-sm-6'>
+                                        <div class="cs-cat">
+                                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                                <div class="cs-img">
+                                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                                </div>
+                                                <div class='sct_cat_content'>
+                                                    <p class="pwpi-title">
+                                                        <t t-esc="slide.name"/>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+<!-- Category Slider Snippet -->
+        <template id="second_theme_scita_category_slider" name="Category Snippet 4">
+            <section id="second_custom_category_slider" class="second_cat_slider categ_slider second_theme_scita_category_slider" contentEditable="false" data-cat-slider-id="" data-disp='category_snippet'>
+                <div class="container">
+                    <div class="block-title">
+                        <h3 class="fancy">Category Snippet</h3>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="second_category_slider_option" inherit_id="website.snippet_options" name="Modify Options">
+            <xpath expr="//div" position="after">
+                <div data-js="second_cat_slider" data-selector=".second_cat_slider">
+                    <we-button class="dropdown-item second_cat_slider" tabindex="-1" href="#" data-cat_slider="">Modify</we-button>
+                </div>
+            </xpath>
+        </template>
+        <template id="second_cat_slider_view" name="Category 2">
+            <div class="container-fluid">
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class="category-slider-section">
+                            <div class='row'>
+                                <t t-as="slide" t-foreach="slider_details">
+                                    <div class='col-md-3 col-sm-6'>
+                                        <div class="cs-cat">
+                                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                                <div class="cs-img">
+                                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                                </div>
+                                                <div class='sct_cat_content'>
+                                                    <p class="pwpi-title">
+                                                        <t t-esc="slide.name"/>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    <!-- Fashion category snippet -->
+    <template id="fashion_category_snippet_1" name="Category Snippet 2">
+        <section class="fashion_category_snippet_1"  data-disp='category_snippet'>
+            <div class='container-fluid'>
+                <div class="row s_nb_column_fixed">
+                    <div class='col-md-12'>
+                        <h2 class="section-title">Categories</h2>
+                    </div>
+                </div>
+                <div class='row s_nb_column_fixed'>
+                    <div class='col-md-12 sct_cat_main'>
+                        <div class='cat_left_side'>
+                            <div class='cat_top_div'>
+                                <div class='cat_top_content'>
+                                    <h3 class='sct_cat_title'>Shop Men</h3>
+                                    <p class='sct_simple_text'>Pre-fall Collection</p>
+                                    <div class="sct_btn_div">
+                                        <a href="/shop" class="btn">SHOP NOW<span class="ti-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                                <div class='left_img_border'>
+                                    <img src="/web/image/theme_scita.sct_category_snippet_2_left" class="img img-fluid"/>
+                                </div>
+                                <h3 class='sct_vertical_text'>New Collection</h3>
+                            </div>
+                            <div class="cat_bottom_div">
+                                <div class='sct_cat_box'>
+                                    <h3 class='sct_box_title'>Shop kids</h3>
+                                    <p class='sct_box_simple'>New Collection</p>
+                                    <div class="sct_btn_div">
+                                        <a href="/shop" class="btn">SHOP NOW<span class="ti-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                                <div class='sct_cat_box'>
+                                    <h3 class='sct_box_title'>Extravaganza</h3>
+                                    <p class='sct_box_simple'>New Collection</p>
+                                    <div class="sct_btn_div">
+                                        <a href="/shop" class="btn">SHOP NOW<span class="ti-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='cat_right_side'>
+                            <div class='sct_back_img'>
+                                <div class='sct_middle_img'>
+                                    <img src="/web/image/theme_scita.sct_category_snippet_2_right" class="img img-fluid"/>
+                                </div>
+                                <div class='cat_top_content'>
+                                    <h3 class='sct_cat_title'>Shop Women</h3>
+                                    <p class='sct_simple_text'>Pre-fall Collection</p>
+                                    <div class="sct_btn_div">
+                                        <a href="/shop" class="btn">SHOP NOW<span class="ti-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--  Retail category banner snippet-->
+    <template id="retial_category_snippet_1" name="Category Snippet 1">
+        <section class="retial_category_snippet_1" data-disp='category_snippet'>
+            <div class='container'>
+                <div class="row s_nb_column_fixed">
+                    <h2 class="section-title">Categories</h2>
+                    <div class='col-md-7'>
+                        <div class="row">
+                            <div class='col-md-6 cat-winter'>
+                                <div class="cat_icon">
+                                    <img src="/web/image/theme_scita.sct_category_snippet_1_kids" class="img img-fluid mx-auto" alt="Kids collection item"/>
+                                </div>
+                                <div class="cat_info">
+                                    <div class="cat-desp">
+                                        <p>Kids</p>
+                                        <h3 class="cat-title">Toys Wishlist</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-md-6 cat-fashion'>
+                                <div class="cat_icon">
+                                    <img src="/web/image/theme_scita.sct_category_snippet_1_furniture" class="img img-fluid mx-auto" alt="furniture Collection icon"/>
+                                </div>
+                                <div class="cat_info">
+                                    <div class="cat-desp">
+                                        <p>Best</p>
+                                        <h3 class="cat-title">Furniture</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-md-6 cat-men'>
+                                <div class="cat_icon">
+                                    <img src="/web/image/theme_scita.sct_category_snippet_1_home_col" class="img img-fluid mx-auto" alt="Home appliances icon"/>
+                                </div>
+                                <div class="cat_info">
+                                    <div class="cat-desp">
+                                        <p>Home</p>
+                                        <h3 class="cat-title">Appliances</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-md-6 cat-women'>
+                                <div class="cat_icon">
+                                    <img src="/web/image/theme_scita.sct_category_snippet_1_watch" class="img img-fluid mx-auto" alt="Watch collection icon"/>
+                                </div>
+                                <div class="cat_info">
+                                    <div class="cat-desp">
+                                        <p>Premium Picks</p>
+                                        <h3 class="cat-title">Watches</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-5'>
+                        <div class="cate_img">
+                            <img src="/web/image/theme_scita.sct_category_snippet_1_cat_main" class="img img-fluid" alt="Main product"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--  Retail category slider snippet-->
+    <template id="theme_scita_category_slider_3" name="Category Slider 1">
+        <section id="theme_scita_custom_category_slider_3" class="cat_slider_3 categ_slider scita_category_slider_3" contentEditable="false" data-cat-slider-id=""  data-disp='category_snippet'>
+            <div class="container">
+                <div class="block-title">
+                    <h3 class="fancy">Category Slider</h3>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="theme_scita_category_slider_3_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="cat_slider_3" data-selector=".cat_slider_3">
+                <we-button class="dropdown-item cat_slider_3" tabindex="-1" href="#" data-cat_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="theme_scita_category_slider_3_view" name="Category">
+        <div class="container">
+            <div class="row top-row title-block">
+                <h2 class="col-md-12 section-title" t-if="not slider_header">
+                    Category Slider
+                </h2>
+                <h2 class="col-md-12 section-title" t-if="slider_header">
+                    <t t-esc="slider_header.name"/>
+                </h2>
+            </div>
+            <div class="row bottom-row categories">
+                <div id="carousel_category" class="col-md-12 category-slider owl-carousel">
+                    <t t-as="slide" t-foreach="slider_details">
+                        <div class="item cs-cat">
+                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                <div class="cs-img">
+                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                </div>
+                                <div class='sct_cat_content'>
+                                    <p class="pwpi-title">
+                                        <t t-esc="slide.name"/>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="theme_scita_category_slider_4" name="Category Slider 2">
+        <section id="theme_scita_custom_category_slider_4" class="cat_slider_4 categ_slider scita_category_slider_4" contentEditable="false" data-cat-slider-id=""  data-disp='category_snippet'>
+            <div class="container">
+                <div class="block-title">
+                    <h3 class="fancy">Category Slider</h3>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="theme_scita_category_slider_4_option" inherit_id="website.snippet_options" name="Modify Options">
+        <xpath expr="//div" position="after">
+            <div data-js="cat_slider_4" data-selector=".cat_slider_4">
+                <we-button class="dropdown-item cat_slider_4" tabindex="-1" href="#" data-cat_slider="">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+    <template id="theme_scita_category_slider_4_view" name="Category">
+        <div class="container-fluid">
+            <div class="row top-row title-block">
+                <h2 class="col-md-12 section-title" t-if="not slider_header">
+                    Category Slider
+                </h2>
+                <h2 class="col-md-12 section-title" t-if="slider_header">
+                    <t t-esc="slider_header.name"/>
+                </h2>
+            </div>
+            <div class="row bottom-row categories">
+                <div id="cat_slider_4_owl" class="col-md-12 category-slider owl-carousel">
+                    <t t-as="slide" t-foreach="slider_details">
+                        <div class="item cs-cat">
+                            <a t-att-href=" '/shop/category/%s' % slug(slide)">
+                                <div class="cs-img">
+                                    <img t-att-alt="slide.name" t-att-src="website.image_url(slide, 'image_1920')" t-att-title="slide.name"/>
+                                </div>
+                                <div class='sct_cat_content'>
+                                    <p class="pwpi-title">
+                                        <t t-esc="slide.name"/>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

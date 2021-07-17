@@ -1,0 +1,55 @@
+.btn-primary {
+	cursor: pointer;
+	background: transparent;
+	line-height: 45px;
+	padding: 0 30px;
+	text-align: center;
+	font-size: $title;
+	font-weight: bold;
+	color: $theme;
+	border-radius: 40px;
+	-webkit-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    border:1px solid transparent;
+    @include transition(all, 0.3s, ease);
+    position: relative;
+	z-index: 2;
+	overflow: hidden;
+    @media (max-width: 1023px){
+    	line-height: 40px;
+    	font-size: $title - 2;
+    }
+    &:before{
+		position: absolute;
+	    content: '';
+	    left: 0;
+	    background: $theme;
+	    right: 0;
+	    top: 100%;
+	    bottom: 0;
+	    @include transition(all, 0.3s, ease);
+	    z-index: -1;
+	}
+	&:focus, &:hover, &:active {
+		border:1px solid $theme;
+		color: $light-color;
+		@include transition(all, 0.3s, ease);
+		background: transparent;
+		outline: none;
+		&:before{
+			top:0;
+			@include transition(all, 0.3s, ease);
+		}
+	}
+}
+.oe_menu_editor{
+	.btn-primary {
+		&:before{
+			position:static;
+			z-index: 1;
+			background-color: transparent;
+			content: "\f044";
+		}
+	}
+}

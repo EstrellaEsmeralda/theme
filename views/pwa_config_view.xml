@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Website Config Settings -->
+    <record id="res_config_settings_view_form_pwa" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pwa</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="theme_scita.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="webmaster_settings" position="after">
+                <h2>PWA Website</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-md-12 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="is_app_pwa"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="is_app_pwa"/>
+                            <div class="text-muted">
+                                Enable PWA For Website 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt16 o_settings_container" attrs="{'invisible': [('is_app_pwa', '=', False)]}">
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="pwa_app_name"/>
+                            <div class="text-muted">
+                                Displayed on the splash-screen below the app icon
+                            </div>
+                            <div class="mt2">
+                                <field name="pwa_app_name"/>
+                            </div>
+                            <label for="pwa_app_short_name"/>
+                            <div class="text-muted">
+                                 Displayed below the shortcut on the desktop or on the home screen
+                            </div>
+                            <div class="mt2">
+                                <field name="pwa_app_short_name"/>
+                            </div>
+                            <label for="pwa_app_start_url"/>
+                            <div class="text-muted">
+                                URL that is loaded first when you open the application from its shortcut
+                            </div>
+                            <div class="mt2">
+                                <field name="pwa_app_start_url"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="pwa_app_back_color"/>
+                            <div class="text-muted">
+                                 The background color of the splash-screen.
+                            </div>
+                            <div class="mt5">
+                                <field name="pwa_app_back_color" widget="color"/>
+                            </div>
+                            <label for="pwa_app_theme_color"/>
+                            <div class="text-muted">
+                                The theme color of application
+                            </div>
+                            <div class="mt5">
+                                <field name="pwa_app_theme_color" widget="color"/>
+                            </div>
+                            <label for="pwa_app_icon_512"/>
+                            <div class="text-muted">
+                                 Application icons used for shortcut and splashscreen. (Required Image File must be PNG format)
+                            </div>
+                            <div class="mt5">
+                                <field name="pwa_app_icon_512" widget="image" height='100px' width='100px'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- Experts details snippets -->
+    <template id="helth_experts_tabs_snippets" name="Our Team Snippet 1">
+        <section class="helth_experts_tabs s_tabs oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_our_team_snippet_1_image_1');" data-disp="our_team">
+            <div class="container">
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span class='left_right_seprator'>Our Expert Says</span></h2>
+                        <p class='sct_simple_text'>Our Clinic has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and bore advanced restorative dentistry. We are among the most qualified implant providers in the AUS with over 30 years of quality training and experience.</p>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body tab-content">
+                                <div class="tab-pane fade show active"
+                                    id="nav_tabs_content_1"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_1">
+                                    <div class='row'>
+                                        <div class='col-md-6 sct_exp_img'>
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_image_2" class="img img-fluid" alt="Expert"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_exp_info'>
+                                                <h3 class='sct_pers_name'>Dr.Veranda Tanumihardja</h3>
+                                                <p class='sct_pers_desig'>Dental</p>
+                                                <p class='sct_simple_text'>Veranda was born and raised in Indonesia, North Way Indonesia He graduated from the University...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_2">
+                                    <div class='row'>
+                                        <div class='col-md-6 sct_exp_img'>
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_image_3" class="img img-fluid" alt="Expert"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_exp_info'>
+                                                <h3 class='sct_pers_name'>Dr.Veranda Tanumihardja</h3>
+                                                <p class='sct_pers_desig'>Dental</p>
+                                                <p class='sct_simple_text'>Veranda was born and raised in Indonesia, North Way Indonesia He graduated from the University...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_3"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_3">
+                                    <div class='row'>
+                                        <div class='col-md-6 sct_exp_img'>
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_image_4" class="img img-fluid" alt="Expert"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_exp_info'>
+                                                <h3 class='sct_pers_name'>Dr.Veranda Tanumihardja</h3>
+                                                <p class='sct_pers_desig'>Animal</p>
+                                                <p class='sct_simple_text'>Veranda was born and raised in Indonesia, North Way Indonesia He graduated from the University...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_4"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_4">
+                                    <div class='row'>
+                                        <div class='col-md-6 sct_exp_img'>
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_image_5" class="img img-fluid" alt="Expert"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_exp_info'>
+                                                <h3 class='sct_pers_name'>Dr.Veranda Tanumihardja</h3>
+                                                <p class='sct_pers_desig'>Physician</p>
+                                                <p class='sct_simple_text'>Veranda was born and raised in Indonesia, North Way Indonesia He graduated from the University...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade"
+                                    id="nav_tabs_content_5"
+                                    role="tabpanel"
+                                    aria-labelledby="nav_tabs_link_5">
+                                    <div class='row'>
+                                        <div class='col-md-6 sct_exp_img'>
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_image_6" class="img img-fluid" alt="Expert"/>
+                                        </div>
+                                        <div class='col-md-6'>
+                                            <div class='sct_exp_info'>
+                                                <h3 class='sct_pers_name'>Dr.Veranda Tanumihardja</h3>
+                                                <p class='sct_pers_desig'>Dental</p>
+                                                <p class='sct_simple_text'>Veranda was born and raised in Indonesia, North Way Indonesia He graduated from the University...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            id="nav_tabs_link_1"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_1"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_1"
+                                            aria-selected="true">
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_thumb_1" class="img img-fluid" alt="Expert"/>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_2"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_2"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_2"
+                                            aria-selected="false">
+                                                <img src="/web/image/theme_scita.sct_our_team_snippet_1_thumb_2" class="img img-fluid" alt="Expert"/>
+                                            </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_3"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_3"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_3"
+                                            aria-selected="false">
+                                                <img src="/web/image/theme_scita.sct_our_team_snippet_1_thumb_3" class="img img-fluid" alt="Expert"/>
+                                            </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_4"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_4"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_4"
+                                            aria-selected="false">
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_thumb_4" class="img img-fluid" alt="Expert"/>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            id="nav_tabs_link_5"
+                                            data-toggle="tab"
+                                            href="#nav_tabs_content_5"
+                                            role="tab"
+                                            aria-controls="nav_tabs_content_5"
+                                            aria-selected="false">
+                                            <img src="/web/image/theme_scita.sct_our_team_snippet_1_thumb_5" class="img img-fluid" alt="Expert"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="it_our_team" name="Our Team Slider 1">
+        <section class="it_our_team our_team_varient_1" data-disp="our_team">
+            <div class="container">
+                <div class='row sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator">Our Awesome Team</h2>
+                        <p class="sct_simple_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo. Enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                    </div>
+                </div>
+            </div>
+            <div class='container-fluid our_team_1' id="it_our_team">
+            </div>
+        </section>
+    </template>
+    <template id="it_our_team_view" name="Our Team Variant 1"> 
+        <div class='row sct_btm_row'>
+            <div class='col-md-12'>
+                <div class="sct_team_slider">
+                    <div id="myourteam" class="owl-carousel myourteam owl-theme">
+                        <t t-as="cust_employees" t-foreach="employee">
+                            <div class="item">
+                                <div class="image-container">
+                                    <div class="only-image">
+                                        <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                                    </div>
+                                    <div class="name">
+                                        <h3 class='sct_title' t-esc="cust_employees.name"/>
+                                        <p class='sct_simple_text'>
+                                            <span t-esc="cust_employees.job_id.name"/>
+                                        </p>
+                                    </div>
+                                    <div class="follow">
+                                        <a t-att-href="'%s'%(cust_employees.emp_social_twitter)" t-if="cust_employees.emp_social_twitter">
+                                            <i class="fa fa-twitter"/>
+                                        </a>
+                                        <a t-att-href="'%s'%(cust_employees.emp_social_facebook)" t-if="cust_employees.emp_social_facebook">
+                                            <i class="fa fa-facebook"/>
+                                        </a>
+                                        <a t-att-href="'%s'%(cust_employees.emp_social_linkdin)" t-if="cust_employees.emp_social_linkdin">
+                                            <i  class="fa fa-linkedin"/>
+                                        </a>
+                                    </div>
+                                </div>     
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="our_team_varient_2" name="Our Team Slider 2">
+        <section class="our_team_varient_2" data-disp="our_team">
+            <div class='container'>
+                <div class='row sct_btm_row'>
+                    <div class='col-md-12'>
+                        <h2 class="section-title hide_on_frontend">Our Team</h2>
+                        <div class="sct_team_slider our_team_2"  id="our_team_varient_2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="our_team_varient_2_view" name="Our Team Variant 2">	
+        <div id="v_2_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-2-image-container">
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                        </div>
+                        <div class="follow">
+                            <a t-att-href="'%s'%(cust_employees.emp_social_twitter)" t-if="cust_employees.emp_social_twitter">
+                                <i class="fa fa-twitter"/>
+                            </a>
+                            <a t-att-href="'%s'%(cust_employees.emp_social_facebook)" t-if="cust_employees.emp_social_facebook">
+                                <i class="fa fa-facebook"/>
+                            </a>
+                            <a t-att-href="'%s'%(cust_employees.emp_social_linkdin)" t-if="cust_employees.emp_social_linkdin">
+                                <i  class="fa fa-linkedin"/>
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                            <p class='sct_simple_text'>
+                                <span t-esc="cust_employees.job_id.name"/>
+                            </p>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>
+    </template>
+    <template id="our_team_varient_3" name="Our Team Slider 3">
+        <section class="our_team_varient_3" data-disp="our_team">
+            <div class="container">
+                <div class='row sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Our Team</h2>
+                        <p class="sct_simple_text">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class='row sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div class="sct_team_slider our_team_3" id="our_team_varient_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="our_team_varient_3_view" name="Our Team Variant 3">
+        <div id="v_3_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-3-image-container">
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                        </div>
+                        <div class="name">
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                            <h4 class='sct_job_desig'>
+                                <span t-esc="cust_employees.job_id.name"/>
+                            </h4>
+                        </div>
+                        <div class='sct_emp_desc'>
+                        	<p class='sct_simple_text' t-esc="cust_employees.emp_description"/>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>
+    </template>
+    <template id="our_team_varient_4" name="Our Team Slider 4">
+        <section class="our_team_varient_4" data-disp="our_team">
+            <div class="container">
+            <div class='row sct_btm_row'>
+                <div class='col-md-12'>
+                    <h2 class="section-title hide_on_frontend">Our Team</h2>
+                    <div class="sct_team_slider our_team_4" id="our_team_varient_4" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </template>
+    <template id="our_team_varient_4_view" name="Our Team Variant 4">
+        <div id="v_4_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-4-image-container">
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                            <div class="sct_hover_follow">
+                                <a t-att-href="'%s'%(cust_employees.emp_social_twitter)" t-if="cust_employees.emp_social_twitter">
+                                    <i class="fa fa-twitter"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_facebook)" t-if="cust_employees.emp_social_facebook">
+                                    <i class="fa fa-facebook"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_linkdin)" t-if="cust_employees.emp_social_linkdin">
+                                    <i  class="fa fa-linkedin"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                        </div>
+                        <div class='sct_contact_detail'>
+                        	<div class='sct_mobile'>
+                        		<span class="fa fa-mobile"/><a t-attf-href="tel:#{cust_employees.work_phone}"><t t-esc="cust_employees.work_phone"/></a>
+                        	</div>
+                        	<div class='sct_email'>
+                        		<span class="fa fa-envelope"/>
+                        		<a t-attf-href="mailto:#{cust_employees.work_email}">
+                            		<t t-esc="cust_employees.work_email"/>
+                            	</a>
+                        	</div>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>  
+    </template>
+    <template id="our_team_varient_5" name="Our Team Slider 5">
+        <section class="our_team_varient_5" data-disp="our_team">
+            <div class="container">
+                <div class='row sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Meet Our Team</h2>
+                        <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class='row sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div class="sct_team_slider our_team_5" id="our_team_varient_5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="our_team_varient_5_view" name="Our Team Variant 5">
+        <div id="v_5_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-5-image-container">
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                            <div class="sct_hover_follow">
+                                <a t-att-href="'%s'%(cust_employees.emp_social_twitter)" t-if="cust_employees.emp_social_twitter">
+                                    <i class="fa fa-twitter"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_facebook)" t-if="cust_employees.emp_social_facebook">
+                                    <i class="fa fa-facebook"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_linkdin)" t-if="cust_employees.emp_social_linkdin">
+                                    <i  class="fa fa-linkedin"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                            <h4 class='sct_job_desig sct_blue_line'>
+                                <span t-esc="cust_employees.job_id.name"/>
+                            </h4>
+                        </div>
+                        <div class='sct_emp_desc'>
+                        	<p class='sct_simple_text' t-esc="cust_employees.emp_description"/>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>
+    </template>
+    <template id="our_team_varient_6" name="Our Team Slider 6">
+        <section class="our_team_varient_6" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp="our_team">
+            <div class="container">
+                <div class='row sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Meet Our Team</h2>
+                    </div>
+                </div>
+                <div class='row sct_btm_row'>
+                    <div class='col-md-12'>
+                        <div class="sct_team_slider our_team_6" id="our_team_varient_6" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="our_team_varient_6_view" name="Our Team Variant 6">
+        <div id="v_6_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-6-image-container">
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                        </div>
+                        <div class="name">
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                            <h4 class='sct_job_desig'>
+                                <span t-esc="cust_employees.job_id.name"/>
+                            </h4>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>
+    </template>
+    <template id="our_team_varient_7" name="Our Team Slider 7">
+        <section  class="our_team_varient_7" data-disp="our_team">
+            <div class="container">
+            <div class='row sct_top_row'>
+                <div class="col-md-12">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="sct_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class='row sct_btm_row'>
+                <div class='col-md-12'>
+                    <div class="sct_team_slider our_team_7" id="our_team_varient_7">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </template>
+    <template id="our_team_varient_7_view" name="Our Team Variant 7">
+        <div id="v_7_myourteam" class="owl-carousel myourteam owl-theme">
+            <t t-as="cust_employees" t-foreach="employee">
+                <div class="item">
+                    <div class="v-7-image-container">
+                        <div class="name">
+                            <h4 class='sct_job_desig'>
+                                <span t-esc="cust_employees.job_id.name"/>
+                            </h4>
+                            <h3 class='sct_title' t-esc="cust_employees.name"/>
+                            <div class='sct_emp_desc'>
+                            	<p class='sct_simple_text' t-esc="cust_employees.emp_description"/>
+                            </div>
+                            <div class="follow">
+                                <a t-att-href="'%s'%(cust_employees.emp_social_twitter)" t-if="cust_employees.emp_social_twitter">
+                                    <i class="fa fa-twitter"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_facebook)" t-if="cust_employees.emp_social_facebook">
+                                    <i class="fa fa-facebook"/>
+                                </a>
+                                <a t-att-href="'%s'%(cust_employees.emp_social_linkdin)" t-if="cust_employees.emp_social_linkdin">
+                                    <i  class="fa fa-linkedin"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="only-image">
+                            <img class="img-responsive" t-att-src="website.image_url(cust_employees, 'image_1920')"/>
+                        </div>
+                    </div>     
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="contact_us_v_1" name="Contact Us Snippet 1">
+        <section class="contact_us_v_1" data-disp='contact_us'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-4 col-sm-6 sct_base_class'>
+
+                        <div class="sct-left-side">
+                            <span class="fa fa-mobile" />
+                        </div>
+                        <div class="sct-right-side">
+                            <h4 class='sct_title'>
+                            <a href="tel:+1323579832822">1323579832822</a>
+                        	</h4>
+                            <p class='sct_simple_text'>Free Shipping On All US Orders</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_base_class'>
+                        <div class="sct-left-side">
+                            <span class="fa fa-envelope-o"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4 class='sct_title'><a href="mailto:info@mediclinic.com">info@mediclinic.com</a>
+                        	</h4>
+                            <p class='sct_simple_text'>All Payment Are Secured.</p>
+                        </div>
+                    </div>
+                    <div class='col-md-4 col-sm-6 sct_base_class'>
+                        <div class="sct-left-side">
+                            <span class="fa fa-envelope-o"/>
+                        </div>
+                        <div class="sct-right-side">
+                            <h4 class='sct_title'>Live Chat</h4>
+                            <p class='sct_simple_text'>Get all the information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="contact_us_v_2" name="Contact Us Snippet 2">
+        <section class="contact_us_v_2 oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp='contact_us'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-12'>
+                        <div class='sct_base_class'>
+                        	<div class='sct_contect_into'>
+	                        	<h3 class='sct_title'>Need help? Call our award winning support team 24/7 at 020 7040505053</h3>
+	                        	<p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+	                        </div>
+	                        <div class='sct_cst_btn'>
+		                        <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Live Chat</a>
+		                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="contact_us_v_3" name="Contact Us Snippet 3">
+        <section class="contact_us_v_3 oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp='contact_us'>
+            <div class='container'>
+                <div class="row">
+                	<div class='col-md-6 sct_base_class'>
+                        <div class="sct-left-side">
+                            <img src="/web/image/theme_scita.sct_contactus_snippet_3" class="img img-fluid" alt="About Company"/>
+                        </div>
+                        <div class="sct-right-side">
+                        	<div class='sct_contect_into'>
+	                            <h4 class='sct_title'>Find An Insurance Agent</h4>
+	                            <p class='sct_simple_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+	                        </div>
+                            <div class='sct_cst_btn'>
+		                        <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Call Now</a>
+		                    </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 sct_base_class'>
+                        <div class="sct-left-side">
+                           	<img src="/web/image/theme_scita.sct_contactus_snippet_3" alt="About Company"/>
+                        </div>
+                        <div class="sct-right-side">
+                        	<div class='sct_contect_into'>
+	                            <h4 class='sct_title'>Call us for any question</h4>
+	                        </div>
+                            <div class='sct_no_detail'>
+		                        <a href="tel:9090909090">009-215-5596</a>
+		                        <p class='sct_simple_text'>(Toll Free)</p>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="contact_us_v_4" name="Contact Us Snippet 4">
+        <section class="contact_us_v_4" data-disp='contact_us'>
+            <div class='container'>
+                <div class="row">
+                    <div class='col-md-12'>
+                        <div class='sct_base_class'>
+                            <div class='sct_contect_img'>
+                                <span class="fa fa-share"/>
+                            </div>
+                        	<div class='sct_contect_into'>
+	                        	<h3 class='sct_title'>Ready to disscuss your Project?</h3>
+	                        </div>
+	                        <div class='sct_cst_btn'>
+		                        <a href="/contactus" class="btn btn-primary scita_cstm_btn ">Contact Us</a>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

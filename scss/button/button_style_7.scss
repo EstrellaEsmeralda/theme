@@ -1,0 +1,61 @@
+.btn-primary {
+	cursor: pointer;
+	background: transparent;
+	line-height: 45px;
+	padding: 0 30px;
+	text-align: center;
+	font-size: $title;
+	font-weight: bold;
+	color: $theme;
+	border-radius: 0;
+	-webkit-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    box-shadow: 0px 2px 14px 0px rgba(27, 27, 27, 0.4);
+    border:1px solid $theme;
+    @include transition(all, 0.3s, ease);
+    position: relative;
+	z-index: 2;
+	overflow: hidden;
+    @media (max-width: 1023px){
+    	line-height: 40px;
+    	font-size: $title - 2;
+    }
+    &:before{
+		position: absolute;
+	    content: '';
+	    left: -100%;
+	    background: fade-out($theme, 0.5);
+	    width: 20%;
+	    height: 100%;
+	    border-radius: 0;
+	    right: 100%;
+	    top: 0;
+	    bottom: 0;
+	    @include transition(all, 0.7s, ease);
+	    z-index: -1;
+	    opacity: 0;
+	}
+	&:focus, &:hover, &:active {
+		border:1px solid $theme;
+		color: $theme;
+		background: transparent;
+		outline: none;
+		&:before{
+			opacity:1;
+			right:-100%;
+			left: auto;
+			@include transition(all, 0.7s, ease);
+		}
+	}
+}
+.oe_menu_editor{
+	.btn-primary {
+		&:before{
+			position:static;
+			z-index: 1;
+			background-color: transparent;
+			content: "\f044";
+			opacity: 1;
+		}
+	}
+}

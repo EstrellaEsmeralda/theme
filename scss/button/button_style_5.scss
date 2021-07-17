@@ -1,0 +1,73 @@
+.btn-primary {
+	position: relative;
+	z-index: 2;
+	background: $light-color;
+	color: $theme;
+	font-size: 20px;
+	padding: 0 25px;
+	line-height: 45px;
+	font-weight: bold;
+	border: 1px solid $theme;
+	position: relative;
+	z-index: 2;
+	border-radius: 0;
+	@media (max-width:1199px){
+		font-size: 18px;
+		padding: 0 20px;
+		line-height: 40px;
+	}
+	&:before{
+		position: absolute;
+	    content: '';
+	    left: 0;
+	    background: $theme;
+	    right: 100%;
+	    top: 0;
+	    bottom: 0;
+	    @include transition(all, 0.3s, ease);
+	    z-index: -1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: -10px;
+		bottom: -10px;
+		left: -10px;
+		right: -10px;
+		z-index: -1;
+		border: 1px solid $theme;
+	}
+	&:hover{
+		border:1px solid $theme;
+		color: $light-color;
+		@include transition(all, 0.3s, ease);
+		background: transparent;
+		outline: none;
+		&:before{
+			right:0;
+			@include transition(all, 0.3s, ease);
+		}
+	}
+}
+.oe_menu_editor{
+	.btn-primary {
+		&:before{
+			position:static;
+			z-index: 1;
+			background-color: transparent;
+			content: "\f044";
+		}
+		&:after{
+			position: static;
+			border: none;
+		}
+	}
+}
+.oe_seo_configuration, .o_portal_wrap {
+	.btn-primary {
+		&:after{
+			position: static;
+			border: none;
+		}
+	}
+}

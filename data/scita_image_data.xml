@@ -1,0 +1,3258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	
+    	<record id="theme_scita.sct_about_us_snippet_1_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_about_us_snippet_1_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/about-bg.png</field>
+        </record>
+    	<record id="theme_scita.sct_about_us_snippet_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_about_us_snippet_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/about-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_about_us_snippet_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_about_us_snippet_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-about-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_1_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_1_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-1-slide-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_1_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_1_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-1-slide-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_1_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_1_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-1-slide-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_2_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_2_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-2-slide-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_2_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_2_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-2-slide-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_2_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_2_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-2-slide-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_3_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_3_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-3-slide-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_3_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_3_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-3-slide-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_3_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_3_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-3-slide-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_4_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_4_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-4-slide-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_4_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_4_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-4-slide-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_4_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_4_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-4-slide-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_1_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_1_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-left-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_1_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_1_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-right-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_2_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_2_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-left-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_2_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_2_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-right-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_3_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_3_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-left-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_5_image_3_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_5_image_3_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-5-slide-right-1b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_6_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_6_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/retail-banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_7_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_7_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/home-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_7_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_7_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/home-banner-object.png</field>
+        </record>
+        <record id="theme_scita.sct_banner_slider_8_image" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_slider_8_image.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-home-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_snippet_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_snippet_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/home-banner_1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_banner_snippet_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_banner_snippet_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/hero_img.jpg</field>
+        </record>
+        <record id="theme_scita.sct_blog_snippet_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_blog_snippet_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-article-bj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_blog_slider_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_blog_slider_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/service-snippet-img.jpg</field>
+        </record>
+        <record id="theme_scita.sct_content_snippet_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_content_snippet_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/service_v_13_mid.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_1_kids" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_1_kids.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/kids-collection.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_1_furniture" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_1_furniture.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/furniture-collection.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_1_home_col" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_1_home_col.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/home-appliances-collection.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_1_watch" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_1_watch.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/watch-collection.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_1_cat_main" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_1_cat_main.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/categoriy-main.jpg</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_2_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_2_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/cat-left-img.png</field>
+        </record>
+        <record id="theme_scita.sct_category_snippet_2_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_category_snippet_2_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/cat-right-img.png</field>
+        </record>
+        <record id="theme_scita.sct_case_study_snippet_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_case_study_snippet_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-cs-obj-1.png</field>
+        </record>
+        <record id="theme_scita.sct_case_study_snippet_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_case_study_snippet_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/cloud-db.png</field>
+        </record>
+        <record id="theme_scita.sct_contactus_snippet_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_contactus_snippet_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-tool-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_1_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_1_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/deal-main-banner.png</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_1_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_1_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/deal-offer-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_1_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_1_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/deal-offer-2.png</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_1_image_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_1_image_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/deal-offer-3.png</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/fashion-deal-of-day.jpg</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/shues.png</field>
+        </record>
+        <record id="theme_scita.sct_deal_snippet_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_deal_snippet_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/deal-bg-light.jpg</field>
+        </record>
+        <record id="theme_scita.sct_how_it_work_snippet_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_how_it_work_snippet_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/service-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_how_it_work_snippet_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_how_it_work_snippet_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/fashion-nl-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_how_it_work_snippet_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_how_it_work_snippet_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/money-back.png</field>
+        </record>
+        <record id="theme_scita.sct_how_it_work_snippet_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_how_it_work_snippet_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/howwork-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_multi_product_slider_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_multi_product_slider_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/feature-product-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-obj-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-obj-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-obj-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-obj-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_image_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_image_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-obj-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_thumb_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_thumb_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-thumb-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_thumb_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_thumb_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-thumb-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_thumb_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_thumb_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-thumb-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_thumb_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_thumb_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-thumb-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_our_team_snippet_1_thumb_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_our_team_snippet_1_thumb_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-exp-thumb-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_big_image" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_big_image.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-big-img.png</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_small_image_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_small_image_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-small-img1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_small_image_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_small_image_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-small-img3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_small_image_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_small_image_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-small-img2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_small_image_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_small_image_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-small-img4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_protflio_snippet_1_small_image_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_protflio_snippet_1_small_image_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/portfolio-small-img4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_3_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_3_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-adv-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_3_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_3_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-adv-ply-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_2_img_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_2_img_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/adsb-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_2_img_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_2_img_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/adsb-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_2_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_2_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/adsb-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_2_img_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_2_img_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/adsb-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_2_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_2_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/adsb-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_1_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_1_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/trending-promo.png</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_1_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_1_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/trending-headphone.jpg</field>
+        </record>
+        <record id="theme_scita.sct_adveertis_snippet_1_img_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_adveertis_snippet_1_img_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/trending-right-image.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_2_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_2_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/promo-bg-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_2_offer_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_2_offer_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/promo-offer-1.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_2_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_2_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/promo-bg-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_2_offer_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_2_offer_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/promo-offer-2.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_1_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_1_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/offer-banner-1.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_1_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_1_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/offer-banner-2.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_1_img_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_1_img_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/offer-banner-3.png</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_3_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_3_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/adv-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_promo_snippet_3_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_promo_snippet_3_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/adv-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_statistic_snippet_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_statistic_snippet_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-statics-1.png</field>
+        </record>
+        <record id="theme_scita.sct_statistic_snippet_2_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_statistic_snippet_2_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-statics-2.png</field>
+        </record>
+        <record id="theme_scita.sct_statistic_snippet_2_img_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_statistic_snippet_2_img_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-statics-3.png</field>
+        </record>
+        <record id="theme_scita.sct_statistic_snippet_2_img_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_statistic_snippet_2_img_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-statics-4.png</field>
+        </record>
+        <record id="theme_scita.sct_statistic_snippet_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_statistic_snippet_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/statics-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_1_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_1_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/service-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_1_img_file" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_1_img_file.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/file-explore.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_1_img_server" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_1_img_server.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/email-server.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_1_img_ecomerce" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_1_img_ecomerce.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/ecommerce.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_1_img_desktop" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_1_img_desktop.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/remote-desktop.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_9" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_9.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/service-snippet-img-12.jpg</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-service-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_1_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_1_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-emrg-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_1_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_1_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-emrg-icon-dark.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_2_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_2_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-tool-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_2_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_2_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-tool-icon-dark.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_3_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_3_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-appointment-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_3_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_3_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-appointment-icon-dark.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_4_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_4_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-insurance-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_14_icon_4_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_14_icon_2_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-insurance-icon-dark.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-department-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-department-main-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_1_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_1_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-light-1.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_1_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_1_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-dark-1.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_2_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_2_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-light-4.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_2_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_2_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-dark-4.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_3_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_3_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-light-2.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_3_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_3_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-dark-2.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_4_light" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_4_light.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-light-3.png</field>
+        </record>
+        <record id="theme_scita.sct_service_snippet_15_icon_4_dark" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_service_snippet_15_icon_4_dark.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-obj-dark-3.png</field>
+        </record>
+        <record id="theme_scita.sct_trust_icon_snippet_1_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_trust_icon_snippet_1_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/free-shipping-icon.png</field>
+        </record>
+        <record id="theme_scita.sct_trust_icon_snippet_1_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_trust_icon_snippet_1_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/secure-payment.png</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_3_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_3_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/testimonial-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_3_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_3_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/testimonial-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_4_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_4_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/testimonial-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_4_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_4_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/testimonial-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_1_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_1_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-test-obj-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_slider_1_img_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_slider_1_img_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/health/health-test-obj-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_testinomail_snippet_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_testinomail_snippet_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/feature-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fashion-theme/Group_1.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fashion-theme/Group_2.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_obj_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_obj_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-obj-1.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_obj_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_obj_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-obj-2.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fashion_brand_obj_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fashion_brand_obj_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/fashion/brand-obj-3.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/it/howwork-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_theme_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_theme_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_theme_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_theme_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_big_portfolio" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_big_portfolio.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/portfolio-big-img.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_small_portfolio_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_small_portfolio_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/portfolio-small-img1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_small_portfolio_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_small_portfolio_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/portfolio-small-img2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_small_portfolio_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_small_portfolio_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/portfolio-small-img3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_small_portfolio_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_small_portfolio_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/portfolio-small-img4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_it_theme_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_it_theme_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/it-theme/3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-theme/retail-banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-theme/banner--2_.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_banner_3-1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_banner_3-1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-theme/banner--3-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_nletter" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_nletter.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/nwesletter-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_health_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_health_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/health-theme/health-home-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_bg_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_bg_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/travel-bg1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_bg_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_bg_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/travel-bg2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_bg_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_bg_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/travel-bg3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_maldives" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_maldives.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/maldives-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_obj_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_obj_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/brand-obj-3.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_amsterdam" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_amsterdam.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/amsterdam.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_obj_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_obj_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/brand-obj-2.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_dubai" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_dubai.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/dubai.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_obj_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_obj_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/brand-obj-1.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_adv" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_adv.jpg</field>
+            <field name="type">url</field>
+            <field name="url">theme_scita/static/src/img/scita_demo_img/travel/adv-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_td_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_td_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/td-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_stats_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_stats_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/travel/statics-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_team_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_team_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-3(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_team_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_team_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-2(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_team_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_team_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-4(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_team_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_team_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-5(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/banner-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_finance_por_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_finance_por_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/finance/por-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_travel_team_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_travel_team_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-8(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_left_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_left_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/left-banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_right_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_right_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/right-banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_left_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_left_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/left-banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_right_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_right_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/right-banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_obj_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_obj_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/abt-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_deal" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_deal.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/deal-object.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_food_feature" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_food_feature.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/feature.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_food_why" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_food_why.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/why-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_retail_food_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_retail_food_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-food/nw-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_consult_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_consult_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/consulting/banner-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_consult_nw_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_consult_nw_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/consulting/nw-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_stud_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_stud_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/banner1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_stud_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_stud_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/banner3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_port_img" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_port_img.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/portfolio-img.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_service_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_service_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/service-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_service_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_service_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/service-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_service_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_service_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/service-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_call_bg2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_call_bg2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/call-bg2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_prtflio_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_prtflio_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/portfolio-small-img1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_prtflio_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_prtflio_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/portfolio-small-img2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_prtflio_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_prtflio_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/portfolio-small-img3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_design_prtflio_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_design_prtflio_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/creative_design_studio/portfolio-small-img4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_service_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_service_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/service-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_service_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_service_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/service-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_service_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_service_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/service-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_g_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_g_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/art-and-entertainment/g-8.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_art_team_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_art_team_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/team-6(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/banner-full-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/banner-full-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_part_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_part_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/1.png</field>
+        </record>
+        <record id="theme_scita.sct_auto_part_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_part_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/2.png</field>
+        </record>
+        <record id="theme_scita.sct_auto_part_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_part_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/3.png</field>
+        </record>
+        <record id="theme_scita.sct_auto_deal_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_deal_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/deal-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_client_bg_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_client_bg_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/client-bg1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_testinomial_img_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_testinomial_img_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/testimonial/image-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_vector_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_vector_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/Vector_Smart_Object-4.png</field>
+        </record>
+        <record id="theme_scita.sct_auto_vector_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_vector_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/Vector_Smart_Object-5.png</field>
+        </record>
+        <record id="theme_scita.sct_auto_vector_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_vector_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/AutoParts/Vector_Smart_Object-3.png</field>
+        </record>
+        <record id="theme_scita.sct_corporate_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_about_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_about_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/about-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_service_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_service_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/service-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_stat_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_stat_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/statics-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_p_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_p_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/p-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_corporate_call_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_corporate_call_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/corporate/call-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_hosting_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_hosting_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hosting-n-server/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_hosting_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_hosting_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hosting-n-server/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_hosting_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_hosting_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hosting-n-server/banner-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_hosting_why_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_hosting_why_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hosting-n-server/why-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_hosting_fea_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_hosting_fea_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hosting-n-server/fea-1.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_watch_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_watch_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/watches/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_watch_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_watch_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/watches/banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_watch_deal" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_watch_deal.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/watches/deal.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a_b" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a_b.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a-b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a_f" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a_f.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a-f.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a_e" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a_e.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a-e.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a_c" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a_c.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a-c.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_a_d" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_a_d.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/a-d.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_b" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_b.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_d_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_d_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/d-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/1.png</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_e_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_e_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/e-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_e_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_e_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/e-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_education_e_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_education_e_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/educations/e-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/banner-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_family_room" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_family_room.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/family-room.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_delux_room" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_delux_room.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/delux-room.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_lux_room" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_lux_room.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/Lux-room.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_hotel_g_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_hotel_g_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/hotel/g-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_furniture_a_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_furniture_a_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture/a-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_furniture_a_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_furniture_a_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture/a-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_furniture_q_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_furniture_q_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture/q-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_furniture_db" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_furniture_db.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture/db.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_about_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_about_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/about-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_donate" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_donate.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/l-donate.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_d" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_d.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/d.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_charity_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_charity_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/charity/6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_light_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_light_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_auto_light_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_auto_light_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_s_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_s_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/s-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_s_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_s_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/s-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_c_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_c_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/c-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_b_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_b_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/b-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_b_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_b_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/b-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_b_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_b_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/b-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_b_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_b_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/b-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_q_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_q_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/q-1.png</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_q_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_q_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/q-2.png</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_q_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_q_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/q-3.png</field>
+        </record>
+        <record id="theme_scita.sct_autoparts_light_t_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_autoparts_light_t_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/autoparts-light/t-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_constructions_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_ab_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_ab_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/ab-2.png</field>
+        </record>
+        <record id="theme_scita.sct_constructions_stats_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_stats_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/static-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_p_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_p_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/p-8.jpg</field>
+        </record>
+        <record id="theme_scita.sct_constructions_c_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_constructions_c_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/constructions/c-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_a" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_a.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_banner_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_banner_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/banner-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_p_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_p_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/p-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_w_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_w_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/w-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_agriculture_w_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_agriculture_w_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Agriculture/w-1.pngg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_b_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_b_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/b-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_b_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_b_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/b-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_a_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_a_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/a-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_a_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_a_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/a-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_b" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_b.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_decor_n" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_decor_n.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home-decor/n.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_s_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_s_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/s-1.png</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_s_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_s_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/s-2.png</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_s_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_s_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/s-3.png</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_s_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_s_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/s-4.png</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_exclusive_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_exclusive_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/exclusiv-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/8.jpg</field>
+        </record>
+        <record id="theme_scita.sct_beauty_spa_s_bg1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_beauty_spa_s_bg1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Beauty-Spa/s-bg1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_about_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_about_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/about-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_industry_fitness_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_industry_fitness_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_stats_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_stats_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/statics-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_g_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_g_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/g-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_g_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_g_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/g-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_g_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_g_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/g-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_g_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_g_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/g-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_g_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_g_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/g-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_test_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_test_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/test-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_fitness_call_action" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_fitness_call_action.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/fitness/call-to-action.jpg</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_banner_23" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_banner_23.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/banner-23.jpg</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_d_obj_main" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_d_obj_main.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/d-obj-main.jpg</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_d_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_d_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/d-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_blue_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_blue_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/blue-bg.png</field>
+        </record>
+        <record id="theme_scita.sct_kitchen_nw_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_kitchen_nw_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-kitchen/nw-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_ab_bg12" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_ab_bg12.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/ab-bg12.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_ab_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_ab_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/ab-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_stats_bg2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_stats_bg2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/static-bg2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_g_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_g_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/g-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_ctoa_bg1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_ctoa_bg1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/ctoa-bg1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_law_govt_pract_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_law_govt_pract_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Law_and_Government/pract-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_banner_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_banner_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/banner-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_health_ins" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_health_ins.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/health-ins.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_travel_ins" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_travel_ins.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/travel-ins.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_car_ins" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_car_ins.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/car-ins.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_stats" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_stats.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/statcics.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_how_help" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_how_help.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/how-help.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_cta" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_cta.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/cta.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_c_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_c_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/c-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_c_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/c-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_insurance_c_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_insurance_c_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Insurance/c-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/banner-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_b_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_b_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/b-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_b_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_b_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/b-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_b_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_b_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/b-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_bicycle_a_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_bicycle_a_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/bicycle/a-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_header_3_slide1a" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_header_3_slide1a.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-3-slide-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_header_3_slide_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_header_3_slide_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/header-3-slide-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_a_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_a_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/a-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_a_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_a_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/a-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_a_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_a_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/a-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_a_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_a_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/a-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_l_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_l_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/l-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_l_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_l_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/l-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_l_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_l_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/l-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_l_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_l_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/l-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_jewelry_nw" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_jewelry_nw.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/jewelry/nw.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_banner_1a" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_banner_1a.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/banner-1a.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_banner_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_banner_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/banner-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_sale_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_sale_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/sale-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_camera_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_camera_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/camera-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_d_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_d_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/d-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_gadgets_speaker" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gadgets_speaker.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/ecommerce-gadgets/51547-7-multimedia-speaker-download-free-download-png-hq.png</field>
+        </record>
+        <record id="theme_scita.sct_wine_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_static" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_static.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/static.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_l_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_l_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/l-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_l_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_l_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/l-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_l_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_l_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/l-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_wine_shop_b" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_wine_shop_b.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/wine-shop/b.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_1_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_1_obj.png</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-obj-1.png</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_2_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_2_obj.png</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-obj-2.png</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_c_3_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_c_3_obj.png</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/c-obj-3.png</field>
+        </record>
+        <record id="theme_scita.sct_sports_d_o_d" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_d_o_d.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/d-o-d.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_l_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_l_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/l-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_test_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_test_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/testi-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_sports_nw_bg_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_sports_nw_bg_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/sports/nw-bg-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_c_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_c_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/c-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_d_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_d_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/d-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_d_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_d_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/d-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_d_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_d_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/d-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_stationery_cta_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_stationery_cta_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/stationery/cta-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_banner_1_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_banner_1_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/banner-1-left.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_banner_1_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_banner_1_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/banner-1-right.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_banner_2_left" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_banner_2_left.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/banner-2-left.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_banner_2_right" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_banner_2_right.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/banner-2-right.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_ad_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_ad_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/ad-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_ad_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_ad_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/ad-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_gift_article_cta" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_gift_article_cta.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/gift-articles/cta.jpg</field>
+        </record>
+        <record id="theme_scita.sct_christmas_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_christmas_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Christmas-Ecommerce/banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_christmas_cta" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_christmas_cta.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/Christmas-Ecommerce/cta.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_banner_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_banner_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/banner-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_banner_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_banner_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/banner-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_s_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_s_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/s-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_print_media_nl_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_print_media_nl_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/print-media/nl-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_furniture_adv_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_furniture_adv_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/adv-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_furniture_adv_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_furniture_adv_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/adv-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_furniture_offer_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_furniture_offer_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/offer-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_furniture_customize_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_furniture_customize_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/customize-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_furniture_add_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_furniture_add_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/furniture-store/add-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_d_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_d_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/d-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_d_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_d_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/d-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_deal_offer_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_deal_offer_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/deal-offer-2.png</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_men_fashion" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_men_fashion.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/mens-fashion.png</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_add_banner" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_add_banner.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/add-banner.jpg/add-banner.jpg</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_of_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_of_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/retail-store/of-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_retail_store_nl_bg" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_retail_store_nl_bg.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/retail/nl-bg.jpg</field>
+        </record>
+        <record id="theme_scita.sct_lab_abt_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_abt_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/abt-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_lab_washing_hand" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_washing_hand.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/washing-hands.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_coronavirus" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_coronavirus.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/coronavirus.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_distance" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_distance.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/distance.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_health" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_health.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/health.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-4.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-3.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-2.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-1.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-5.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_s_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_s_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/s-6.png</field>
+        </record>
+        <record id="theme_scita.sct_lab_team_4_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_team_4_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/team-4-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_lab_team_8_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_team_8_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/team-8-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_lab_map" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_lab_map.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/lab/map.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_c_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/c-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_cc_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_c_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/cc-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_cc_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_cc_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/cc-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_cc_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_cc_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/cc-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_cc_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_cc_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/cc-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_c_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_c_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/c-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_7" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_7.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-7.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-8.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_f_93" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_f_93.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/f-93.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_h_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_h_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/h-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_1.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-1.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_2" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_2.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-2.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_3" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_3.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-3.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_4" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_4.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-4.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-5.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_sc_6" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_sc_6.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/sc-6.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_about_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_about_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/about-obj.jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_service_obj" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_service_obj.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/service-obj.png</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_team_8" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_team_8.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/team-8(1).jpg</field>
+        </record>
+        <record id="theme_scita.sct_home_delivery_team_5" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">sct_home_delivery_team_5.jpg</field>
+            <field name="type">url</field>
+            <field name="url">/theme_scita/static/src/img/scita_demo_img/home_delivery/team-5(1).jpg</field>
+        </record>
+    </data>
+</odoo>

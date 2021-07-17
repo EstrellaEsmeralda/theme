@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="it_fact_sheet" name="Statistics Snippet 1">
+        <section class="it_fact_sheet" style="background-image: url('/web/image/theme_scita.sct_statistic_snippet_1');" data-disp='statistics'>
+            <div class="container">
+                <div class='row s_nb_column_fixed  sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title btm_seprator light-seprator">Company Statistics</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class="progress-value">100+</div>
+                        <h5 class="progress-value-text">Award Won</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class="progress-value">800+</div>
+                        <h5 class="progress-value-text">Happy clients</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class="progress-value">1000+</div>
+                        <h5 class="progress-value-text">Project Complated</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class="progress-value">1500+</div>
+                        <h5 class="progress-value-text">Satisfied Visitors</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="health_fact_sheet" name="Statistics Snippet 2">
+        <section class="health_fact_sheet" data-disp='statistics'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class='progress-img'>
+                            <img src="/web/image/theme_scita.sct_statistic_snippet_8" class="img img-fluid" alt="Expert"/>
+                        </div>
+                        <div class="progress-value">3000+</div>
+                        <h5 class="progress-value-text">Satisfied Patients</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class='progress-img'>
+                            <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_2" class="img img-fluid" alt="Expert"/>
+                        </div>
+                        <div class="progress-value">500</div>
+                        <h5 class="progress-value-text">Doctor's Team</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class='progress-img'>
+                            <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_3" class="img img-fluid" alt="Expert"/>
+                        </div>
+                        <div class="progress-value">99%</div>
+                        <h5 class="progress-value-text">Success Ratio</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                        <div class='progress-img'>
+                            <img src="/web/image/theme_scita.sct_statistic_snippet_2_img_4" class="img img-fluid" alt="Expert"/>
+                        </div>
+                        <div class="progress-value">1300</div>
+                        <h5 class="progress-value-text">Successfull Surgeries</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_4" name="Statistics Snippet 3">
+        <section class="expertise_statistics_4" data-disp='statistics'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-trophy"/>
+	                        </div>
+	                        <div class="progress-value">12335</div>
+	                        <h5 class="progress-value-text">Awwards</h5>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-shopping-bag"/>
+	                        </div>
+	                        <div class="progress-value">500</div>
+	                        <h5 class="progress-value-text">Successful Projects</h5>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-weixin"/>
+	                        </div>
+	                        <div class="progress-value">12335</div>
+	                        <h5 class="progress-value-text">Our Customers</h5>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-database"/>
+	                        </div>
+	                        <div class="progress-value">12345</div>
+	                        <h5 class="progress-value-text">New Update</h5>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_5" name="Statistics Snippet 4">
+        <section class="expertise_statistics_5" data-disp='statistics'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-align-center"/>
+	                        </div>
+	                        <div class='sct_prog_content'>
+		                        <div class="progress-value">2360</div>
+		                        <h5 class="progress-value-text">Lines of code</h5>
+		                    </div>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-coffee"/>
+	                        </div>
+	                        <div class='sct_prog_content'>
+		                        <div class="progress-value">12335</div>
+		                        <h5 class="progress-value-text">Cup Of Coffee</h5>
+		                    </div>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-thumbs-up"/>
+	                        </div>
+	                        <div class='sct_prog_content'>
+		                        <div class="progress-value">12335</div>
+		                        <h5 class="progress-value-text">Statisfied Client</h5>
+		                    </div>
+	                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 prog_statics">
+                    	<div class='prg_static_box'>
+	                        <div class='progress-img'>
+	                            <span class="fa fa-hand-peace-o"/>
+	                        </div>
+	                        <div class='sct_prog_content'>
+		                        <div class="progress-value">250</div>
+		                        <h5 class="progress-value-text">Awards Won</h5>
+		                    </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_6" name="Statistics Snippet 5">
+        <section class="expertise_statistics_6 oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp='statistics'>
+            <div class="container">
+                <div class="row">
+                	<div class='col-lg-7 col-md-12'>
+                		<div class='sct_base_class'>
+                			<div class='sct_label_div'>
+                				<p class='sct_red_label'>Intersting Fact</p>
+                			</div>
+                			<div class='sct_prog_info'>
+                				<h2 class='sct_title'>Number speak our past &amp; feature</h2>
+                				<p class='sct_simple_class'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                			</div>
+                			<div class='prog_statics'>
+                				<div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">23</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Year Of Experience</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">244</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Happy Customers</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">236</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Project Completed</h5>
+				                    </div>
+			                    </div>
+                			</div>
+                			<div class='sct_cst_btn'>
+		                        <a href="#" class="btn btn-primary scita_cstm_btn ">Start Your Project</a>
+		                        <a href="#" class="btn btn-primary scita_cstm_btn  btn_dark">Talk To Our Expert</a>
+		                    </div>
+                		</div>
+                	</div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_7" name="Statistics Snippet 6">
+        <section class="expertise_statistics_7" data-disp='statistics'>
+            <div class='container'>
+                <div class='row s_nb_column_fixed sct_top_row'>
+                    <div class="col-md-12">
+                        <h2 class="section-title">Our Stories</h2>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed sct_btm_row">
+                    <div class='col-md-6 sct_pra_info'>
+                        <h3 class='sct_title'>What is Lorem Ipsum?</h3>
+                        <p class='sct_simple_text'>
+                        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class='col-md-6 sct_prog_box'>
+                        <ul>
+                            <li>
+                                <p class='sct_simple_text'>Design - <strong class='sct_per'>85%</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>Writing - <strong class='sct_per'>90%</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>Photography - <strong class='sct_per'>100%</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:100%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class='sct_simple_text'>Cost - <strong class='sct_per'>72%</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:72%;"></div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_8" name="Statistics Snippet 7">
+        <section class="expertise_statistics_8" data-disp='statistics'>
+            <div class='container'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-4 oe_img_bg' style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');">
+                    	<div class='sct_prog_content'>
+	                    	<p class='sct_simple_text'>Investment Numbers</p>
+	                        <h2 class='sct_title'>Making an impact in our community</h2> 
+	                    </div>
+                        <div class='sct_cst_btn'>
+	                        <a href="#" class="btn btn-primary scita_cstm_btn ">Learn More</a>
+	                    </div>
+                    </div>
+                    <div class='col-md-8 sct_cmp_info'>
+                        <div class='prog_statics'>
+            				<div class='prg_static_box'>
+		                        <div class='progress-img'>
+			                        <div class="progress-value">86%</div>
+		                        </div>
+		                        <div class='sct_prog_content'>
+			                        <h5 class="progress-value-text">Sucessful Apllications</h5>
+			                    </div>
+		                    </div>
+		                    <div class='prg_static_box'>
+		                        <div class='progress-img'>
+			                        <div class="progress-value">92%</div>
+		                        </div>
+		                        <div class='sct_prog_content'>
+			                        <h5 class="progress-value-text">Return On Investment</h5>
+			                    </div>
+		                    </div>
+		                    <div class='prg_static_box'>
+		                        <div class='progress-img'>
+			                        <div class="progress-value">94%</div>
+		                        </div>
+		                        <div class='sct_prog_content'>
+			                        <h5 class="progress-value-text">Applied Solution</h5>
+			                    </div>
+		                    </div>
+		                    <div class='prg_static_box'>
+		                        <div class='progress-img'>
+			                        <div class="progress-value">100%</div>
+		                        </div>
+		                        <div class='sct_prog_content'>
+			                        <h5 class="progress-value-text">Completely Secure</h5>
+			                    </div>
+		                    </div>
+            			</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_9" name="Statistics Snippet 8">
+        <section class="expertise_statistics_9" data-disp='statistics'>
+            <div class='container'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-3 sct_pra_info'>
+                    	<div class='sct_pra_box'>
+                    		<p class='sct_simple_text'>Advance Service</p>
+	                        <h2 class='sct_title'>What is Lorem Ipsum?</h2>
+	                        <p class='sct_simple_text'>
+	                        	Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	                        </p>
+	                    </div>
+                    </div>
+                    <div class='col-md-9 sct_prog_box'>
+                    	<div class='row'>
+                    		<div class='col-md-4'>
+                    			<div class='sct_base_class'>
+		                        	<div class='sct_prog_content'>
+						                <h5 class="progress-value-text">Project Completed</h5>
+		                        		<h3 class="progress-value">35.358</h3>
+		                        	</div>
+		                        	<div class='progress-img'>
+		                        		<img src="/web/image/theme_scita.sct_statistic_snippet_8" class="img img-fluid" alt="Expert"/>
+		                        	</div>
+		                        </div>
+                    		</div>
+                    		<div class='col-md-4'>
+                    			<div class='sct_base_class'>
+		                        	<div class='sct_prog_content'>
+						                <h5 class="progress-value-text">Project Completed</h5>
+		                        		<h3 class="progress-value">35.358</h3>
+		                        	</div>
+		                        	<div class='progress-img'>
+		                        		<img src="/web/image/theme_scita.sct_statistic_snippet_8" class="img img-fluid" alt="Expert"/>
+		                        	</div>
+		                        </div>
+                    		</div>
+                    		<div class='col-md-4'>
+                    			<div class='sct_base_class'>
+		                        	<div class='sct_prog_content'>
+						                <h5 class="progress-value-text">Project Completed</h5>
+		                        		<h3 class="progress-value">35.358</h3>
+		                        	</div>
+		                        	<div class='progress-img'>
+		                        		<img src="/web/image/theme_scita.sct_statistic_snippet_8" class="img img-fluid" alt="Expert"/>
+		                        	</div>
+		                        </div>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_10" name="Statistics Snippet 9">
+        <section class="expertise_statistics_10" data-disp='statistics'>
+            <div class="container">
+                <div class="row">
+                	<div class='col-md-12'>
+                		<div class='sct_base_class'>
+                			<div class='sct_prog_info'>
+                				<p class='sct_look_for'>Looking for</p>
+                				<h2 class='sct_title'>A first-class editor?</h2>
+                				<p class='sct_simple_class'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                			</div>
+                			<div class='prog_statics'>
+                				<div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">23</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Trusted Clients</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">44</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Awards</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">36</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Year Of Experience</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">21</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Expert</h5>
+				                    </div>
+			                    </div>
+                			</div>
+                			<div class='sct_cst_btn'>
+		                        <a href="#" class="btn btn-primary scita_cstm_btn ">Start Your Project</a>
+		                        <span>or</span>
+		                        <a href="#" class="btn btn-primary scita_cstm_btn ">Talk To Our Expert</a>
+		                    </div>
+                		</div>
+                	</div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_11" name="Statistics Snippet 10">
+        <section class="expertise_statistics_11" data-disp='statistics'>
+            <div class='container'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-4 sct_pra_info'>
+                    	<div class='progress-img'>
+                    		<img src="/web/image/theme_scita.sct_protflio_snippet_1_big_image" class="img img-fluid mx-auto" alt="For Men Offer"/>
+	                    </div>
+                    </div>
+                    <div class='col-md-8 sct_prog_box'>
+                    	<div class='sct_base_class'>
+	                    	<div class='sct_pra_info'>
+	                    		<h2 class='sct_title'>Lorem Ipsum is simply dummy text of the printing and typesetting</h2>
+		                        <p class='sct_simple_text'>
+		                        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+		                        </p>
+	                    	</div>
+	                    	<div class='sct_line_div'>
+		                    	<ul class="sct_unorder_list">
+	                                <li>
+	                                    <span class="fa fa-dot-circle-o"/><span class='text'>Lorem Ipsum is simply</span></li>
+	                                <li>
+	                                    <span class="fa fa-dot-circle-o"/><span class='text'>Lorem Ipsum is simply</span></li>
+	                                <li>
+	                                    <span class="fa fa-dot-circle-o"/><span class='text'>Lorem Ipsum is simply</span></li>
+	                                <li>
+	                                    <span class="fa fa-dot-circle-o"/><span class='text'>Lorem Ipsum is simply</span></li>
+	                            
+	                            </ul>
+	                        </div>
+                            <div class='prog_statics'>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">36+</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Projects</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">21+</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Clients</h5>
+				                    </div>
+			                    </div>
+			                    <div class='prg_static_box'>
+			                        <div class='progress-img'>
+				                        <div class="progress-value">44+</div>
+			                        </div>
+			                        <div class='sct_prog_content'>
+				                        <h5 class="progress-value-text">Awards</h5>
+				                    </div>
+			                    </div>
+                			</div>
+
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="expertise_statistics_12" name="Statistics Snippet 11">
+        <section class="expertise_statistics_12 oe_img_bg" style="background-image: url('/web/image/theme_scita.sct_blog_slider_1');" data-disp='statistics'>
+            <div class='container'>
+                <div class="row sct_btm_row">
+                    <div class='col-md-5 sct_pra_info'>
+                    	<div class='sct_base_class'>
+                    		<h3 class='sct_title'>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
+	                        <p class='sct_simple_text'>
+	                        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+	                        </p>
+                    	</div>
+                    </div>
+                    <div class='col-md-5 sct_prog_box'>
+	                    <div class='prg_static_box'>
+	                        <div class="left-sct">
+	                        	<span class="fa fa-cloud-download"/>
+                            </div>
+                            <div class="midle-sct">
+		                        <h5 class="progress-value-text">Projects</h5>
+		                        <p class='sct_simple_text'>Lorem Ipsum is simply</p>
+                            </div>
+                            <div class="right-sct">
+		                        <div class="progress-value">366</div>
+                            </div>
+	                    </div>
+	                    <div class='prg_static_box'>
+	                        <div class="left-sct">
+	                        	<span class="fa fa-user-o"/>
+                            </div>
+                            <div class="midle-sct">
+		                        <h5 class="progress-value-text">Happy Client</h5>
+		                        <p class='sct_simple_text'>Lorem Ipsum is simplydummy text of</p>
+                            </div>
+                            <div class="right-sct">
+		                        <div class="progress-value">366</div>
+                            </div>
+	                    </div>
+	                    <div class='prg_static_box'>
+	                        <div class="left-sct">
+	                        	<span class="fa fa-cloud-download"/>
+                            </div>
+                            <div class="midle-sct">
+		                        <h5 class="progress-value-text">Projects Finished</h5>
+		                        <p class='sct_simple_text'>Lorem Ipsum is simply</p>
+                            </div>
+                            <div class="right-sct">
+		                        <div class="progress-value">16</div>
+                            </div>
+	                    </div>
+	                    <div class='prg_static_box'>
+	                        <div class="left-sct">
+                            	<span class="fa fa-trophy"/>
+                            </div>
+                            <div class="midle-sct">
+    	                        <h5 class="progress-value-text">Business Solution</h5>
+    	                        <p class='sct_simple_text'>Lorem Ipsum is simply</p>
+                            </div>
+                            <div class="right-sct">
+    	                        <div class="progress-value">366</div>
+                            </div>
+	                    </div>
+            			
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,324 @@
+/*common style*/
+.sct-title {
+	font-size: $subtitle + 10;
+	@media (max-width: 1600px){
+		font-size: $subtitle;
+	}
+	@media (max-width: 1439px){
+		font-size: $title + 6;
+	}
+	@media (max-width: 767px){
+		font-size: $title;
+	}
+}
+.sct-tag {
+	font-size: $title;
+}
+#contact_us_page {
+	ul {
+		list-style-type: none;
+	}
+	textarea {
+		border-radius: 0;
+	}
+}
+.sct-scocial-icon-footer {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		a {
+			font-size: $title;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+/*common style end*/
+/*contact us page 1*/
+.sct-contact-us-1 {
+	padding: 60px 0;
+	@media (max-width: 1599px){
+		padding: 40px 0;
+	}
+	@media (max-width: 767px){
+		padding: 30px 0;
+	}
+	.top-row {
+		.sct-title {
+			color: $theme;
+		}
+		.sct-subtitle {
+			border-bottom: 1px solid $theme;
+			margin-bottom: 40px;
+			padding-bottom: 15px;
+		}
+	}
+	.bottom-row {
+		.sct-row {
+			margin-bottom: 20px;
+			.sct-small-title {
+				font-size: $title;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			a {
+				display: inline-block;
+				color: $theme;
+			}
+		}
+	}
+}
+/*contact us page 1 end*/
+/*contact us page 2*/
+.sct-contact-us-2 {
+	padding: 60px 0;
+	@media (max-width: 1599px){
+		padding: 40px 0;
+	}
+	@media (max-width: 767px){
+		padding: 30px 0;
+	}
+	> .container {
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.top-row {
+		text-align: center;
+		margin-bottom: 30px;
+		.sct-title {
+			background-color: $light-grey-color;
+			padding: 20px 0;
+			margin-bottom: 0;
+		}
+	}
+	.bottom-row {
+		.sct-right {
+			@media (max-width: 767px){
+				margin-top: 20px;
+			}
+		}
+		.form-btn {
+			.form-group {
+				margin-bottom: 0;
+			}
+		}
+		.sct-scocial-icon-footer {
+			margin-bottom: 20px;
+			li {
+				a {
+					width: 35px;
+					height: 35px;
+					color: $dark-color;
+					background-color: $light-grey-color;
+					line-height: 35px;
+					text-align: center;
+					display: block;
+				}
+			}
+		}
+		.our_office {
+			margin-bottom: 20px;
+		}
+		.sct-get-email {
+			.sct-info {
+				margin-bottom: 20px;
+				.sct-mail {
+					font-size: $font-body;
+					margin-bottom: 5px;
+				}
+				a {
+					display: inline-block;
+					color: $theme;
+					font-size: $font-body;
+				}
+			}
+		}
+	}
+}
+/*contact us page 2 end*/
+/*contact us page 3*/
+.sct-contact-us-3 {
+	padding: 60px 0;
+	@media (max-width: 1599px){
+		padding: 40px 0;
+	}
+	@media (max-width: 767px){
+		padding: 30px 0;
+	}
+	.top-row {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.middle-row {
+		text-align: center;
+		@media (min-width: 768px){
+			margin-bottom: 30px;
+		}
+		.sct-thumb {
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+			padding:15px;
+			height: 100%;
+			@media (max-width: 767px){
+				height: auto;
+				margin-bottom: 30px;
+			}
+		}
+		.mail {
+			a {
+				word-wrap: break-word;
+				word-break: break-all;
+			}
+		}
+		a {
+			color: $theme;
+			font-weight: bold;
+		}
+	}
+}
+/*contact us page 3 end*/
+/*contact us page 4*/
+.sct-contact-us-4 {
+	padding: 60px 0;
+	@media (max-width: 1599px){
+		padding: 40px 0;
+	}
+	@media (max-width: 767px){
+		padding: 30px 0;
+	}
+	> .container {
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+		padding:30px;
+	}
+	.top-row {
+		text-align: center;
+		.sct-title {
+			margin-bottom: 0;
+		}
+	}
+	.middle-row {
+		padding-top: 30px;
+		@media (max-width: 767px){
+			padding-top: 10px;
+		}
+		.col-form-label {
+			@media (min-width: 768px){
+				text-align: right;
+			}
+		}
+	}
+	.bottom-row {
+		margin-top: 20px;
+		.sct-thumb {
+			-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+			text-align: center;
+			padding: 15px 25px;
+			height: 100%;
+			font-size: $font-body;
+			background-color: $theme;
+			color: $light-color;
+			@media (max-width: 767px){
+				height: auto;
+				margin-bottom: 20px;
+			}
+			a {
+				color: $light-color;
+			}
+		}
+		.mail {
+			a {
+				word-wrap: break-word;
+				word-break: break-all;
+			}
+		}
+	}
+}
+/*contact us page 4 end*/
+/*contact us page 5*/
+.sct-contact-us-5 {
+	.top-row {
+		.sct-left, .sct-right {
+			padding-top: 5%;
+			padding-bottom: 5%;
+			@include flex;
+			@include flexwrap;
+			@include justify-align-content;
+			.sct-box {
+				flex: 0 0 70%;
+				max-width: 70%;
+				@media (max-width: 991px){
+					flex: 0 0 80%;
+					max-width: 80%;
+				}
+			}
+		}
+		.sct-left {
+			background: $theme;
+			color: $light-color;
+			.sct-title {
+				color: $light-color;
+				margin-bottom: 20px;
+				@media (max-width: 767px){
+					margin-bottom: 10px;
+				}
+			}
+			.sct-cnt-list {
+				.fa {
+					margin-right: 5px;
+				}
+				a {
+					color: $light-color;
+				}
+			}
+			.phone, .address {
+				margin-top: 1rem;
+			}
+		}
+		.sct-right {
+			
+		}
+	}
+	.bottom-row {
+		.sct-cnt-map {
+			padding: 0;
+			.google_map_v1 {
+				padding: 0;
+			}
+		}
+	}
+}
+/*contact us page 5 end*/
+
+/*Change Password Design*/
+
+
+body .o_portal_security_body{
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-top: 40px;
+    section{
+    	margin-top:0px !important;
+    	h3{
+		    color:$dark-color;
+		    font-weight: 600;
+		    font-size: 24px;
+		    margin-bottom:15px;
+    	}
+    	.oe_reset_password_form{
+    		margin-bottom: 20px;
+   		 	input.form-control{
+   		 		line-height: 24px;
+   		 	}
+    	}
+    	.alert-secondary{
+   		 		padding: 10px;
+   		}
+    }
+}
