@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="stock_valuation_ondate_report">
+            <t t-call="web.html_container">
+                <t t-set="data_report_margin_top" t-value="12" />
+                <t t-set="data_report_header_spacing" t-value="9" />
+                <t t-set="data_report_dpi" t-value="110" />
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <h2 class="text-center">Inventory Valuation Report</h2>
+                        <t t-foreach="get_company(data['form']['company_id'])"
+                            t-as="obj_company">
+                            <div class="row mt32">
+                                <div class="col-3 text-center"
+                                    style="border-width:1px;border-style:ridge;">
+                                    <strong>Company</strong>
+                                    <p t-esc="obj_company['name']" />
+                                </div>
+                                <div class="col-3 text-center"
+                                    style="border-width:1px;border-style:ridge;">
+                                    <strong>Warehouse</strong>
+                                    <p
+                                        t-esc="get_warehouses_block(data['form']['warehouse_ids'], data['form']['company_id'])" />
+                                </div>
+                                <div class="col-3 text-center"
+                                    style="border-width:1px;border-style:ridge;">
+                                    <strong>Valuation Date</strong>
+                                    <p t-esc="data['form']['start_date'] + ' TO ' + data['form']['end_date']" />
+                                </div>
+                                <div class="col-3 text-center"
+                                    style="border-width:1px;border-style:ridge;">
+                                    <strong>Amount In Currency</strong>
+                                    <p t-esc="obj_company['currency_id'][1]" />
+                                </div>
+                            </div>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left"
+                                            style="color:#0F33C6;font-size: 17px;">
+                                            <strong
+                                                t-esc="obj_company['name']" />
+                                        </th>
+                                        <th class="text-right">Beginning</th>
+                                        <th class="text-right">Received</th>
+                                        <th class="text-right">Sales</th>
+                                        <th class="text-right">Adjustments</th>
+                                        <th class="text-right">Ending</th>
+                                        <th class="text-right">Cost</th>
+                                        <th class="text-right">Total Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+	                                <t t-set="c_total_begin" t-value="0"/>
+	                                <t t-set="c_total_in" t-value="0"/>
+	                                <t t-set="c_total_out" t-value="0"/>
+	                                <t t-set="c_total_adj" t-value="0"/>
+	                                <t t-set="c_total_end" t-value="0"/>
+	                                <t t-set="c_total_cost" t-value="0"/>
+	                                <t t-set="c_total_subcost" t-value="0"/>
+                                    <t
+                                        t-foreach="get_lines(data, obj_company['id']).items()"
+                                        t-as="categ">
+	                                    <t t-set="total_begin" t-value="0"/>
+	                                    <t t-set="total_in" t-value="0"/>
+	                                    <t t-set="total_out" t-value="0"/>
+	                                    <t t-set="total_adj" t-value="0"/>
+	                                    <t t-set="total_end" t-value="0"/>
+		                                <t t-set="total_cost" t-value="0"/>
+		                                <t t-set="total_subcost" t-value="0"/>
+                                        <t
+                                            t-if="not data['form']['only_summary']">
+                                            <tr>
+                                                <td>
+                                                    <strong
+                                                        style="color:#827575;font-size: 17px;"
+                                                        t-esc="get_categ(categ[0])" />
+                                                </td>
+                                            </tr>
+                                            <t t-foreach="(categ[1])"
+                                                t-as="l">
+                                                <t t-set="cost"
+                                                    t-value="get_cost(obj_company['id'], l['product_id'], data['form']['end_date'], l['ending_qty']) or 0.0" />
+                                                <t t-set="subtotal_cost"
+                                                    t-value="get_subtotal_cost(cost, l['ending_qty'], l) or 0.0" />
+                                                <t
+                                                    t-if="l['begining_qty'] or l['ending_qty'] or l['product_qty_in'] or l['product_qty_out'] or l['product_qty_adjustment']">
+                                                    <tr>
+                                                        <td class="text-left">
+                                                            <p
+                                                                t-esc="get_product_name(l['product_id'])" />
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <p
+                                                                t-esc="(l['begining_qty'])" />
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <p
+                                                                t-esc="(l['product_qty_in'])" />
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <p
+                                                                t-esc="(l['product_qty_out'])" />
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <p
+                                                                t-esc="(l['product_qty_adjustment'])" />
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <p
+                                                                t-esc="(l['ending_qty'])" />
+                                                        </td>
+                                                        <td class="text-right" style="color:blue">
+                                                            <p
+                                                                t-esc="cost" />
+                                                        </td>
+                                                        <td class="text-right" style="color:blue">
+                                                            <p
+                                                                t-esc="subtotal_cost" />
+                                                        </td>
+
+					                                    <t t-set="total_begin" t-value="total_begin + l['begining_qty']"/>
+					                                    <t t-set="total_in" t-value="total_in + l['product_qty_in']"/>
+					                                    <t t-set="total_out" t-value="total_out + l['product_qty_out']"/>
+					                                    <t t-set="total_adj" t-value="total_adj + l['product_qty_adjustment']"/>
+					                                    <t t-set="total_end" t-value="total_end + l['ending_qty']"/>
+					                                    <t t-set="total_cost" t-value="total_cost + cost"/>
+					                                    <t t-set="total_subcost" t-value="total_subcost + subtotal_cost"/>
+		
+						                                <t t-set="c_total_begin" t-value="c_total_begin +  l['begining_qty']"/>
+						                                <t t-set="c_total_in" t-value="c_total_in + l['product_qty_in']"/>
+						                                <t t-set="c_total_out" t-value="c_total_out + l['product_qty_out']"/>
+						                                <t t-set="c_total_adj" t-value="c_total_adj + l['product_qty_adjustment']"/>
+						                                <t t-set="c_total_end" t-value="c_total_end + l['ending_qty']"/>
+					                                    <t t-set="c_total_cost" t-value="c_total_cost + cost"/>
+					                                    <t t-set="c_total_subcost" t-value="c_total_subcost + subtotal_cost"/>
+
+                                                    </tr>
+                                                </t>
+                                            </t>
+                                        </t>
+                                        <t
+                                            t-if="data['form']['only_summary']">
+                                            <t t-foreach="(categ[1])"
+                                                t-as="l">
+
+			                                    <t t-set="total_begin" t-value="total_begin + l['begining_qty']"/>
+			                                    <t t-set="total_in" t-value="total_in + l['product_qty_in']"/>
+			                                    <t t-set="total_out" t-value="total_out + l['product_qty_out']"/>
+			                                    <t t-set="total_adj" t-value="total_adj + l['product_qty_adjustment']"/>
+			                                    <t t-set="total_end" t-value="total_end + l['ending_qty']"/>
+
+				                                <t t-set="c_total_begin" t-value="c_total_begin +  l['begining_qty']"/>
+				                                <t t-set="c_total_in" t-value="c_total_in + l['product_qty_in']"/>
+				                                <t t-set="c_total_out" t-value="c_total_out + l['product_qty_out']"/>
+				                                <t t-set="c_total_adj" t-value="c_total_adj + l['product_qty_adjustment']"/>
+				                                <t t-set="c_total_end" t-value="c_total_end + l['ending_qty']"/>
+
+                                                <t t-set="p"
+                                                    t-value="l['begining_qty']" />
+                                                <t t-set="q"
+                                                    t-value="l['ending_qty']" />
+                                                <t t-set="r"
+                                                    t-value="get_cost(obj_company['id'], l['product_id'], data['form']['end_date'], q) or 0.0" />
+                                                <t t-set="s"
+                                                    t-value="get_subtotal_cost(r, q, l) or 0.0" />
+
+			                                    <t t-set="total_cost" t-value="total_cost + r"/>
+			                                    <t t-set="total_subcost" t-value="total_subcost + s"/>
+			                                    <t t-set="c_total_cost" t-value="c_total_cost + r"/>
+			                                    <t t-set="c_total_subcost" t-value="c_total_subcost + s"/>
+
+                                            </t>
+                                        </t>
+                                        <t t-if="categ[1]">
+                                            <tr class="border-black">
+                                                <td class="text-right">
+                                                    <strong
+                                                        style="color:#827575;font-size: 17px;"
+                                                        t-esc="get_categ(categ[0])" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_begin" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_in" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_out" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_adj" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_end" />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong />
+                                                </td>
+                                                <td class="text-right" style="color:#9D5389">
+                                                    <strong
+                                                        t-esc="total_subcost" />
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </t>
+                                    <tr class="border-black">
+                                        <td class="text-right">
+                                            <strong
+                                                style="color:#4B524F;font-size: 19px;">Total Inventory
+                                            </strong>
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_begin" />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_in" />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_out" />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_adj" />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_end" />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong />
+                                        </td>
+                                        <td class="text-right" style="color:#9D5389">
+                                            <strong
+                                                t-esc="c_total_subcost" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="page-break-before:always;">
+                            </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </template>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_stock_valuation_ondate" model="ir.actions.report">
+        <field name="name">Stock Valuation Report(PDF/XLS)</field>
+        <field name="model">stock.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">stock_valuation_on_date.stock_valuation_ondate_report</field>
+        <field name="report_file">stock_valuation_on_date.stock_valuation_ondate_report</field>
+        <!-- field name="binding_model_id" ref="product.model_product_product"/ -->
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
